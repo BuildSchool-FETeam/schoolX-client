@@ -18,7 +18,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "experimentalDecorators": true,
+    "types": ["reflect-metadata"],
+    "emitDecoratorMetadata": true,
+    "baseUrl": "src"
   },
   "include": [
     "src"
