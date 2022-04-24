@@ -2,7 +2,10 @@ import { config } from "config/config.dev";
 import { GraphQLClient, RequestDocument } from "graphql-request";
 import { GraphQLError } from "graphql-request/dist/types";
 import { inject, injectable } from "inversify";
-import { IErrorHandlingService } from "store-sdk/errorHandlingService/interfaces";
+import {
+  ErrorHandler,
+  IErrorHandlingService,
+} from "store-sdk/errorHandlingService/interfaces";
 import { Symbols } from "store-sdk/ioc-container/symbols";
 import { IGraphqlService } from "./interfaces";
 
@@ -16,7 +19,7 @@ export class GraphqlService implements IGraphqlService {
 
   async sendRequest<T>(
     gqlString: RequestDocument,
-    errorHandler?: (error: any) => void
+    errorHandler?: ErrorHandler
   ) {
     if (!errorHandler) {
       errorHandler = this.errorService.defaultHandling.bind(this.errorService);

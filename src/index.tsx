@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import reportWebVitals from "reportWebVitals";
 import container from "store-sdk/ioc-container/ioc";
 import { IOCProvider } from "store-sdk/ioc-container/ioc.context";
+import "./i18n/i18n";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
