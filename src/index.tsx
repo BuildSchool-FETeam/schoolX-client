@@ -4,7 +4,10 @@ import ReactDOM from "react-dom/client";
 import reportWebVitals from "reportWebVitals";
 import container from "store-sdk/ioc-container/ioc";
 import { IOCProvider } from "store-sdk/ioc-container/ioc.context";
+import { BrowserRouter } from "react-router-dom";
 import "./i18n/i18n";
+import { ChakraProvider } from "@chakra-ui/react";
+import { chakraTheme } from "theme/chakraTheme";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -12,7 +15,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <IOCProvider container={container}>
-      <App />
+      <ChakraProvider theme={chakraTheme}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ChakraProvider>
     </IOCProvider>
   </React.StrictMode>
 );

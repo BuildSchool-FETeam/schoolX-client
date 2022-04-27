@@ -31,6 +31,6 @@ export const usePage1Management = () => {
   return {
     fetchedData,
     authData,
-    logout: authStore.logout.bind(authStore),
+    onLogout: authStore.logout.bind(authStore),
   };
 };
