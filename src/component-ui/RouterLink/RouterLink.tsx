@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 import { chakra, LinkProps } from "@chakra-ui/react";
 import React from "react";
 
-export interface IRouterLinkProps extends React.PropsWithChildren<unknown> {
+export interface IRouterLinkProps extends LinkProps {
   to: string;
 }
 
 /**
- * The wrapper of the router link come from @React router dom.
+ * The wrapper of the router link coming from @React-router-dom.
  * You can use as normal chakraUI component
  */
-export function RouterLink(props: IRouterLinkProps & LinkProps) {
+export function RouterLink(props: IRouterLinkProps) {
   const { to, children, color = "blue.600" } = props;
   const RouterLinkBase = chakra(Link);
 
