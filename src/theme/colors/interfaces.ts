@@ -8,5 +8,5 @@ export enum ExtendsColorEnum {
 
   "error.500" = "error.500",
 
-  "warning.500" = "primary.500",
+  "warning.500" = "warning.500",
 }

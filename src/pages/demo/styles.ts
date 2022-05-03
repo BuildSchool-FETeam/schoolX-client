@@ -13,7 +13,7 @@ export const styles: IStyleSheet = {
 
   listItems: {
     m: 4,
-    w: "40rem",
+    w: "70rem",
     p: 4,
     borderRadius: "1rem",
     mb: 4,

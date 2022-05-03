@@ -1,13 +1,12 @@
-import { Box } from "@chakra-ui/react";
+import { Box, VStack } from "@chakra-ui/react";
 import { RouterLink } from "component-ui/RouterLink/RouterLink";
 import { ReactRoutes } from "router/ReactRoutes";
 import { testRoutes } from "router/routes/testRoutes.route";
-import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Box as="nav" mb={"2rem"}>
+    <VStack align={"center"} textAlign="center">
+      <Box as="nav">
         <RouterLink to="/" mr={"1rem"}>
           Page 1
         </RouterLink>
@@ -18,10 +17,10 @@ function App() {
           Demo from page2
         </RouterLink>
       </Box>
-      <div>
+      <Box>
         <ReactRoutes routes={testRoutes} />
-      </div>
-    </div>
+      </Box>
+    </VStack>
   );
 }
 
