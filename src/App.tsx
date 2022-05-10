@@ -16,6 +16,9 @@ function App() {
         <RouterLink to="/page2/demo" mr={"1rem"}>
           Demo from page2
         </RouterLink>
+        <RouterLink to="/page2/demo-btn" mr={"1rem"}>
+          Demo from page2
+        </RouterLink>
       </Box>
       <Box>
         <ReactRoutes routes={testRoutes} />

@@ -18,4 +18,12 @@ export const styles: IStyleSheet = {
     borderRadius: "1rem",
     mb: 4,
   },
+
+  listBtns: {
+    m: 4,
+    w: "50rem",
+    p: 4,
+    borderRadius: "1rem",
+    mb: 4,
+  },
 };
