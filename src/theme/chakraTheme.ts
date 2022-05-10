@@ -3,6 +3,7 @@ import { baseColor } from "./colors/baseColor";
 import { globalStyle } from "./base/globalStyle";
 import { semanticTokens } from "./base/semanticToken";
 import { textLayerStyle } from "./typography/textLayerStyle";
+import { ButtonTheme } from "./components/ButtonTheme";
 
 export const chakraTheme = extendTheme({
   semanticTokens: semanticTokens,
@@ -13,4 +14,7 @@ export const chakraTheme = extendTheme({
   layerStyles: {
     ...textLayerStyle,
   },
+  components: {
+    Button: ButtonTheme
+  }
 });
