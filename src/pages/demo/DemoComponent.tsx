@@ -22,7 +22,10 @@ export const DemoComponent = () => {
         >
           Tooltip
         </Text>
-        <Text layerStyle={TextLayerEnum.labelLg500} color={"gray.500"}>
+        <Text
+          layerStyle={TextLayerEnum.labelLg500}
+          color={ExtendsColorEnum["grayScale.400"]}
+        >
           shortcut
         </Text>
       </HStack>
@@ -32,19 +35,19 @@ export const DemoComponent = () => {
   return (
     <Box>
       <SimpleGrid spacing={10} columns={4} bg="gray.100" sx={styles.listBtns}>
-        <Button colorScheme={"blue"}>Enabled</Button>
-        <Button colorScheme={"blue"} disabled>
+        <Button colorScheme={"primary"}>Enabled</Button>
+        <Button colorScheme={"primary"} disabled>
           Disabled
         </Button>
 
         <Button
-          colorScheme={"blue"}
+          colorScheme={"primary"}
           leftIcon={<AddIcon h={3} w={3} color="gray.100" mr={2} />}
         >
           Icon Btn
         </Button>
         <Button
-          colorScheme={"blue"}
+          colorScheme={"primary"}
           disabled
           leftIcon={<AddIcon h={3} w={3} color="gray.100" mr={2} />}
         >
@@ -55,7 +58,7 @@ export const DemoComponent = () => {
       <SimpleGrid
         spacing={10}
         columns={4}
-        bg={ExtendsColorEnum["base.900"]}
+        bg={ExtendsColorEnum["darkLevel.950"]}
         sx={styles.listBtns}
       >
         <Button variant={ExtendVariantEnum.ghost}>Enabled</Button>
@@ -65,6 +68,7 @@ export const DemoComponent = () => {
 
         <Button
           variant="ghost"
+          colorScheme={ExtendsColorEnum["secondary.500"]}
           leftIcon={
             <AddIcon
               h={3}

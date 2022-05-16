@@ -2,11 +2,11 @@ import { ExtendsColorEnum } from "theme/colors/interfaces";
 
 export const colorDarkBoxData = [
   {
-    color: ExtendsColorEnum["base.700"],
+    color: ExtendsColorEnum["darkLevel.700"],
     text: "base 1",
   },
   {
-    color: ExtendsColorEnum["base.900"],
+    color: ExtendsColorEnum["darkLevel.900"],
     text: "base 2",
   },
 ];
@@ -21,7 +21,7 @@ export const colorLightBoxData = [
     text: "secondary 500",
   },
   {
-    color: ExtendsColorEnum["error.500"],
+    color: ExtendsColorEnum["danger.500"],
     text: "error 500",
   },
   {

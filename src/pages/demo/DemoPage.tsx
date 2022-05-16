@@ -1,4 +1,4 @@
-import { SimpleGrid, Text, Box, Button } from "@chakra-ui/react";
+import { SimpleGrid, Text, Box } from "@chakra-ui/react";
 import { Fragment } from "react";
 import { ExtendsColorEnum } from "theme/colors/interfaces";
 import { TextLayerEnum } from "theme/typography/interfaces";
@@ -34,7 +34,7 @@ export const DemoPage = () => {
       <SimpleGrid
         spacing={4}
         columns={4}
-        bg={ExtendsColorEnum["base.700"]}
+        bg={ExtendsColorEnum["darkLevel.950"]}
         sx={styles.listItems}
       >
         {listColorLightBoxes}
@@ -183,16 +183,6 @@ export const DemoPage = () => {
         <Text layerStyle={TextLayerEnum["labelSm500"]}>
           1. Label small - Work sans bold +0.5
         </Text>
-      </SimpleGrid>
-
-      <SimpleGrid
-        spacing={4}
-        columns={1}
-        bg="gray.100"
-        sx={styles.listItems}
-        textAlign="left"
-      >
-        <Button> Primary </Button>
       </SimpleGrid>
     </Fragment>
   );
