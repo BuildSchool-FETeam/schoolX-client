@@ -5,6 +5,7 @@ import {
   SimpleGrid,
   Tooltip,
   Text,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons";
 import { styles } from "./styles";
@@ -13,6 +14,11 @@ import { ExtendVariantEnum } from "theme/components/interfaces";
 import { TextLayerEnum } from "theme/typography/interfaces";
 
 export const DemoComponent = () => {
+  const boxColor = useColorModeValue(
+    ExtendsColorEnum["darkLevel.50"],
+    ExtendsColorEnum["darkLevel.950"]
+  );
+
   const renderTooltipContent = () => {
     return (
       <HStack>
@@ -22,7 +28,10 @@ export const DemoComponent = () => {
         >
           Tooltip
         </Text>
-        <Text layerStyle={TextLayerEnum.labelLg500} color={"gray.500"}>
+        <Text
+          layerStyle={TextLayerEnum.labelLg500}
+          color={ExtendsColorEnum["grayScale.400"]}
+        >
           shortcut
         </Text>
       </HStack>
@@ -31,33 +40,29 @@ export const DemoComponent = () => {
 
   return (
     <Box>
-      <SimpleGrid spacing={10} columns={4} bg="gray.100" sx={styles.listBtns}>
-        <Button colorScheme={"blue"}>Enabled</Button>
-        <Button colorScheme={"blue"} disabled>
-          Disabled
-        </Button>
+      <SimpleGrid spacing={10} columns={4} bg={boxColor} sx={styles.listBtns}>
+        <Button>Enabled</Button>
+        <Button disabled>Disabled</Button>
 
-        <Button
-          colorScheme={"blue"}
-          leftIcon={<AddIcon h={3} w={3} color="gray.100" mr={2} />}
-        >
+        <Button leftIcon={<AddIcon h={3} w={3} color={"white"} mr={2} />}>
           Icon Btn
         </Button>
         <Button
-          colorScheme={"blue"}
           disabled
-          leftIcon={<AddIcon h={3} w={3} color="gray.100" mr={2} />}
+          leftIcon={
+            <AddIcon
+              h={3}
+              w={3}
+              color={ExtendsColorEnum["grayScale.200"]}
+              mr={2}
+            />
+          }
         >
           Disabled
         </Button>
       </SimpleGrid>
 
-      <SimpleGrid
-        spacing={10}
-        columns={4}
-        bg={ExtendsColorEnum["base.900"]}
-        sx={styles.listBtns}
-      >
+      <SimpleGrid spacing={10} columns={4} bg={boxColor} sx={styles.listBtns}>
         <Button variant={ExtendVariantEnum.ghost}>Enabled</Button>
         <Button variant={ExtendVariantEnum.ghost} disabled>
           Enabled
@@ -65,6 +70,7 @@ export const DemoComponent = () => {
 
         <Button
           variant="ghost"
+          colorScheme={ExtendsColorEnum["secondary.500"]}
           leftIcon={
             <AddIcon
               h={3}
@@ -79,13 +85,20 @@ export const DemoComponent = () => {
         <Button
           variant="ghost"
           disabled
-          leftIcon={<AddIcon h={3} w={3} color="gray.100" mr={2} />}
+          leftIcon={
+            <AddIcon
+              h={3}
+              w={3}
+              color={ExtendsColorEnum["grayScale.600"]}
+              mr={2}
+            />
+          }
         >
           Disabled
         </Button>
       </SimpleGrid>
 
-      <SimpleGrid spacing={10} columns={4} bg={"gray.100"} sx={styles.listBtns}>
+      <SimpleGrid spacing={10} columns={4} bg={boxColor} sx={styles.listBtns}>
         <Tooltip label="Default tooltip" placement="bottom">
           <Button colorScheme={"gray"}>Default tooltip</Button>
         </Tooltip>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { chakra, LinkProps } from "@chakra-ui/react";
+import { chakra, LinkProps, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
+import { ExtendsColorEnum } from "theme/colors/interfaces";
 
 export interface IRouterLinkProps extends LinkProps {
   to: string;
@@ -11,7 +12,12 @@ export interface IRouterLinkProps extends LinkProps {
  * You can use as normal chakraUI component
  */
 export function RouterLink(props: IRouterLinkProps) {
-  const { to, children, color = "blue.600" } = props;
+  const linkColor = useColorModeValue(
+    ExtendsColorEnum["primary.500"],
+    ExtendsColorEnum["primary.200"]
+  );
+
+  const { to, children, color = linkColor } = props;
   const RouterLinkBase = chakra(Link);
 
   return (
