@@ -5,8 +5,12 @@ import { semanticTokens } from "./base/semanticToken";
 import { textLayerStyle } from "./typography/textLayerStyle";
 import { ButtonTheme } from "./components/ButtonTheme";
 import { TooltipTheme } from "./components/TooltipTheme";
+import { TextTheme } from "./components/TextTheme";
 
 export const chakraTheme = extendTheme({
+  config: {
+    initialColorMode: "dark",
+  },
   semanticTokens: semanticTokens,
   styles: {
     global: globalStyle,
@@ -18,5 +22,6 @@ export const chakraTheme = extendTheme({
   components: {
     Button: ButtonTheme,
     Tooltip: TooltipTheme,
+    Text: TextTheme,
   },
 });

@@ -1,4 +1,4 @@
-import { SimpleGrid, Text, Box } from "@chakra-ui/react";
+import { SimpleGrid, Text, Box, useColorModeValue } from "@chakra-ui/react";
 import { Fragment } from "react";
 import { ExtendsColorEnum } from "theme/colors/interfaces";
 import { TextLayerEnum } from "theme/typography/interfaces";
@@ -22,28 +22,28 @@ export const DemoPage = () => {
     );
   });
 
+  const boxColor = useColorModeValue(
+    ExtendsColorEnum["darkLevel.50"],
+    ExtendsColorEnum["darkLevel.900"]
+  );
+
   return (
     <Fragment>
       <Text size="2xl" mt="1rem">
         DEMO, this is the default font
       </Text>
-      <SimpleGrid spacing={4} columns={4} bg="gray.100" sx={styles.listItems}>
+      <SimpleGrid spacing={4} columns={4} bg={boxColor} sx={styles.listItems}>
         {listColorDarkBoxes}
       </SimpleGrid>
 
-      <SimpleGrid
-        spacing={4}
-        columns={4}
-        bg={ExtendsColorEnum["darkLevel.950"]}
-        sx={styles.listItems}
-      >
+      <SimpleGrid spacing={4} columns={4} bg={boxColor} sx={styles.listItems}>
         {listColorLightBoxes}
       </SimpleGrid>
 
       <SimpleGrid
         spacing={4}
         columns={1}
-        bg="gray.100"
+        bg={boxColor}
         sx={styles.listItems}
         textAlign="left"
       >
@@ -70,7 +70,7 @@ export const DemoPage = () => {
       <SimpleGrid
         spacing={4}
         columns={1}
-        bg="gray.100"
+        bg={boxColor}
         sx={styles.listItems}
         textAlign="left"
       >
@@ -98,7 +98,7 @@ export const DemoPage = () => {
       <SimpleGrid
         spacing={4}
         columns={1}
-        bg="gray.100"
+        bg={boxColor}
         sx={styles.listItems}
         textAlign="left"
       >
@@ -126,7 +126,7 @@ export const DemoPage = () => {
       <SimpleGrid
         spacing={4}
         columns={1}
-        bg="gray.100"
+        bg={boxColor}
         sx={styles.listItems}
         textAlign="left"
       >
@@ -159,7 +159,7 @@ export const DemoPage = () => {
       <SimpleGrid
         spacing={4}
         columns={1}
-        bg="gray.100"
+        bg={boxColor}
         sx={styles.listItems}
         textAlign="left"
       >

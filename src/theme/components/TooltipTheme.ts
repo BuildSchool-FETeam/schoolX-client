@@ -6,7 +6,7 @@ export const TooltipTheme: ComponentStyleConfig = {
   baseStyle: {
     borderRadius: "10rem",
     color: ExtendsColorEnum["secondary.500"],
-    bgColor: ExtendsColorEnum["darkLevel.950"],
+    bgColor: ExtendsColorEnum["darkLevel.900"],
     layerStyle: TextLayerEnum.labelLg500,
     px: 3,
     py: 2,
