@@ -63,6 +63,34 @@ export const DemoComponent = () => {
       </SimpleGrid>
 
       <SimpleGrid spacing={10} columns={4} bg={boxColor} sx={styles.listBtns}>
+        <Button variant={"info"}>Enabled</Button>
+        <Button variant={"info"} disabled>
+          Disabled
+        </Button>
+
+        <Button
+          variant={"info"}
+          leftIcon={<AddIcon h={3} w={3} color={"white"} mr={2} />}
+        >
+          Icon Btn
+        </Button>
+        <Button
+          variant={"info"}
+          disabled
+          leftIcon={
+            <AddIcon
+              h={3}
+              w={3}
+              color={ExtendsColorEnum["grayScale.200"]}
+              mr={2}
+            />
+          }
+        >
+          Disabled
+        </Button>
+      </SimpleGrid>
+
+      <SimpleGrid spacing={10} columns={4} bg={boxColor} sx={styles.listBtns}>
         <Button variant={ExtendVariantEnum.ghost}>Enabled</Button>
         <Button variant={ExtendVariantEnum.ghost} disabled>
           Enabled
