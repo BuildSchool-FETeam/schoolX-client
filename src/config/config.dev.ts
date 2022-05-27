@@ -1,3 +1,3 @@
 export const config = {
-  gqlEndpoint: "http://schoolx.xyz:3001/graphql",
+  gqlEndpoint: "http://schoolx.host:3001/graphql",
 };

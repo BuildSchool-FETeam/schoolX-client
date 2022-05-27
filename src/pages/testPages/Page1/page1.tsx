@@ -13,10 +13,10 @@ export const Page1 = () => {
     <VStack m={10}>
       <Box sx={styles.demoBox}></Box>
       <Text as={"h1"}>Hello</Text>
-      <h3>{authData.isAuth ? "Login" : "Non-login"}</h3>
+      <Text>{authData.isAuth ? "Login" : "Non-login"}</Text>
 
-      <h4>TRANS: {t(["test.title"], { ns: "common" })}</h4>
-      <p>{`${fetchedData?.heartBeat}`}</p>
+      <Text>TRANS: {t(["test.title"], { ns: "common" })}</Text>
+      <Text>{`${fetchedData?.heartBeat}`}</Text>
 
       <Button variant={"solid"} colorScheme="orange" onClick={() => onLogout()}>
         Logout

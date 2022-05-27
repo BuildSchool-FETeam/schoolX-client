@@ -39,6 +39,19 @@ export const ButtonVariants: ComponentStyleConfig["variants"] = {
     },
   }),
 
+  error: (props) => ({
+    bg: mode(
+      ExtendsColorEnum["danger.300"],
+      ExtendsColorEnum["danger.500"]
+    )(props),
+    _hover: {
+      bg: mode(
+        ExtendsColorEnum["danger.400"],
+        ExtendsColorEnum["danger.400"]
+      )(props),
+    },
+  }),
+
   ghost: (props) => ({
     backgroundColor: "transparent",
     color: ExtendsColorEnum["secondary.500"],

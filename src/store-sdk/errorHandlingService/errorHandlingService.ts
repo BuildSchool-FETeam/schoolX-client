@@ -1,11 +1,22 @@
 import { GraphQLError } from "graphql-request/dist/types";
-import { injectable } from "inversify";
+import { inject, injectable } from "inversify";
+import { Symbols } from "store-sdk/ioc-container/symbols";
+import { INotificationModalStore } from "store-sdk/modalServices/interfaces";
 import { IErrorHandlingService } from "./interfaces";
 
 @injectable()
 export class ErrorHandlingService implements IErrorHandlingService {
+  @inject(Symbols.INotificationModalStore)
+  notificationModalStore!: INotificationModalStore;
+
   defaultHandling(error: unknown) {
-    console.log("Got Error: ", this.getErrorMessages(error as GraphQLError[]));
+    const message = this.getErrorMessages(error as GraphQLError[]);
+
+    this.notificationModalStore.show({
+      title: "Fetch Error",
+      content: message,
+      type: "error",
+    });
   }
 
   private getErrorMessages(error?: any) {
