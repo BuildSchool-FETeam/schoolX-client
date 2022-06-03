@@ -4,4 +4,5 @@ export enum Symbols {
   IAuthStore = "IAuthStore",
   IErrorHandlingService = "IErrorHandlingService",
   INotificationModalStore = "INotificationModalStore",
+  ICommonModalStore = "ICommonModalStore",
 }

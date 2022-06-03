@@ -17,6 +17,7 @@ export const ButtonVariants: ComponentStyleConfig["variants"] = {
   }),
 
   secondary: (props) => ({
+    color: "gray.900",
     bg: mode(
       ExtendsColorEnum["secondary.300"],
       ExtendsColorEnum["secondary.500"]

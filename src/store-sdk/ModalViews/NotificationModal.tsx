@@ -1,4 +1,4 @@
-import { WarningTwoIcon } from "@chakra-ui/icons";
+import { CheckCircleIcon, InfoIcon, WarningTwoIcon } from "@chakra-ui/icons";
 import {
   Button,
   Modal,
@@ -57,6 +57,20 @@ export const NotificationModal = (props: INotificationModal) => {
           color: ExtendsColorEnum["danger.500"],
           Icon: WarningTwoIcon,
           btnVariant: "error",
+        };
+        break;
+      case "success":
+        data = {
+          color: ExtendsColorEnum["secondary.500"],
+          Icon: CheckCircleIcon,
+          btnVariant: "secondary",
+        };
+        break;
+      case "info":
+        data = {
+          color: ExtendsColorEnum["info.500"],
+          Icon: InfoIcon,
+          btnVariant: "info",
         };
         break;
 

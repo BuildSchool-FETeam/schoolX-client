@@ -2,11 +2,11 @@ import { Box, VStack } from "@chakra-ui/react";
 import { RouterLink } from "component-ui/RouterLink/RouterLink";
 import { ReactRoutes } from "router/ReactRoutes";
 import { testRoutes } from "router/routes/testRoutes.route";
-import { NotificationModalContainer } from "store-sdk/modalStore/NotificationModalContainer";
+import { ModalContainer } from "store-sdk/ModalViews/NotificationModalContainer";
 
 function App() {
   return (
-    <NotificationModalContainer>
+    <ModalContainer>
       <VStack align={"center"} textAlign="center">
         <Box as="nav">
           <RouterLink to="/" mr={"1rem"}>
@@ -29,7 +29,7 @@ function App() {
           <ReactRoutes routes={testRoutes} />
         </Box>
       </VStack>
-    </NotificationModalContainer>
+    </ModalContainer>
   );
 }
 

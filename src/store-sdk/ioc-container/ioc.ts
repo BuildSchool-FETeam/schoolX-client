@@ -7,6 +7,7 @@ import { GraphqlService } from "../graphqlService/graphqlService";
 import { AuthStore } from "../authStore/authStore";
 import { ErrorHandlingService } from "store-sdk/errorHandlingService/errorHandlingService";
 import { NotificationModalStore } from "store-sdk/modalServices/modalNotificationStore";
+import { CommonModalStore } from "store-sdk/modalServices/commonModalStore";
 
 const container = new Container({});
 
@@ -30,5 +31,7 @@ registerServiceSingleton(
   Symbols.INotificationModalStore,
   NotificationModalStore
 );
+
+registerServiceSingleton(Symbols.ICommonModalStore, CommonModalStore);
 
 export default container;
