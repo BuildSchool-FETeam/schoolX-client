@@ -17,7 +17,7 @@ export const EmptyMessage = (props: IconProps) => {
             rx="110.607"
             ry="21.3375"
             fill="#1F88F8"
-            fill-opacity="0.35"
+            fillOpacity="0.35"
           />
         </g>
         <path
@@ -41,7 +41,7 @@ export const EmptyMessage = (props: IconProps) => {
             rx="36.5786"
             ry="11.7574"
             fill="#FF4C77"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
         </g>
         <path
@@ -119,21 +119,21 @@ export const EmptyMessage = (props: IconProps) => {
         <path
           d="M243.722 26.9985C243.722 29.644 241.577 31.7886 238.932 31.7886C236.286 31.7886 234.142 29.644 234.142 26.9985C234.142 24.353 236.286 22.2084 238.932 22.2084C241.577 22.2084 243.722 24.353 243.722 26.9985Z"
           stroke="url(#paint8_linear_418_2357)"
-          stroke-width="2.61276"
+          strokeWidth="2.61276"
         />
         <circle
           cx="69.1028"
           cy="204.666"
           r="4.79006"
           stroke="url(#paint9_linear_418_2357)"
-          stroke-width="2.61276"
+          strokeWidth="2.61276"
         />
         <circle
           cx="216.288"
           cy="214.246"
           r="4.79006"
           stroke="url(#paint10_linear_418_2357)"
-          stroke-width="2.61276"
+          strokeWidth="2.61276"
         />
         <path
           d="M85.36 31.9319C85.8749 29.799 88.9088 29.799 89.4237 31.9319L91.1566 39.1108C91.3406 39.873 91.9357 40.4681 92.698 40.6521L99.8768 42.3851C102.01 42.8999 102.01 45.9339 99.8768 46.4488L92.698 48.1817C91.9357 48.3657 91.3406 48.9608 91.1566 49.7231L89.4237 56.9019C88.9088 59.0348 85.8749 59.0348 85.36 56.9019L83.627 49.723C83.443 48.9608 82.8479 48.3657 82.0857 48.1817L74.9069 46.4488C72.7739 45.9339 72.7739 42.8999 74.9069 42.3851L82.0857 40.6521C82.8479 40.4681 83.443 39.873 83.627 39.1108L85.36 31.9319Z"
@@ -159,9 +159,9 @@ export const EmptyMessage = (props: IconProps) => {
             width="264.76"
             height="86.2211"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -180,9 +180,9 @@ export const EmptyMessage = (props: IconProps) => {
             width="203.549"
             height="140.993"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -215,9 +215,9 @@ export const EmptyMessage = (props: IconProps) => {
             width="116.703"
             height="67.0608"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -236,9 +236,9 @@ export const EmptyMessage = (props: IconProps) => {
             width="133.251"
             height="86.4589"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -271,9 +271,9 @@ export const EmptyMessage = (props: IconProps) => {
             width="165.841"
             height="109.103"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -307,8 +307,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="365.463"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#CAE0FF" stop-opacity="0" />
-            <stop offset="1" stop-color="#BCD8FF" />
+            <stop stopColor="#CAE0FF" stopOpacity="0" />
+            <stop offset="1" stopColor="#BCD8FF" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_418_2357"
@@ -318,8 +318,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="146.219"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#EDF4FF" />
-            <stop offset="1" stop-color="#ABCCFF" />
+            <stop stopColor="#EDF4FF" />
+            <stop offset="1" stopColor="#ABCCFF" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_418_2357"
@@ -329,8 +329,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="193.594"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#ABCCFF" />
-            <stop offset="1" stop-color="#70A8FF" />
+            <stop stopColor="#ABCCFF" />
+            <stop offset="1" stopColor="#70A8FF" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_418_2357"
@@ -340,8 +340,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="193.594"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#ABCCFF" />
-            <stop offset="1" stop-color="#70A8FF" />
+            <stop stopColor="#ABCCFF" />
+            <stop offset="1" stopColor="#70A8FF" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_418_2357"
@@ -351,8 +351,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="193.594"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#70A8FF" />
-            <stop offset="1" stop-color="#5597FD" />
+            <stop stopColor="#70A8FF" />
+            <stop offset="1" stopColor="#5597FD" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_418_2357"
@@ -362,8 +362,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="71.4154"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C6DDFF" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#C6DDFF" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint6_linear_418_2357"
@@ -373,8 +373,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="85.3501"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF698D" />
-            <stop offset="1" stop-color="#FF3868" />
+            <stop stopColor="#FF698D" />
+            <stop offset="1" stopColor="#FF3868" />
           </linearGradient>
           <linearGradient
             id="paint7_linear_418_2357"
@@ -384,8 +384,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="110.903"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C6DDFF" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#C6DDFF" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint8_linear_418_2357"
@@ -395,8 +395,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="39.6994"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#94BFFF" />
-            <stop offset="1" stop-color="#4C94FE" />
+            <stop stopColor="#94BFFF" />
+            <stop offset="1" stopColor="#4C94FE" />
           </linearGradient>
           <linearGradient
             id="paint9_linear_418_2357"
@@ -406,8 +406,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="217.367"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#94BFFF" />
-            <stop offset="1" stop-color="#4C94FE" />
+            <stop stopColor="#94BFFF" />
+            <stop offset="1" stopColor="#4C94FE" />
           </linearGradient>
           <linearGradient
             id="paint10_linear_418_2357"
@@ -417,8 +417,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="226.947"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#94BFFF" />
-            <stop offset="1" stop-color="#4C94FE" />
+            <stop stopColor="#94BFFF" />
+            <stop offset="1" stopColor="#4C94FE" />
           </linearGradient>
           <linearGradient
             id="paint11_linear_418_2357"
@@ -428,8 +428,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="65.319"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#70A8FF" />
-            <stop offset="1" stop-color="#5597FD" />
+            <stop stopColor="#70A8FF" />
+            <stop offset="1" stopColor="#5597FD" />
           </linearGradient>
           <linearGradient
             id="paint12_linear_418_2357"
@@ -439,8 +439,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="216.804"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#70A8FF" />
-            <stop offset="1" stop-color="#5597FD" />
+            <stop stopColor="#70A8FF" />
+            <stop offset="1" stopColor="#5597FD" />
           </linearGradient>
           <linearGradient
             id="paint13_linear_418_2357"
@@ -450,8 +450,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="177.122"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#70A8FF" />
-            <stop offset="1" stop-color="#5597FD" />
+            <stop stopColor="#70A8FF" />
+            <stop offset="1" stopColor="#5597FD" />
           </linearGradient>
           <linearGradient
             id="paint14_linear_418_2357"
@@ -461,8 +461,8 @@ export const EmptyMessage = (props: IconProps) => {
             y2="89.9639"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#70A8FF" />
-            <stop offset="1" stop-color="#5597FD" />
+            <stop stopColor="#70A8FF" />
+            <stop offset="1" stopColor="#5597FD" />
           </linearGradient>
         </defs>
       </svg>

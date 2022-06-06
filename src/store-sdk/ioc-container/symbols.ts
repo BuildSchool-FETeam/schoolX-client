@@ -5,4 +5,5 @@ export enum Symbols {
   IErrorHandlingService = "IErrorHandlingService",
   INotificationModalStore = "INotificationModalStore",
   ICommonModalStore = "ICommonModalStore",
+  ICachingService = "ICachingService",
 }

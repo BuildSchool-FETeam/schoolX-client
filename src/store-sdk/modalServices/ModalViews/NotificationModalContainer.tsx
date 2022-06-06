@@ -14,6 +14,11 @@ import { NotificationModal } from "./NotificationModal";
 
 interface INotificationContainer extends PropsWithChildren<any> {}
 
+/**
+ * Use to control modal through store
+ * @param props Props
+ * @returns JSX Element
+ */
 export const ModalContainer = (props: INotificationContainer) => {
   const {
     isOpen: noticIsOpen,

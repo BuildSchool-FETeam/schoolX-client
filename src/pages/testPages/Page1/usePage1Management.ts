@@ -9,7 +9,7 @@ export const usePage1Management = () => {
   const fetchService = useInjection<IFetchService>(Symbols.IFetchService);
   const authStore = useInjection<IAuthStore>(Symbols.IAuthStore);
 
-  const [fetchedData, setFetchData] = useState<any>(null);
+  const [fetchedData, setFetchData] = useState<any>();
   const [authData, setAuthData] = useState<IAuthData>({ isAuth: false });
 
   useEffect(() => {

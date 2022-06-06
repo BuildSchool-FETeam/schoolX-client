@@ -1,5 +1,6 @@
 import { Box, BoxProps } from "@chakra-ui/react";
 import { PropsWithChildren } from "react";
+import { omit } from "lodash";
 
 export interface IDisplayContainerProps extends PropsWithChildren<any> {
   isFluid?: boolean;
@@ -23,7 +24,7 @@ export const DisplayContainer = (props: IDisplayContainerProps & BoxProps) => {
   }
 
   return (
-    <Box px={px} m="0 auto" maxW={maxWidth} {...props}>
+    <Box px={px} m="0 auto" maxW={maxWidth} {...omit(props, "isFluid")}>
       {props.children}
     </Box>
   );

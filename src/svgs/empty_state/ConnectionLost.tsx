@@ -15,8 +15,8 @@ export const ConnectionLost = (props: IconProps) => {
           fill="url(#paint0_linear_418_2296)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M3.28711 71.7143C23.3884 59.6438 46.16 57.3458 67.9624 58.0682C71.0778 58.1714 73.5195 60.7806 73.4163 63.8959C73.3131 67.0112 70.7039 69.453 67.5886 69.3498C46.6643 68.6565 26.4706 70.9594 9.09808 81.3914C6.42582 82.9961 2.95869 82.1306 1.35404 79.4584C-0.250621 76.7861 0.614843 73.319 3.28711 71.7143Z"
           fill="url(#paint1_linear_418_2296)"
         />
@@ -36,7 +36,7 @@ export const ConnectionLost = (props: IconProps) => {
             rx="31.5156"
             ry="11.8183"
             fill="#40DFF0"
-            fill-opacity="0.6"
+            fillOpacity="0.6"
           />
         </g>
         <g filter="url(#filter2_f_418_2296)">
@@ -49,8 +49,8 @@ export const ConnectionLost = (props: IconProps) => {
           />
         </g>
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M302.618 163.421C304.223 166.094 303.358 169.561 300.685 171.165C280.586 183.235 257.803 185.533 236.002 184.812C232.887 184.708 230.445 182.099 230.548 178.984C230.651 175.869 233.26 173.427 236.376 173.53C257.299 174.223 277.504 171.919 294.874 161.488C297.547 159.884 301.014 160.749 302.618 163.421Z"
           fill="url(#paint2_linear_418_2296)"
         />
@@ -127,14 +127,14 @@ export const ConnectionLost = (props: IconProps) => {
           cy="98.9239"
           r="4.81488"
           stroke="url(#paint16_linear_418_2296)"
-          stroke-width="2.6263"
+          strokeWidth="2.6263"
         />
         <circle
           cx="251.128"
           cy="210.872"
           r="4.81488"
           stroke="url(#paint17_linear_418_2296)"
-          stroke-width="2.6263"
+          strokeWidth="2.6263"
         />
         <path
           d="M246.556 131.614C246.223 130.308 247.429 129.131 248.726 129.496L257.485 131.957C258.783 132.322 259.199 133.954 258.234 134.895L251.723 141.25C250.759 142.191 249.137 141.736 248.804 140.43L246.556 131.614Z"
@@ -153,7 +153,7 @@ export const ConnectionLost = (props: IconProps) => {
           cy="6.87192"
           r="4.81488"
           stroke="url(#paint21_linear_418_2296)"
-          stroke-width="2.6263"
+          strokeWidth="2.6263"
         />
         <path
           d="M240.051 97.0605C243.567 97.0605 246.022 94.6607 246.022 91.3122C246.022 87.9078 243.567 85.5081 240.051 85.5081C236.591 85.5081 234.079 87.9078 234.079 91.3122C234.079 94.6607 236.591 97.0605 240.051 97.0605ZM245.52 56.0968H234.582V67.0353L237.372 82.1595H242.674L245.52 67.0353V56.0968Z"
@@ -183,9 +183,9 @@ export const ConnectionLost = (props: IconProps) => {
             width="182.09"
             height="67.4083"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -204,9 +204,9 @@ export const ConnectionLost = (props: IconProps) => {
             width="106.803"
             height="67.4083"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -225,9 +225,9 @@ export const ConnectionLost = (props: IconProps) => {
             width="182.09"
             height="67.4083"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -247,8 +247,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="378.207"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="1" stop-color="#9DB3FF" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="1" stopColor="#9DB3FF" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_418_2296"
@@ -258,8 +258,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="35.3109"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_418_2296"
@@ -269,8 +269,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="224.131"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_418_2296"
@@ -280,8 +280,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="89.1873"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_418_2296"
@@ -291,8 +291,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="85.8677"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_418_2296"
@@ -302,8 +302,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="187.915"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#B9B6FF" />
-            <stop offset="1" stop-color="#C6C4F9" />
+            <stop stopColor="#B9B6FF" />
+            <stop offset="1" stopColor="#C6C4F9" />
           </linearGradient>
           <linearGradient
             id="paint6_linear_418_2296"
@@ -313,8 +313,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="140.697"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint7_linear_418_2296"
@@ -324,8 +324,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="175.697"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint8_linear_418_2296"
@@ -335,8 +335,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="-24.8998"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint9_linear_418_2296"
@@ -346,8 +346,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="-31.0826"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint10_linear_418_2296"
@@ -357,8 +357,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="73.8597"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#B9B6FF" />
-            <stop offset="1" stop-color="#C6C4F9" />
+            <stop stopColor="#B9B6FF" />
+            <stop offset="1" stopColor="#C6C4F9" />
           </linearGradient>
           <linearGradient
             id="paint11_linear_418_2296"
@@ -368,8 +368,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="54.6687"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint12_linear_418_2296"
@@ -379,8 +379,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="108.582"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint13_linear_418_2296"
@@ -390,8 +390,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="55.7789"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint14_linear_418_2296"
@@ -401,8 +401,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="95.7789"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint15_linear_418_2296"
@@ -412,8 +412,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="-20.9823"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint16_linear_418_2296"
@@ -423,8 +423,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="86.6761"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint17_linear_418_2296"
@@ -434,8 +434,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="198.624"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint18_linear_418_2296"
@@ -445,8 +445,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="125.77"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint19_linear_418_2296"
@@ -456,8 +456,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="205.965"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint20_linear_418_2296"
@@ -467,8 +467,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="115.176"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#49E2F2" />
-            <stop offset="1" stop-color="#31D9EB" />
+            <stop stopColor="#49E2F2" />
+            <stop offset="1" stopColor="#31D9EB" />
           </linearGradient>
           <linearGradient
             id="paint21_linear_418_2296"
@@ -478,8 +478,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="-5.37593"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint22_linear_418_2296"
@@ -489,8 +489,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="138.93"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
           <linearGradient
             id="paint23_linear_418_2296"
@@ -500,8 +500,8 @@ export const ConnectionLost = (props: IconProps) => {
             y2="176.779"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5149F2" />
-            <stop offset="1" stop-color="#F7F7FF" />
+            <stop stopColor="#5149F2" />
+            <stop offset="1" stopColor="#F7F7FF" />
           </linearGradient>
         </defs>
       </svg>

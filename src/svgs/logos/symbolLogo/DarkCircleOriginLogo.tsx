@@ -28,8 +28,8 @@ export const DarkCircleOriginLogo = (props: IconProps) => {
             y2="54.525"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#0084D5" />
-            <stop offset="1" stop-color="#44B8FF" />
+            <stop stopColor="#0084D5" />
+            <stop offset="1" stopColor="#44B8FF" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_96_1180"
@@ -39,8 +39,8 @@ export const DarkCircleOriginLogo = (props: IconProps) => {
             y2="68.1193"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#0084D5" />
-            <stop offset="1" stop-color="#44B8FF" />
+            <stop stopColor="#0084D5" />
+            <stop offset="1" stopColor="#44B8FF" />
           </linearGradient>
         </defs>
       </svg>

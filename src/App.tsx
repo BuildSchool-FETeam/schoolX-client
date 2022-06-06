@@ -2,7 +2,7 @@ import { Box, VStack } from "@chakra-ui/react";
 import { RouterLink } from "component-ui/RouterLink/RouterLink";
 import { ReactRoutes } from "router/ReactRoutes";
 import { testRoutes } from "router/routes/testRoutes.route";
-import { ModalContainer } from "store-sdk/ModalViews/NotificationModalContainer";
+import { ModalContainer } from "store-sdk/modalServices/ModalViews/NotificationModalContainer";
 
 function App() {
   return (

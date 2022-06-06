@@ -36,7 +36,7 @@ export const EmptyFavorite = (props: IconProps) => {
             rx="52.1402"
             ry="11.1729"
             fill="#FF7C86"
-            fill-opacity="0.39"
+            fillOpacity="0.39"
           />
         </g>
         <path
@@ -62,7 +62,7 @@ export const EmptyFavorite = (props: IconProps) => {
         <path
           d="M133.164 226.768C133.164 229.282 131.126 231.32 128.612 231.32C126.098 231.32 124.061 229.282 124.061 226.768C124.061 224.254 126.098 222.217 128.612 222.217C131.126 222.217 133.164 224.254 133.164 226.768Z"
           stroke="#FFBEBD"
-          stroke-width="2.48287"
+          strokeWidth="2.48287"
         />
         <path
           d="M214.41 189.248C214.899 187.221 217.782 187.221 218.271 189.248L219.918 196.07C220.093 196.794 220.658 197.36 221.383 197.535L228.205 199.182C230.232 199.671 230.232 202.554 228.205 203.043L221.383 204.69C220.658 204.865 220.093 205.43 219.918 206.155L218.271 212.977C217.782 215.004 214.899 215.004 214.41 212.977L212.763 206.155C212.588 205.43 212.022 204.865 211.298 204.69L204.476 203.043C202.449 202.554 202.449 199.671 204.476 199.182L211.298 197.535C212.022 197.36 212.588 196.794 212.763 196.07L214.41 189.248Z"
@@ -73,7 +73,7 @@ export const EmptyFavorite = (props: IconProps) => {
           cy="160.559"
           r="4.55192"
           stroke="#FC9999"
-          stroke-width="2.48287"
+          strokeWidth="2.48287"
         />
         <defs>
           <filter
@@ -83,9 +83,9 @@ export const EmptyFavorite = (props: IconProps) => {
             width="228.546"
             height="86.546"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -104,9 +104,9 @@ export const EmptyFavorite = (props: IconProps) => {
             width="145.662"
             height="63.727"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -126,8 +126,8 @@ export const EmptyFavorite = (props: IconProps) => {
             y2="383.463"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFE1E1" stop-opacity="0" />
-            <stop offset="1" stop-color="#FFE1E0" />
+            <stop stopColor="#FFE1E1" stopOpacity="0" />
+            <stop offset="1" stopColor="#FFE1E0" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_418_2336"
@@ -137,8 +137,8 @@ export const EmptyFavorite = (props: IconProps) => {
             y2="88.769"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF9999" />
-            <stop offset="1" stop-color="#FFE7DA" />
+            <stop stopColor="#FF9999" />
+            <stop offset="1" stopColor="#FFE7DA" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_418_2336"
@@ -148,8 +148,8 @@ export const EmptyFavorite = (props: IconProps) => {
             y2="38.8982"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFBEBD" />
-            <stop offset="1" stop-color="#FFF6F5" />
+            <stop stopColor="#FFBEBD" />
+            <stop offset="1" stopColor="#FFF6F5" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_418_2336"
@@ -159,8 +159,8 @@ export const EmptyFavorite = (props: IconProps) => {
             y2="19.7533"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFBEBD" />
-            <stop offset="1" stop-color="#FFF6F5" />
+            <stop stopColor="#FFBEBD" />
+            <stop offset="1" stopColor="#FFF6F5" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_418_2336"
@@ -170,8 +170,8 @@ export const EmptyFavorite = (props: IconProps) => {
             y2="160.346"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFDEAC" />
-            <stop offset="0.70369" stop-color="#FF426F" />
+            <stop stopColor="#FFDEAC" />
+            <stop offset="0.70369" stopColor="#FF426F" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_418_2336"
@@ -181,8 +181,8 @@ export const EmptyFavorite = (props: IconProps) => {
             y2="149.967"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFBEBD" />
-            <stop offset="1" stop-color="#FFF6F5" />
+            <stop stopColor="#FFBEBD" />
+            <stop offset="1" stopColor="#FFF6F5" />
           </linearGradient>
         </defs>
       </svg>

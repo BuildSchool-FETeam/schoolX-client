@@ -83,8 +83,8 @@ export const ResultNotFound = (props: IconProps) => {
           fill="url(#paint13_linear_418_2261)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M220.279 146.083C220.279 180.126 192.682 207.723 158.64 207.723C124.597 207.723 97 180.126 97 146.083C97 112.041 124.597 84.4436 158.64 84.4436C192.682 84.4436 220.279 112.041 220.279 146.083ZM210.824 146.083C210.824 174.904 187.46 198.268 158.639 198.268C129.819 198.268 106.455 174.904 106.455 146.083C106.455 117.262 129.819 93.8984 158.639 93.8984C187.46 93.8984 210.824 117.262 210.824 146.083Z"
           fill="url(#paint14_linear_418_2261)"
         />
@@ -92,7 +92,7 @@ export const ResultNotFound = (props: IconProps) => {
           <path
             d="M158.64 198.268C187.461 198.268 210.825 174.904 210.825 146.083C210.825 117.262 187.461 93.8984 158.64 93.8984C129.819 93.8984 106.455 117.262 106.455 146.083C106.455 174.904 129.819 198.268 158.64 198.268Z"
             fill="url(#paint15_linear_418_2261)"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
         </g>
         <path
@@ -106,7 +106,7 @@ export const ResultNotFound = (props: IconProps) => {
             rx="36.6853"
             ry="5.41942"
             fill="#EC5575"
-            fill-opacity="0.56"
+            fillOpacity="0.56"
           />
         </g>
         <path
@@ -118,8 +118,8 @@ export const ResultNotFound = (props: IconProps) => {
           fill="url(#paint18_linear_418_2261)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M123.128 20.0734C125.062 20.0734 126.63 18.5056 126.63 16.5716C126.63 14.6377 125.062 13.0699 123.128 13.0699C121.194 13.0699 119.626 14.6377 119.626 16.5716C119.626 18.5056 121.194 20.0734 123.128 20.0734ZM123.128 22.6997C126.512 22.6997 129.256 19.956 129.256 16.5716C129.256 13.1872 126.512 10.4436 123.128 10.4436C119.744 10.4436 117 13.1872 117 16.5716C117 19.956 119.744 22.6997 123.128 22.6997Z"
           fill="url(#paint19_linear_418_2261)"
         />
@@ -136,8 +136,8 @@ export const ResultNotFound = (props: IconProps) => {
           fill="url(#paint22_linear_418_2261)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M240.128 71.0734C242.062 71.0734 243.63 69.5056 243.63 67.5716C243.63 65.6377 242.062 64.0699 240.128 64.0699C238.194 64.0699 236.626 65.6377 236.626 67.5716C236.626 69.5056 238.194 71.0734 240.128 71.0734ZM240.128 73.6997C243.512 73.6997 246.256 70.956 246.256 67.5716C246.256 64.1872 243.512 61.4436 240.128 61.4436C236.744 61.4436 234 64.1872 234 67.5716C234 70.956 236.744 73.6997 240.128 73.6997Z"
           fill="url(#paint23_linear_418_2261)"
         />
@@ -153,9 +153,9 @@ export const ResultNotFound = (props: IconProps) => {
             width="100.219"
             height="123.573"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -188,9 +188,9 @@ export const ResultNotFound = (props: IconProps) => {
             width="96.219"
             height="64.3778"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -223,9 +223,9 @@ export const ResultNotFound = (props: IconProps) => {
             width="137.72"
             height="137.72"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feGaussianBlur in="BackgroundImage" stdDeviation="8.33757" />
             <feComposite
               in2="SourceAlpha"
@@ -246,9 +246,9 @@ export const ResultNotFound = (props: IconProps) => {
             width="115.058"
             height="52.5267"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -268,8 +268,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="381.907"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="1" stop-color="#8EE2F4" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="1" stopColor="#8EE2F4" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_418_2261"
@@ -279,8 +279,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="57.4436"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#90E3F5" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#90E3F5" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_418_2261"
@@ -290,8 +290,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="164.944"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#BCF3FF" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="#BCF3FF" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_418_2261"
@@ -301,8 +301,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="79.4436"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#65C8DE" />
-            <stop offset="1" stop-color="#D2F7FF" />
+            <stop stopColor="#65C8DE" />
+            <stop offset="1" stopColor="#D2F7FF" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_418_2261"
@@ -312,8 +312,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="112.139"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#65C8DE" />
-            <stop offset="1" stop-color="#D2F7FF" />
+            <stop stopColor="#65C8DE" />
+            <stop offset="1" stopColor="#D2F7FF" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_418_2261"
@@ -323,8 +323,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="144.835"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#65C8DE" />
-            <stop offset="1" stop-color="#D2F7FF" />
+            <stop stopColor="#65C8DE" />
+            <stop offset="1" stopColor="#D2F7FF" />
           </linearGradient>
           <linearGradient
             id="paint6_linear_418_2261"
@@ -334,8 +334,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="177.53"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#65C8DE" />
-            <stop offset="1" stop-color="#D2F7FF" />
+            <stop stopColor="#65C8DE" />
+            <stop offset="1" stopColor="#D2F7FF" />
           </linearGradient>
           <linearGradient
             id="paint7_linear_418_2261"
@@ -345,8 +345,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="211.665"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#BCF3FF" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="#BCF3FF" />
           </linearGradient>
           <linearGradient
             id="paint8_linear_418_2261"
@@ -356,8 +356,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="40.7116"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#BCF3FF" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="#BCF3FF" />
           </linearGradient>
           <linearGradient
             id="paint9_linear_418_2261"
@@ -367,8 +367,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="174.653"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D2F7FF" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#D2F7FF" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint10_linear_418_2261"
@@ -378,8 +378,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="210.802"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D2F7FF" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#D2F7FF" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint11_linear_418_2261"
@@ -389,8 +389,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="191.802"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D2F7FF" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#D2F7FF" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint12_linear_418_2261"
@@ -400,8 +400,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="155.653"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.243799" stop-color="#D2F7FF" />
-            <stop offset="1" stop-color="#6BCBE0" />
+            <stop offset="0.243799" stopColor="#D2F7FF" />
+            <stop offset="1" stopColor="#6BCBE0" />
           </linearGradient>
           <linearGradient
             id="paint13_linear_418_2261"
@@ -411,8 +411,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="181.675"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#90E3F5" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#90E3F5" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint14_linear_418_2261"
@@ -422,8 +422,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="113.7"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#90E3F5" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#90E3F5" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint15_linear_418_2261"
@@ -433,8 +433,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="230.351"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#D2F7FF" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="#D2F7FF" />
           </linearGradient>
           <linearGradient
             id="paint16_linear_418_2261"
@@ -444,8 +444,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="174.392"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF698D" />
-            <stop offset="1" stop-color="#FF3868" />
+            <stop stopColor="#FF698D" />
+            <stop offset="1" stopColor="#FF3868" />
           </linearGradient>
           <linearGradient
             id="paint17_linear_418_2261"
@@ -455,8 +455,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="212.416"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#90E3F5" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#90E3F5" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint18_linear_418_2261"
@@ -466,8 +466,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="20.416"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#90E3F5" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#90E3F5" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint19_linear_418_2261"
@@ -477,8 +477,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="13.3522"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#90E3F5" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#90E3F5" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint20_linear_418_2261"
@@ -488,8 +488,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="110.351"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#90E3F5" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#90E3F5" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint21_linear_418_2261"
@@ -499,8 +499,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="109.956"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#90E3F5" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#90E3F5" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint22_linear_418_2261"
@@ -510,8 +510,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="230.956"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#90E3F5" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#90E3F5" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
           <linearGradient
             id="paint23_linear_418_2261"
@@ -521,8 +521,8 @@ export const ResultNotFound = (props: IconProps) => {
             y2="64.3522"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#90E3F5" />
-            <stop offset="1" stop-color="#65C8DE" />
+            <stop stopColor="#90E3F5" />
+            <stop offset="1" stopColor="#65C8DE" />
           </linearGradient>
         </defs>
       </svg>

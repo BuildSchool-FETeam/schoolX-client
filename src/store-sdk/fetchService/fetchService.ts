@@ -16,6 +16,6 @@ export class FetchService implements IFetchService {
   }
 
   async heartBeat() {
-    return this.gqlService.sendRequest(heartBeatQuery);
+    return this.gqlService.sendRequest<boolean>(heartBeatQuery);
   }
 }

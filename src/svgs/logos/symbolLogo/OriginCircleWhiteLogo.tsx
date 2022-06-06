@@ -27,8 +27,8 @@ export const OriginCircleWhiteLogo = (props: IconProps) => {
             y2="120"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#0084D5" />
-            <stop offset="1" stop-color="#44B8FF" />
+            <stop stopColor="#0084D5" />
+            <stop offset="1" stopColor="#44B8FF" />
           </linearGradient>
         </defs>
       </svg>

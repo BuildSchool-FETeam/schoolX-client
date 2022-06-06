@@ -5,7 +5,6 @@ import {
   Text,
   Button,
   ModalBody,
-  ModalCloseButton,
   ModalHeader,
 } from "@chakra-ui/react";
 import { Fragment, ReactNode } from "react";
@@ -68,12 +67,12 @@ export const DemoEmptyState = () => {
 
   function _onCommonModalClick() {
     commonModalStore.show({
+      haveCloseButton: false,
       content: (
         <Fragment>
           <ModalHeader>
             <Text layerStyle={TextLayerEnum.headlineSm}>Modal Title</Text>
           </ModalHeader>
-          <ModalCloseButton />
           <ModalBody>
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis

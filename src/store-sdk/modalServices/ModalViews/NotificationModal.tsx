@@ -42,6 +42,7 @@ export const NotificationModal = (props: INotificationModal) => {
     onClose,
     type: noticType,
   } = props;
+
   const closeButtonColor = useColorModeValue("gray.800", "white");
 
   function getDataByType(type: NotificationModalType) {
@@ -86,7 +87,7 @@ export const NotificationModal = (props: INotificationModal) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose} isCentered>
       <ModalOverlay />
-      <ModalContent>
+      <ModalContent p=".5rem 1rem">
         <ModalHeader pb="0">
           <HStack>
             <Icon color={color} h="1.5rem" w="1.5rem" mr=".5rem" />
