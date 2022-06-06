@@ -7,6 +7,7 @@ import {
   ModalBody,
   ModalHeader,
 } from "@chakra-ui/react";
+import { SwitchButton } from "component-ui/Form/SwitchButton/SwitchButton";
 import { Fragment, ReactNode } from "react";
 import { useInjection } from "store-sdk/ioc-container/ioc.context";
 import { Symbols } from "store-sdk/ioc-container/symbols";
@@ -139,6 +140,7 @@ export const DemoEmptyState = () => {
       >
         {emptyStateData.map((item) => renderEmptyCard(item))}
       </SimpleGrid>
+
       <SimpleGrid
         spacing={10}
         columns={{ base: 1, sm: 2, md: 4 }}
@@ -157,6 +159,15 @@ export const DemoEmptyState = () => {
         <Button colorScheme={"gray"} onClick={_onCommonModalClick}>
           Big modal
         </Button>
+      </SimpleGrid>
+
+      <SimpleGrid
+        spacing={10}
+        columns={{ base: 1, sm: 2, md: 4 }}
+        bg={boxColor}
+        sx={styles.listEmptyState}
+      >
+        <SwitchButton />
       </SimpleGrid>
     </Fragment>
   );
