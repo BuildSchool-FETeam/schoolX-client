@@ -2,11 +2,14 @@ import { config } from "config/config.dev";
 import { GraphQLClient, RequestDocument } from "graphql-request";
 import { GraphQLError } from "graphql-request/dist/types";
 import { inject, injectable } from "inversify";
+import { TOKEN_KEY } from "store-sdk/authStore/authStore";
+import { IAuthData } from "store-sdk/authStore/interfaces";
 import {
   ErrorHandler,
   IErrorHandlingService,
 } from "store-sdk/errorHandlingService/interfaces";
 import { Symbols } from "store-sdk/ioc-container/symbols";
+import { IStorageService } from "store-sdk/storageService/interfaces";
 import { ICachingService, IGraphqlService, VariableType } from "./interfaces";
 
 @injectable()
@@ -20,13 +23,20 @@ export class GraphqlService implements IGraphqlService {
   @inject(Symbols.ICachingService)
   private cachingService!: ICachingService;
 
+  @inject(Symbols.IStorageService)
+  private storageService!: IStorageService;
+
   async sendRequest<T, U extends VariableType = undefined>(
     gqlString: RequestDocument,
     variables?: U,
     errorHandler?: ErrorHandler
   ) {
+    const authData = this.getToken();
     if (!errorHandler) {
       errorHandler = this.errorService.defaultHandling.bind(this.errorService);
+    }
+    if (authData?.token) {
+      this.client.setHeader("authorization", `Bearer ${authData.token}`);
     }
     try {
       return await this.client.request<T>(gqlString, variables);
@@ -40,8 +50,13 @@ export class GraphqlService implements IGraphqlService {
     variables?: U,
     errorHandler?: ErrorHandler
   ) {
+    const authData = this.getToken();
+
     if (!errorHandler) {
       errorHandler = this.errorService.defaultHandling.bind(this.errorService);
+    }
+    if (authData?.token) {
+      this.client.setHeader("authorization", `Bearer ${authData.token}`);
     }
     try {
       let data: T | undefined = undefined;
@@ -61,5 +76,9 @@ export class GraphqlService implements IGraphqlService {
     } catch (error) {
       errorHandler(error as GraphQLError[]);
     }
+  }
+
+  private getToken() {
+    return this.storageService.getItem<IAuthData>(TOKEN_KEY);
   }
 }

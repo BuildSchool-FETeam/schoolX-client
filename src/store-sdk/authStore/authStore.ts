@@ -12,7 +12,7 @@ import {
   IAuthStore,
 } from "./interfaces";
 
-const TOKEN_KEY = "userToken";
+export const TOKEN_KEY = "userToken";
 @injectable()
 export class AuthStore implements IAuthStore {
   @inject(Symbols.IStorageService)

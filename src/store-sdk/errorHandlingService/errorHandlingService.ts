@@ -19,6 +19,12 @@ export class ErrorHandlingService implements IErrorHandlingService {
     });
   }
 
+  skipHandlingError(error: GraphQLError[]) {
+    const message = this.getErrorMessages(error as GraphQLError[]);
+
+    throw new Error(message);
+  }
+
   private getErrorMessages(error?: any) {
     return error.message.split(": ")[0];
   }

@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 import { TextLayerEnum } from "theme/typography/interfaces";
 
 export const Page1 = () => {
-  const { authData, onLogout } = usePage1Management();
+  const { authData, onLogout, fetchedData } = usePage1Management();
 
   const { t } = useTranslation(["common"]);
 
@@ -19,6 +19,7 @@ export const Page1 = () => {
       </Text>
 
       <Text>TRANS: {t(["test.title"], { ns: "common" })}</Text>
+      <Text>{fetchedData?.heartBeatWithAuth}</Text>
 
       <Button variant={"solid"} colorScheme="orange" onClick={() => onLogout()}>
         Logout
