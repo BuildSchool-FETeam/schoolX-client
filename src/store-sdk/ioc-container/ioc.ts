@@ -9,6 +9,7 @@ import { ErrorHandlingService } from "store-sdk/errorHandlingService/errorHandli
 import { NotificationModalStore } from "store-sdk/modalServices/modalNotificationStore";
 import { CommonModalStore } from "store-sdk/modalServices/commonModalStore";
 import { CachingService } from "store-sdk/graphqlService/cachingService";
+import { StorageService } from "store-sdk/storageService/storageService";
 
 const container = new Container({});
 
@@ -35,5 +36,6 @@ registerServiceSingleton(
 
 registerServiceSingleton(Symbols.ICommonModalStore, CommonModalStore);
 registerServiceSingleton(Symbols.ICachingService, CachingService);
+registerServiceSingleton(Symbols.IStorageService, StorageService);
 
 export default container;

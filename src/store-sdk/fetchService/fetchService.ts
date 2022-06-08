@@ -9,12 +9,6 @@ export class FetchService implements IFetchService {
   @inject(Symbols.IGraphqlService)
   private gqlService!: IGraphqlService;
 
-  async fakeFetch() {
-    return new Promise<string>((resolve) => {
-      setTimeout(() => resolve("Hello"), 3000);
-    });
-  }
-
   async heartBeat() {
     return this.gqlService.sendRequest<boolean>(heartBeatQuery);
   }

@@ -9,7 +9,7 @@ export class CachingService implements ICachingService {
     this.requestStorage.set(key, data);
   }
 
-  hasStoreData(key: string): boolean {
+  hasStoredData(key: string): boolean {
     return this.requestStorage.has(key);
   }
 

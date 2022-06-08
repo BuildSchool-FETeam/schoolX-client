@@ -2,11 +2,13 @@ import { Box, VStack } from "@chakra-ui/react";
 import { RouterLink } from "component-ui/RouterLink/RouterLink";
 import { ReactRoutes } from "router/ReactRoutes";
 import { testRoutes } from "router/routes/testRoutes.route";
+import { AuthContainer } from "store-sdk/authStore/AuthView/AuthContainer";
 import { ModalContainer } from "store-sdk/modalServices/ModalViews/NotificationModalContainer";
 
 function App() {
   return (
     <ModalContainer>
+      <AuthContainer />
       <VStack align={"center"} textAlign="center">
         <Box as="nav">
           <RouterLink to="/" mr={"1rem"}>

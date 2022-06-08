@@ -6,4 +6,5 @@ export enum Symbols {
   INotificationModalStore = "INotificationModalStore",
   ICommonModalStore = "ICommonModalStore",
   ICachingService = "ICachingService",
+  IStorageService = "IStorageService",
 }

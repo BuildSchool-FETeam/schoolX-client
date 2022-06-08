@@ -20,7 +20,18 @@ export const Page2 = () => {
       <DisplayContainer>
         <Text layerStyle={TextLayerEnum.headLineMd}>Page2: Demo</Text>
         <HStack>
-          <Button my={"10px"} colorScheme={"gray"} onClick={() => login()}>
+          <Button
+            my={"10px"}
+            colorScheme={"gray"}
+            onClick={() =>
+              login({
+                data: {
+                  email: "superknife0511@gmail.com",
+                  password: "Toan1234",
+                },
+              })
+            }
+          >
             Login
           </Button>
           <Button
