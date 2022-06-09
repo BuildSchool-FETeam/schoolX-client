@@ -22,7 +22,7 @@ export class ErrorHandlingService implements IErrorHandlingService {
   skipHandlingError(error: GraphQLError[]) {
     const message = this.getErrorMessages(error as GraphQLError[]);
 
-    throw new Error(message);
+    console.error(message);
   }
 
   private getErrorMessages(error?: any) {

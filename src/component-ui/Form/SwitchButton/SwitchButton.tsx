@@ -1,18 +1,35 @@
 import { Box } from "@chakra-ui/react";
 import { useState } from "react";
 import { styles } from "./styles";
-import "./styles.css";
+import "./animation.css";
+import classNames from "classnames";
+import { ExtendsColorEnum } from "theme/colors/interfaces";
 
-export const SwitchButton = () => {
+export interface ISwitchProps {
+  onChangeState?(state: boolean): void;
+  activeColor?: ExtendsColorEnum;
+}
+
+export const SwitchButton = (props: ISwitchProps) => {
+  const { activeColor = ExtendsColorEnum["primary.500"] } = props;
   const [state, setState] = useState(false);
 
   function _onClick() {
     setState(!state);
   }
 
+  const slideIn = classNames("slideInAnimation", "end-state");
+  const slideOut = classNames("slideOutAnimation", "start-state");
+
   return (
-    <Box sx={styles.outer} onClick={_onClick}>
-      <Box sx={styles.inner} className={state ? "slideInAnimation" : ""}></Box>
+    <Box
+      cursor={"pointer"}
+      sx={styles.outer}
+      bg={!state ? ExtendsColorEnum["grayScale.400"] : activeColor}
+      onClick={_onClick}
+      tabIndex={0}
+    >
+      <Box sx={styles.inner} className={state ? slideIn : slideOut}></Box>
     </Box>
   );
 };
