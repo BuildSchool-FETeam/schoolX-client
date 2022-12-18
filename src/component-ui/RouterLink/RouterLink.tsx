@@ -13,8 +13,8 @@ export interface IRouterLinkProps extends LinkProps {
  */
 export function RouterLink(props: IRouterLinkProps) {
   const linkColor = useColorModeValue(
-    ExtendsColorEnum["primary.500"],
-    ExtendsColorEnum["primary.200"]
+    ExtendsColorEnum["primary_dark.500"],
+    ExtendsColorEnum["primary_dark.100"]
   );
 
   const { to, children, color = linkColor } = props;

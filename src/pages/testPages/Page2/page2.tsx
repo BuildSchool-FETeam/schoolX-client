@@ -34,11 +34,7 @@ export const Page2 = () => {
           >
             Login
           </Button>
-          <Button
-            variant={"secondary"}
-            color={"gray.700"}
-            onClick={toggleColorMode}
-          >
+          <Button variant={"success"} onClick={toggleColorMode}>
             Change color mode
           </Button>
         </HStack>

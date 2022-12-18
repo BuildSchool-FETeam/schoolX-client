@@ -9,8 +9,8 @@ export const ButtonTheme: ComponentStyleConfig = {
     fontFamily: "content",
 
     color: mode(
-      ExtendsColorEnum["grayScale.900"],
-      ExtendsColorEnum["grayScale.50"]
+      ExtendsColorEnum["darkLevel.100"],
+      ExtendsColorEnum["darkLevel.100"]
     )(props),
 
     _disabled: {

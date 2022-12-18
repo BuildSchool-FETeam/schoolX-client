@@ -1,5 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
-import { baseColor } from "./colors/baseColor";
+import { global } from "./colors/baseColor";
 import { globalStyle } from "./base/globalStyle";
 import { semanticTokens } from "./base/semanticToken";
 import { textLayerStyle } from "./typography/textLayerStyle";
@@ -17,7 +17,7 @@ export const chakraTheme = extendTheme({
   styles: {
     global: globalStyle,
   },
-  colors: baseColor,
+  colors: global,
   layerStyles: {
     ...textLayerStyle,
   },

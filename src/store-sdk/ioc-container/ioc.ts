@@ -1,7 +1,5 @@
 import "reflect-metadata";
 import { Container } from "inversify";
-
-import { FetchService } from "../fetchService/fetchService";
 import { Symbols } from "./symbols";
 import { GraphqlService } from "../graphqlService/graphqlService";
 import { AuthStore } from "../authStore/authStore";
@@ -25,7 +23,6 @@ const registerServiceSingleton = registerServiceSingletonPre.bind(
   container
 );
 
-registerServiceSingleton(Symbols.IFetchService, FetchService);
 registerServiceSingleton(Symbols.IGraphqlService, GraphqlService);
 registerServiceSingleton(Symbols.IAuthStore, AuthStore);
 registerServiceSingleton(Symbols.IErrorHandlingService, ErrorHandlingService);

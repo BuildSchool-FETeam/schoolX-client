@@ -4,13 +4,17 @@ import { GraphQLError } from "graphql-request/dist/types";
 import { inject, injectable } from "inversify";
 import { TOKEN_KEY } from "store-sdk/authStore/authStore";
 import { IAuthData } from "store-sdk/authStore/interfaces";
-import {
+import type {
   ErrorHandler,
   IErrorHandlingService,
 } from "store-sdk/errorHandlingService/interfaces";
 import { Symbols } from "store-sdk/ioc-container/symbols";
-import { IStorageService } from "store-sdk/storageService/interfaces";
-import { ICachingService, IGraphqlService, VariableType } from "./interfaces";
+import type { IStorageService } from "store-sdk/storageService/interfaces";
+import type {
+  ICachingService,
+  IGraphqlService,
+  VariableType,
+} from "./interfaces";
 
 @injectable()
 export class GraphqlService implements IGraphqlService {

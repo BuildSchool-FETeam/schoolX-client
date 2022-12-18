@@ -5,7 +5,7 @@ import { TextLayerEnum } from "theme/typography/interfaces";
 export const TooltipTheme: ComponentStyleConfig = {
   baseStyle: (props) => ({
     borderRadius: "10rem",
-    color: ExtendsColorEnum["secondary.500"],
+    // color: ExtendsColorEnum["success.500"],
     bgColor: ExtendsColorEnum["darkLevel.900"],
     layerStyle: TextLayerEnum.labelLg500,
     px: 3,

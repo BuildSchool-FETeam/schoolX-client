@@ -1,7 +1,7 @@
 import { GraphQLError } from "graphql-request/dist/types";
 import { inject, injectable } from "inversify";
 import { Symbols } from "store-sdk/ioc-container/symbols";
-import { INotificationModalStore } from "store-sdk/modalServices/interfaces";
+import type { INotificationModalStore } from "store-sdk/modalServices/interfaces";
 import { IErrorHandlingService } from "./interfaces";
 
 @injectable()

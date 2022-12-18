@@ -1,8 +1,5 @@
-import { ConnectionLost } from "svgs/empty_state/ConnectionLost";
-import { EmptyFavorite } from "svgs/empty_state/EmptyFavorite";
-import { EmptyMessage } from "svgs/empty_state/EmptyMessage";
+import { ColorToken } from "theme/base/interfaces";
 import { ExtendsColorEnum } from "theme/colors/interfaces";
-import { ItemState } from "./DemoEmptyState";
 
 export const colorDarkBoxData = [
   {
@@ -17,38 +14,32 @@ export const colorDarkBoxData = [
 
 export const colorLightBoxData = [
   {
-    color: ExtendsColorEnum["primary.500"],
+    color: ExtendsColorEnum["primary_dark.500"],
     text: "primary 500",
   },
   {
-    color: ExtendsColorEnum["secondary.500"],
-    text: "secondary 500",
-  },
-  {
-    color: ExtendsColorEnum["danger.500"],
-    text: "error 500",
-  },
-  {
-    color: ExtendsColorEnum["warning.500"],
+    color: ExtendsColorEnum["warning_dark.500"],
     text: "warning 500",
   },
 ];
 
-export const emptyStateData: ItemState[] = [
+export const colorTokenBox = [
   {
-    IconComp: <EmptyMessage h={"13rem"} w={"13rem"} />,
-    title: "No Messages",
-    content: "When you have messages you’ll see them here",
+    color: ColorToken.primary_darker,
+    text: "primary darker",
   },
   {
-    IconComp: <EmptyFavorite h={"13rem"} w={"13rem"} />,
-    title: "No Favorites",
-    content: "You can add an item to your favourites by clicking “Star Icon”",
+    color: ColorToken.success_base,
+    text: "Success base",
   },
+
   {
-    IconComp: <ConnectionLost h={"13rem"} w={"13rem"} />,
-    title: "Connection Lost",
-    content:
-      "Whoops, no internet connection found. Please check your connection",
+    color: ColorToken.warning_light,
+    text: "Warning light",
+  },
+
+  {
+    color: ColorToken.error_dark,
+    text: "Error dark",
   },
 ];

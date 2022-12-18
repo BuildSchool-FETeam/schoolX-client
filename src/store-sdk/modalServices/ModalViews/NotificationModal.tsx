@@ -47,7 +47,7 @@ export const NotificationModal = (props: INotificationModal) => {
 
   function getDataByType(type: NotificationModalType) {
     let data: ModalMetaData = {
-      color: ExtendsColorEnum["danger.500"],
+      color: ExtendsColorEnum["error_dark.500"],
       Icon: WarningTwoIcon,
       btnVariant: "error",
     };
@@ -55,21 +55,21 @@ export const NotificationModal = (props: INotificationModal) => {
     switch (type) {
       case "error":
         data = {
-          color: ExtendsColorEnum["danger.500"],
+          color: ExtendsColorEnum["error_dark.500"],
           Icon: WarningTwoIcon,
           btnVariant: "error",
         };
         break;
       case "success":
         data = {
-          color: ExtendsColorEnum["secondary.500"],
+          color: ExtendsColorEnum["success_dark.500"],
           Icon: CheckCircleIcon,
           btnVariant: "secondary",
         };
         break;
       case "info":
         data = {
-          color: ExtendsColorEnum["info.500"],
+          color: ExtendsColorEnum["info_dark.500"],
           Icon: InfoIcon,
           btnVariant: "info",
         };

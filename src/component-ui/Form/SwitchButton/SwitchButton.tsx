@@ -11,7 +11,6 @@ export interface ISwitchProps {
 }
 
 export const SwitchButton = (props: ISwitchProps) => {
-  const { activeColor = ExtendsColorEnum["primary.500"] } = props;
   const [state, setState] = useState(false);
 
   function _onClick() {
@@ -22,13 +21,7 @@ export const SwitchButton = (props: ISwitchProps) => {
   const slideOut = classNames("slideOutAnimation", "start-state");
 
   return (
-    <Box
-      cursor={"pointer"}
-      sx={styles.outer}
-      bg={!state ? ExtendsColorEnum["grayScale.400"] : activeColor}
-      onClick={_onClick}
-      tabIndex={0}
-    >
+    <Box cursor={"pointer"} sx={styles.outer} onClick={_onClick} tabIndex={0}>
       <Box sx={styles.inner} className={state ? slideIn : slideOut}></Box>
     </Box>
   );
