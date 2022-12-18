@@ -1,16 +1,16 @@
-import App from "App";
-import React from "react";
-import ReactDOM from "react-dom/client";
-import reportWebVitals from "reportWebVitals";
-import container from "store-sdk/ioc-container/ioc";
-import { IOCProvider } from "store-sdk/ioc-container/ioc.context";
-import { BrowserRouter } from "react-router-dom";
-import "./i18n/i18n";
-import { ChakraProvider } from "@chakra-ui/react";
-import { chakraTheme } from "theme/chakraTheme";
+import App from 'App';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import reportWebVitals from 'reportWebVitals';
+import container from 'store-sdk/ioc-container/ioc';
+import { IOCProvider } from 'store-sdk/ioc-container/ioc.context';
+import { BrowserRouter } from 'react-router-dom';
+import './i18n/i18n';
+import { ChakraProvider } from '@chakra-ui/react';
+import { chakraTheme } from 'theme/chakraTheme';
 
 const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
+  document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>

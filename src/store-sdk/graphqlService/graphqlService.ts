@@ -1,20 +1,20 @@
-import { config } from "config/config.dev";
-import { GraphQLClient, RequestDocument } from "graphql-request";
-import { GraphQLError } from "graphql-request/dist/types";
-import { inject, injectable } from "inversify";
-import { TOKEN_KEY } from "store-sdk/authStore/authStore";
-import { IAuthData } from "store-sdk/authStore/interfaces";
+import { config } from 'config/config.dev';
+import { GraphQLClient, RequestDocument } from 'graphql-request';
+import { GraphQLError } from 'graphql-request/dist/types';
+import { inject, injectable } from 'inversify';
+import { TOKEN_KEY } from 'store-sdk/authStore/authStore';
+import { IAuthData } from 'store-sdk/authStore/interfaces';
 import type {
   ErrorHandler,
-  IErrorHandlingService,
-} from "store-sdk/errorHandlingService/interfaces";
-import { Symbols } from "store-sdk/ioc-container/symbols";
-import type { IStorageService } from "store-sdk/storageService/interfaces";
+  IErrorHandlingService
+} from 'store-sdk/errorHandlingService/interfaces';
+import { Symbols } from 'store-sdk/ioc-container/symbols';
+import type { IStorageService } from 'store-sdk/storageService/interfaces';
 import type {
   ICachingService,
   IGraphqlService,
-  VariableType,
-} from "./interfaces";
+  VariableType
+} from './interfaces';
 
 @injectable()
 export class GraphqlService implements IGraphqlService {
@@ -40,7 +40,7 @@ export class GraphqlService implements IGraphqlService {
       errorHandler = this.errorService.defaultHandling.bind(this.errorService);
     }
     if (authData?.token) {
-      this.client.setHeader("authorization", `Bearer ${authData.token}`);
+      this.client.setHeader('authorization', `Bearer ${authData.token}`);
     }
     try {
       return await this.client.request<T>(gqlString, variables);
@@ -60,7 +60,7 @@ export class GraphqlService implements IGraphqlService {
       errorHandler = this.errorService.defaultHandling.bind(this.errorService);
     }
     if (authData?.token) {
-      this.client.setHeader("authorization", `Bearer ${authData.token}`);
+      this.client.setHeader('authorization', `Bearer ${authData.token}`);
     }
     try {
       let data: T | undefined = undefined;

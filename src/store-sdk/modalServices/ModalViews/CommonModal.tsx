@@ -4,8 +4,8 @@ import {
   ModalContent,
   ModalOverlay,
   ModalProps,
-  useColorModeValue,
-} from "@chakra-ui/react";
+  useColorModeValue
+} from '@chakra-ui/react';
 
 export interface ICommonModalProps extends ModalProps {
   onClose(): void;
@@ -16,7 +16,7 @@ export interface ICommonModalProps extends ModalProps {
 /**
  * Modal central controller
  * @param props ModalProps
- * @returns JSS
+ * @return JSS
  */
 export const CommonModal = (props: ICommonModalProps) => {
   const {
@@ -24,22 +24,16 @@ export const CommonModal = (props: ICommonModalProps) => {
     isOpen,
     haveCloseButton = true,
     children,
-    motionPreset = "slideInBottom",
-    size = "2xl",
+    motionPreset = 'slideInBottom',
+    size = '2xl'
   } = props;
 
-  const closeButtonColor = useColorModeValue("gray.800", "white");
+  const closeButtonColor = useColorModeValue('gray.800', 'white');
 
   return (
-    <Modal
-      isCentered
-      onClose={onClose}
-      isOpen={isOpen}
-      size={size}
-      motionPreset={motionPreset}
-    >
+    <Modal isCentered onClose={onClose} isOpen={isOpen} size={size} motionPreset={motionPreset}>
       <ModalOverlay />
-      <ModalContent minH={"20rem"} p="1rem 1.5rem">
+      <ModalContent minH={'20rem'} p="1rem 1.5rem">
         {haveCloseButton && <ModalCloseButton color={closeButtonColor} />}
         {children}
       </ModalContent>

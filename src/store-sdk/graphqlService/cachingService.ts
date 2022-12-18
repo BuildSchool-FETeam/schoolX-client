@@ -1,5 +1,5 @@
-import { injectable } from "inversify";
-import { ICachingService } from "./interfaces";
+import { injectable } from 'inversify';
+import { ICachingService } from './interfaces';
 
 @injectable()
 export class CachingService implements ICachingService {

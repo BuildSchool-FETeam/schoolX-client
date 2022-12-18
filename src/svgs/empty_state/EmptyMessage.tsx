@@ -1,4 +1,4 @@
-import { Icon, IconProps } from "@chakra-ui/react";
+import { Icon, IconProps } from '@chakra-ui/react';
 
 export const EmptyMessage = (props: IconProps) => {
   return (
@@ -162,16 +162,8 @@ export const EmptyMessage = (props: IconProps) => {
             colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feGaussianBlur
-              stdDeviation="10.8865"
-              result="effect1_foregroundBlur_418_2357"
-            />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="10.8865" result="effect1_foregroundBlur_418_2357" />
           </filter>
           <filter
             id="filter1_d_418_2357"
@@ -192,15 +184,8 @@ export const EmptyMessage = (props: IconProps) => {
             <feOffset dy="3.48368" />
             <feGaussianBlur stdDeviation="1.74184" />
             <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_418_2357"
-            />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_418_2357" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -218,16 +203,8 @@ export const EmptyMessage = (props: IconProps) => {
             colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feGaussianBlur
-              stdDeviation="10.8865"
-              result="effect1_foregroundBlur_418_2357"
-            />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="10.8865" result="effect1_foregroundBlur_418_2357" />
           </filter>
           <filter
             id="filter3_d_418_2357"
@@ -252,11 +229,7 @@ export const EmptyMessage = (props: IconProps) => {
               type="matrix"
               values="0 0 0 0 0.0196078 0 0 0 0 0.168627 0 0 0 0 0.396078 0 0 0 0.15 0"
             />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_418_2357"
-            />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_418_2357" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -287,11 +260,7 @@ export const EmptyMessage = (props: IconProps) => {
               type="matrix"
               values="0 0 0 0 0.021441 0 0 0 0 0.168056 0 0 0 0 0.395833 0 0 0 0.15 0"
             />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_418_2357"
-            />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_418_2357" />
             <feBlend
               mode="normal"
               in="SourceGraphic"

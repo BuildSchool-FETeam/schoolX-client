@@ -1,4 +1,4 @@
-import { Icon, IconProps } from "@chakra-ui/react";
+import { Icon, IconProps } from '@chakra-ui/react';
 
 export const ResultNotFound = (props: IconProps) => {
   return (
@@ -169,11 +169,7 @@ export const ResultNotFound = (props: IconProps) => {
               type="matrix"
               values="0 0 0 0 0.104618 0 0 0 0 0.465612 0 0 0 0 0.545833 0 0 0 0.15 0"
             />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_418_2261"
-            />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_418_2261" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -204,11 +200,7 @@ export const ResultNotFound = (props: IconProps) => {
               type="matrix"
               values="0 0 0 0 0.104618 0 0 0 0 0.465612 0 0 0 0 0.545833 0 0 0 0.09 0"
             />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_418_2261"
-            />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_418_2261" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -227,11 +219,7 @@ export const ResultNotFound = (props: IconProps) => {
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feGaussianBlur in="BackgroundImage" stdDeviation="8.33757" />
-            <feComposite
-              in2="SourceAlpha"
-              operator="in"
-              result="effect1_backgroundBlur_418_2261"
-            />
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_418_2261" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -249,16 +237,8 @@ export const ResultNotFound = (props: IconProps) => {
             colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feGaussianBlur
-              stdDeviation="10.422"
-              result="effect1_foregroundBlur_418_2261"
-            />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="10.422" result="effect1_foregroundBlur_418_2261" />
           </filter>
           <linearGradient
             id="paint0_linear_418_2261"

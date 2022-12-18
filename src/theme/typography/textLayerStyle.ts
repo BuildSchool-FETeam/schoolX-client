@@ -1,10 +1,10 @@
-import { CSSObject } from "@emotion/react";
+import { CSSObject } from '@emotion/react';
 
 /**
  * @param fontSize px
  * @param fontWeight number 100/200/.../900
  * @param lineHeight px
- * @returns CSS Object with rem
+ * @return CSS Object with rem
  */
 function generateHeadingStyle(
   fontSize: number,
@@ -12,10 +12,10 @@ function generateHeadingStyle(
   lineHeight: number
 ): CSSObject {
   return {
-    color: "gray.900",
-    fontSize: (fontSize / 16).toFixed(1) + "rem",
+    color: 'gray.900',
+    fontSize: (fontSize / 16).toFixed(1) + 'rem',
     fontWeight,
-    lineHeight: (lineHeight / 16).toFixed(1) + "rem",
+    lineHeight: (lineHeight / 16).toFixed(1) + 'rem'
   };
 }
 
@@ -26,12 +26,12 @@ function generateSubTitleStyle(
   letter = 0.1
 ): CSSObject {
   return {
-    fontFamily: "content",
-    color: "gray.900",
-    fontSize: (fontSize / 16).toFixed(1) + "rem",
+    fontFamily: 'content',
+    color: 'gray.900',
+    fontSize: (fontSize / 16).toFixed(1) + 'rem',
     fontWeight,
-    lineHeight: (lineHeight / 16).toFixed(1) + "rem",
-    letterSpacing: letter,
+    lineHeight: (lineHeight / 16).toFixed(1) + 'rem',
+    letterSpacing: letter
   };
 }
 
@@ -61,5 +61,5 @@ export const textLayerStyle = {
   labelMd800: generateSubTitleStyle(12, 800, 16, 0.5),
   labelMd500: generateSubTitleStyle(12, 500, 16, 0.5),
   labelSm800: generateSubTitleStyle(10, 800, 16, 0.7),
-  labelSm500: generateSubTitleStyle(10, 600, 16, 0.5),
+  labelSm500: generateSubTitleStyle(10, 600, 16, 0.5)
 };

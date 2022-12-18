@@ -1,6 +1,6 @@
-import { memo } from "react";
-import { Route, Routes } from "react-router-dom";
-import { IRoute } from "./interfaces";
+import { memo } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { IRoute } from './interfaces';
 
 export interface IRoutesProps {
   routes: IRoute[];
@@ -27,13 +27,7 @@ const ReactRoutesPre = (props: IRoutesProps) => {
       );
     }
 
-    return (
-      <Route
-        key={route.path}
-        path={route.path}
-        element={<route.ReactComponent />}
-      />
-    );
+    return <Route key={route.path} path={route.path} element={<route.ReactComponent />} />;
   }
 
   return <Routes>{renderRoutes(props.routes)}</Routes>;

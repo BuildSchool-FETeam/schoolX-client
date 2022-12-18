@@ -1,5 +1,5 @@
-import { injectable } from "inversify";
-import { IStorageService, StorageType } from "./interfaces";
+import { injectable } from 'inversify';
+import { IStorageService, StorageType } from './interfaces';
 
 @injectable()
 export class StorageService implements IStorageService {
@@ -29,8 +29,8 @@ export class StorageService implements IStorageService {
     storage.removeItem(key);
   }
 
-  private getStorage(storageType: "session" | "local" = "session") {
-    if (storageType === "session") {
+  private getStorage(storageType: 'session' | 'local' = 'session') {
+    if (storageType === 'session') {
       return sessionStorage;
     } else {
       return localStorage;

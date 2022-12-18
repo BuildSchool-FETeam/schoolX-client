@@ -1,4 +1,4 @@
-export type StorageType = "session" | "local";
+export type StorageType = 'session' | 'local';
 
 export interface IStorageService {
   setItem<T>(key: string, data: T, storageType?: StorageType): void;

@@ -1,27 +1,26 @@
 import {
   Box,
   Button,
-  HStack,
   SimpleGrid,
   Tooltip,
   Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
-import { AddIcon } from "@chakra-ui/icons";
-import { styles } from "./styles";
-import { ExtendsColorEnum } from "theme/colors/interfaces";
-import { ExtendVariantEnum } from "theme/components/interfaces";
-import { TextLayerEnum } from "theme/typography/interfaces";
-import { DisplayContainer } from "component-ui/DisplayContainer/DisplayContainer";
+  useColorModeValue
+} from '@chakra-ui/react';
+import { AddIcon } from '@chakra-ui/icons';
+import { styles } from './styles';
+import { ExtendsColorEnum } from 'theme/colors/interfaces';
+import { ExtendVariantEnum } from 'theme/components/interfaces';
+import { TextLayerEnum } from 'theme/typography/interfaces';
+import { DisplayContainer } from 'component-ui/DisplayContainer/DisplayContainer';
 
 export const DemoComponent = () => {
   const boxColor = useColorModeValue(
-    ExtendsColorEnum["darkLevel.100"],
-    ExtendsColorEnum["darkLevel.900"]
+    ExtendsColorEnum['darkLevel.100'],
+    ExtendsColorEnum['darkLevel.900']
   );
 
   return (
-    <Box py={"3rem"}>
+    <Box py={'3rem'}>
       <DisplayContainer>
         <SimpleGrid
           spacing={10}
@@ -32,7 +31,7 @@ export const DemoComponent = () => {
           <Button>Enabled</Button>
           <Button disabled>Disabled</Button>
 
-          <Button leftIcon={<AddIcon h={3} w={3} color={"white"} mr={2} />}>
+          <Button leftIcon={<AddIcon h={3} w={3} color={'white'} mr={2} />}>
             Icon Btn
           </Button>
           <Button disabled leftIcon={<AddIcon h={3} w={3} mr={2} />}>
@@ -46,14 +45,14 @@ export const DemoComponent = () => {
           bg={boxColor}
           sx={styles.listBtns}
         >
-          <Button variant={"info"}>Enabled</Button>
-          <Button variant={"info"} disabled>
+          <Button variant={'info'}>Enabled</Button>
+          <Button variant={'info'} disabled>
             Disabled
           </Button>
 
           <Button
-            variant={"info"}
-            leftIcon={<AddIcon h={3} w={3} color={"white"} mr={2} />}
+            variant={'info'}
+            leftIcon={<AddIcon h={3} w={3} color={'white'} mr={2} />}
           >
             Icon Btn
           </Button>
@@ -78,7 +77,7 @@ export const DemoComponent = () => {
           sx={styles.listBtns}
         >
           <Tooltip label="Default tooltip" placement="bottom">
-            <Button colorScheme={"gray"}>Default tooltip</Button>
+            <Button colorScheme={'gray'}>Default tooltip</Button>
           </Tooltip>
         </SimpleGrid>
 
@@ -86,7 +85,7 @@ export const DemoComponent = () => {
           <Text layerStyle={TextLayerEnum.headlineSm} mb="2rem">
             Demo responsive
           </Text>
-          <Box display={{ base: "block", md: "flex" }} maxW="30rem">
+          <Box display={{ base: 'block', md: 'flex' }} maxW="30rem">
             <Text layerStyle={TextLayerEnum.bodyLg400}>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
               laboriosam, minus provident ex fuga, asperiores veniam magni, est

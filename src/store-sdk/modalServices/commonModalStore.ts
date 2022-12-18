@@ -1,6 +1,6 @@
-import { injectable } from "inversify";
-import { Subject } from "rxjs";
-import { ICommonModalData, ICommonModalStore } from "./interfaces";
+import { injectable } from 'inversify';
+import { Subject } from 'rxjs';
+import { ICommonModalData, ICommonModalStore } from './interfaces';
 
 @injectable()
 export class CommonModalStore implements ICommonModalStore {

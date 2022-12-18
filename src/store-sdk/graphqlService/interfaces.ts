@@ -1,4 +1,4 @@
-import { RequestDocument } from "graphql-request";
+import { RequestDocument } from 'graphql-request';
 
 export interface DynamicObject {
   [key: string]: any;

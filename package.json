@@ -17,7 +17,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/inversify": "^2.0.33",
     "@types/jest": "^27.4.1",
-    "@types/node": "^16.11.27",
+    "@types/node": "^18.11.17",
     "@types/react": "^18.0.6",
     "@types/react-dom": "^18.0.2",
     "babel-jest": "^27.4.2",
@@ -87,13 +87,29 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "lint-check": "eslint ./src/",
+    "lint-fix": "eslint ./src/ --fix",
+    "prepare": "husky install",
+    "prettier-check": "prettier --check \"src/**/*.ts\""
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "google"
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "require-jsdoc": "off",
+      "max-len": "off",
+      "valid-jsdoc": "off",
+      "object-curly-spacing": "off",
+      "comma-dangle": "off",
+      "operator-linebreak": "off",
+      "indent": "off",
+      "quotes": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -164,6 +180,14 @@
     ]
   },
   "devDependencies": {
-    "@types/reflect-metadata": "^0.1.0"
+    "@types/reflect-metadata": "^0.1.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.8.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

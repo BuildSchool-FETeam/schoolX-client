@@ -1,4 +1,4 @@
-import { CheckCircleIcon, InfoIcon, WarningTwoIcon } from "@chakra-ui/icons";
+import { CheckCircleIcon, InfoIcon, WarningTwoIcon } from '@chakra-ui/icons';
 import {
   Button,
   Modal,
@@ -13,16 +13,16 @@ import {
   Divider,
   ComponentWithAs,
   IconProps,
-  HStack,
-} from "@chakra-ui/react";
-import { ExtendsColorEnum } from "theme/colors/interfaces";
-import { TextLayerEnum } from "theme/typography/interfaces";
+  HStack
+} from '@chakra-ui/react';
+import { ExtendsColorEnum } from 'theme/colors/interfaces';
+import { TextLayerEnum } from 'theme/typography/interfaces';
 
-export type NotificationModalType = "info" | "error" | "success";
+export type NotificationModalType = 'info' | 'error' | 'success';
 
 interface ModalMetaData {
   color: string;
-  Icon: ComponentWithAs<"svg", IconProps>;
+  Icon: ComponentWithAs<'svg', IconProps>;
   btnVariant: string;
 }
 
@@ -36,42 +36,42 @@ export interface INotificationModal {
 
 export const NotificationModal = (props: INotificationModal) => {
   const {
-    title = "Modal title",
-    content = "Modal content",
+    title = 'Modal title',
+    content = 'Modal content',
     isOpen,
     onClose,
-    type: noticType,
+    type: noticType
   } = props;
 
-  const closeButtonColor = useColorModeValue("gray.800", "white");
+  const closeButtonColor = useColorModeValue('gray.800', 'white');
 
   function getDataByType(type: NotificationModalType) {
     let data: ModalMetaData = {
-      color: ExtendsColorEnum["error_dark.500"],
+      color: ExtendsColorEnum['error_dark.500'],
       Icon: WarningTwoIcon,
-      btnVariant: "error",
+      btnVariant: 'error'
     };
 
     switch (type) {
-      case "error":
+      case 'error':
         data = {
-          color: ExtendsColorEnum["error_dark.500"],
+          color: ExtendsColorEnum['error_dark.500'],
           Icon: WarningTwoIcon,
-          btnVariant: "error",
+          btnVariant: 'error'
         };
         break;
-      case "success":
+      case 'success':
         data = {
-          color: ExtendsColorEnum["success_dark.500"],
+          color: ExtendsColorEnum['success_dark.500'],
           Icon: CheckCircleIcon,
-          btnVariant: "secondary",
+          btnVariant: 'secondary'
         };
         break;
-      case "info":
+      case 'info':
         data = {
-          color: ExtendsColorEnum["info_dark.500"],
+          color: ExtendsColorEnum['info_dark.500'],
           Icon: InfoIcon,
-          btnVariant: "info",
+          btnVariant: 'info'
         };
         break;
 
@@ -82,7 +82,7 @@ export const NotificationModal = (props: INotificationModal) => {
     return data;
   }
 
-  const { color, Icon, btnVariant } = getDataByType(noticType || "error");
+  const { color, Icon, btnVariant } = getDataByType(noticType || 'error');
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} isCentered>

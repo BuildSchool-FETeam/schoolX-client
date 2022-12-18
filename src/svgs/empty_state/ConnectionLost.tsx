@@ -1,4 +1,4 @@
-import { Icon, IconProps } from "@chakra-ui/react";
+import { Icon, IconProps } from '@chakra-ui/react';
 
 export const ConnectionLost = (props: IconProps) => {
   return (
@@ -21,13 +21,7 @@ export const ConnectionLost = (props: IconProps) => {
           fill="url(#paint1_linear_418_2296)"
         />
         <g filter="url(#filter0_f_418_2296)">
-          <ellipse
-            cx="129.237"
-            cy="110.742"
-            rx="69.1592"
-            ry="11.8183"
-            fill="#C4C1FE"
-          />
+          <ellipse cx="129.237" cy="110.742" rx="69.1592" ry="11.8183" fill="#C4C1FE" />
         </g>
         <g filter="url(#filter1_f_418_2296)">
           <ellipse
@@ -40,13 +34,7 @@ export const ConnectionLost = (props: IconProps) => {
           />
         </g>
         <g filter="url(#filter2_f_418_2296)">
-          <ellipse
-            cx="171.258"
-            cy="228.926"
-            rx="69.1592"
-            ry="11.8183"
-            fill="#C4C1FE"
-          />
+          <ellipse cx="171.258" cy="228.926" rx="69.1592" ry="11.8183" fill="#C4C1FE" />
         </g>
         <path
           fillRule="evenodd"
@@ -186,16 +174,8 @@ export const ConnectionLost = (props: IconProps) => {
             colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feGaussianBlur
-              stdDeviation="10.9429"
-              result="effect1_foregroundBlur_418_2296"
-            />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="10.9429" result="effect1_foregroundBlur_418_2296" />
           </filter>
           <filter
             id="filter1_f_418_2296"
@@ -207,16 +187,8 @@ export const ConnectionLost = (props: IconProps) => {
             colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feGaussianBlur
-              stdDeviation="10.9429"
-              result="effect1_foregroundBlur_418_2296"
-            />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="10.9429" result="effect1_foregroundBlur_418_2296" />
           </filter>
           <filter
             id="filter2_f_418_2296"
@@ -228,16 +200,8 @@ export const ConnectionLost = (props: IconProps) => {
             colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feGaussianBlur
-              stdDeviation="10.9429"
-              result="effect1_foregroundBlur_418_2296"
-            />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="10.9429" result="effect1_foregroundBlur_418_2296" />
           </filter>
           <linearGradient
             id="paint0_linear_418_2296"

@@ -1,7 +1,7 @@
-import { Fragment, PropsWithChildren } from "react";
-import { useInjection } from "store-sdk/ioc-container/ioc.context";
-import { Symbols } from "store-sdk/ioc-container/symbols";
-import { IAuthStore } from "../interfaces";
+import { Fragment, PropsWithChildren } from 'react';
+import { useInjection } from 'store-sdk/ioc-container/ioc.context';
+import { Symbols } from 'store-sdk/ioc-container/symbols';
+import { IAuthStore } from '../interfaces';
 
 interface IAuthProps extends PropsWithChildren<any> {}
 

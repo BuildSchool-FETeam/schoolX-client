@@ -1,34 +1,34 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useDisclosure } from "@chakra-ui/react";
-import React, { PropsWithChildren, useEffect, useState } from "react";
-import { useInjection } from "store-sdk/ioc-container/ioc.context";
-import { Symbols } from "store-sdk/ioc-container/symbols";
+import { useDisclosure } from '@chakra-ui/react';
+import React, { PropsWithChildren, useEffect, useState } from 'react';
+import { useInjection } from 'store-sdk/ioc-container/ioc.context';
+import { Symbols } from 'store-sdk/ioc-container/symbols';
 import {
   INotificationModalStore,
   INoticModalData,
   ICommonModalStore,
-  ICommonModalData,
-} from "store-sdk/modalServices/interfaces";
-import { CommonModal } from "./CommonModal";
-import { NotificationModal } from "./NotificationModal";
+  ICommonModalData
+} from 'store-sdk/modalServices/interfaces';
+import { CommonModal } from './CommonModal';
+import { NotificationModal } from './NotificationModal';
 
 interface INotificationContainer extends PropsWithChildren<any> {}
 
 /**
  * Use to control modal through store
  * @param props Props
- * @returns JSX Element
+ * @return JSX Element
  */
 export const ModalContainer = (props: INotificationContainer) => {
   const {
     isOpen: noticIsOpen,
     onClose: noticOnClose,
-    onOpen: noticOnOpen,
+    onOpen: noticOnOpen
   } = useDisclosure();
   const {
     isOpen: commonIsOpen,
     onClose: commonOnClose,
-    onOpen: commonOnOpen,
+    onOpen: commonOnOpen
   } = useDisclosure();
 
   const [modalData, setModalData] = useState<INoticModalData>();

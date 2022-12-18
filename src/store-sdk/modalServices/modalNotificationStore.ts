@@ -1,6 +1,6 @@
-import { INotificationModalStore, INoticModalData } from "./interfaces";
-import { Subject } from "rxjs";
-import { injectable } from "inversify";
+import { INotificationModalStore, INoticModalData } from './interfaces';
+import { Subject } from 'rxjs';
+import { injectable } from 'inversify';
 
 @injectable()
 export class NotificationModalStore implements INotificationModalStore {

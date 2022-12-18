@@ -1,18 +1,18 @@
-import { config } from "config/config.dev";
-import { inject, injectable } from "inversify";
-import { BehaviorSubject } from "rxjs";
-import { IGraphqlService } from "store-sdk/graphqlService/interfaces";
-import { Symbols } from "store-sdk/ioc-container/symbols";
-import { IStorageService } from "store-sdk/storageService/interfaces";
-import { signInGql } from "./auth.graphql";
+import { config } from 'config/config.dev';
+import { inject, injectable } from 'inversify';
+import { BehaviorSubject } from 'rxjs';
+import { IGraphqlService } from 'store-sdk/graphqlService/interfaces';
+import { Symbols } from 'store-sdk/ioc-container/symbols';
+import { IStorageService } from 'store-sdk/storageService/interfaces';
+import { signInGql } from './auth.graphql';
 import {
   ClientSignInResponse,
   ClientUserSigninInput,
   IAuthData,
-  IAuthStore,
-} from "./interfaces";
+  IAuthStore
+} from './interfaces';
 
-export const TOKEN_KEY = "userToken";
+export const TOKEN_KEY = 'userToken';
 @injectable()
 export class AuthStore implements IAuthStore {
   @inject(Symbols.IStorageService)
@@ -25,7 +25,7 @@ export class AuthStore implements IAuthStore {
 
   private loginDataSubject = new BehaviorSubject<IAuthData>({
     token: null,
-    expDate: null,
+    expDate: null
   });
 
   loginData$ = this.loginDataSubject.asObservable();
@@ -40,7 +40,7 @@ export class AuthStore implements IAuthStore {
       const { token } = data.clientUserAuthMutation.signIn;
       const authData = {
         token,
-        expDate: new Date(this.addTimeInMinute(this.tokenLive)),
+        expDate: new Date(this.addTimeInMinute(this.tokenLive))
       };
       this.loginDataSubject.next(authData);
       this.storageService.setItem<IAuthData>(TOKEN_KEY, { ...authData });

@@ -1,7 +1,7 @@
-import { ModalProps } from "@chakra-ui/react";
-import { ReactNode } from "react";
-import { Observable } from "rxjs";
-import { NotificationModalType } from "store-sdk/modalServices/ModalViews/NotificationModal";
+import { ModalProps } from '@chakra-ui/react';
+import { ReactNode } from 'react';
+import { Observable } from 'rxjs';
+import { NotificationModalType } from 'store-sdk/modalServices/ModalViews/NotificationModal';
 
 export interface INoticModalData {
   title: string;
@@ -11,9 +11,9 @@ export interface INoticModalData {
 
 export interface ICommonModalData {
   content: ReactNode;
-  size?: "md" | "lg" | "xl" | "2xl" | "3xl";
+  size?: 'md' | 'lg' | 'xl' | '2xl' | '3xl';
   haveCloseButton?: boolean;
-  motionPreset?: ModalProps["motionPreset"];
+  motionPreset?: ModalProps['motionPreset'];
 }
 
 export interface INotificationModalStore {

@@ -1,3 +1,3 @@
 export enum ExtendVariantEnum {
-  ghost = "ghost",
+  ghost = 'ghost'
 }

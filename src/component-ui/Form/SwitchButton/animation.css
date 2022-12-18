@@ -8,7 +8,7 @@
   }
 
   85% {
-    transform: translateX(128%) scaleX(.7);
+    transform: translateX(128%) scaleX(0.7);
   }
   100% {
     transform: translateX(120%) scaleX(1);
@@ -21,11 +21,11 @@
   }
 
   20% {
-    transform:translateX(85%) scaleX(1.35);
+    transform: translateX(85%) scaleX(1.35);
   }
 
   85% {
-    transform: translateX(0%) scaleX(.6);
+    transform: translateX(0%) scaleX(0.6);
   }
   100% {
     transform: translateX(0%) scaleX(1);
@@ -42,10 +42,10 @@
 
 .slideInAnimation {
   transform-origin: 100% 50%;
-  animation: slideIn cubic-bezier(.08,.55,.53,.94) .5s;
+  animation: slideIn cubic-bezier(0.08, 0.55, 0.53, 0.94) 0.5s;
 }
 
 .slideOutAnimation {
-  transform-origin: 0% 50% ;
-  animation: slideOut cubic-bezier(.08,.55,.53,.94) .5s;
+  transform-origin: 0% 50%;
+  animation: slideOut cubic-bezier(0.08, 0.55, 0.53, 0.94) 0.5s;
 }

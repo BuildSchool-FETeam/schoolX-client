@@ -3,12 +3,12 @@ import {
   Text,
   Box,
   useColorModeValue,
-  Button,
-} from "@chakra-ui/react";
-import { Fragment } from "react";
-import { ExtendsColorEnum } from "theme/colors/interfaces";
-import { colorDarkBoxData, colorLightBoxData, colorTokenBox } from "./data";
-import { styles } from "./styles";
+  Button
+} from '@chakra-ui/react';
+import { Fragment } from 'react';
+import { ExtendsColorEnum } from 'theme/colors/interfaces';
+import { colorDarkBoxData, colorLightBoxData, colorTokenBox } from './data';
+import { styles } from './styles';
 
 export const DemoPage = () => {
   const listColorDarkBoxes = colorDarkBoxData.map((dt) => {
@@ -36,8 +36,8 @@ export const DemoPage = () => {
   });
 
   const boxColor = useColorModeValue(
-    ExtendsColorEnum["darkLevel.100"],
-    ExtendsColorEnum["darkLevel.900"]
+    ExtendsColorEnum['darkLevel.100'],
+    ExtendsColorEnum['darkLevel.900']
   );
 
   return (
