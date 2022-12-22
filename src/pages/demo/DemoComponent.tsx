@@ -8,15 +8,15 @@ import {
 } from '@chakra-ui/react';
 import { AddIcon } from '@chakra-ui/icons';
 import { styles } from './styles';
-import { ExtendsColorEnum } from 'theme/colors/interfaces';
+import { ExtendedColor } from 'theme/colors/interfaces';
 import { ExtendVariantEnum } from 'theme/components/interfaces';
-import { TextLayerEnum } from 'theme/typography/interfaces';
-import { DisplayContainer } from 'component-ui/DisplayContainer/DisplayContainer';
+import { TextLayer } from 'theme/typography/interfaces';
+import { DisplayContainer } from 'component-ui/layouts/DisplayContainer/DisplayContainer';
 
 export const DemoComponent = () => {
   const boxColor = useColorModeValue(
-    ExtendsColorEnum['darkLevel.100'],
-    ExtendsColorEnum['darkLevel.900']
+    ExtendedColor['darkLevel.100'],
+    ExtendedColor['darkLevel.900']
   );
 
   return (
@@ -31,7 +31,9 @@ export const DemoComponent = () => {
           <Button>Enabled</Button>
           <Button disabled>Disabled</Button>
 
-          <Button leftIcon={<AddIcon h={3} w={3} color={'white'} mr={2} />}>
+          <Button
+            leftIcon={<AddIcon h={3} w={3} color={'white'} mr={2} />}
+          >
             Icon Btn
           </Button>
           <Button disabled leftIcon={<AddIcon h={3} w={3} mr={2} />}>
@@ -82,15 +84,16 @@ export const DemoComponent = () => {
         </SimpleGrid>
 
         <Box>
-          <Text layerStyle={TextLayerEnum.headlineSm} mb="2rem">
+          <Text layerStyle={TextLayer.headlineSm} mb="2rem">
             Demo responsive
           </Text>
           <Box display={{ base: 'block', md: 'flex' }} maxW="30rem">
-            <Text layerStyle={TextLayerEnum.bodyLg400}>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-              laboriosam, minus provident ex fuga, asperiores veniam magni, est
-              temporibus vel explicabo? Inventore optio officiis, necessitatibus
-              dolores dolorem quae perspiciatis odit.
+            <Text layerStyle={TextLayer.bodyLg400}>
+              Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Atque laboriosam, minus provident ex fuga,
+              asperiores veniam magni, est temporibus vel explicabo?
+              Inventore optio officiis, necessitatibus dolores dolorem
+              quae perspiciatis odit.
             </Text>
           </Box>
         </Box>

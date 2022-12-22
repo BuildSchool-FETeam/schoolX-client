@@ -34,3 +34,17 @@ export enum ColorToken {
   error_dark = 'error_dark',
   error_darker = 'error_darker'
 }
+
+export enum ShadowToken {
+  z1 = 'z1',
+  z4 = 'z4',
+  z8 = 'z8',
+  z12 = 'z12',
+  z16 = 'z16',
+  z20 = 'z20',
+  z24 = 'z24',
+
+  card = 'card',
+  dialog = 'dialog',
+  dropdown = 'dropdown'
+}

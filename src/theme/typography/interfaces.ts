@@ -1,4 +1,4 @@
-export enum TextLayerEnum {
+export enum TextLayer {
   displayLg = 'displayLg',
   displayMd = 'displayMd',
   displaySm = 'displaySm',

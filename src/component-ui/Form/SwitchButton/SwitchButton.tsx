@@ -3,11 +3,11 @@ import { useState } from 'react';
 import { styles } from './styles';
 import './animation.css';
 import classNames from 'classnames';
-import { ExtendsColorEnum } from 'theme/colors/interfaces';
+import { ExtendedColor } from 'theme/colors/interfaces';
 
 export interface ISwitchProps {
   onChangeState?(state: boolean): void;
-  activeColor?: ExtendsColorEnum;
+  activeColor?: ExtendedColor;
 }
 
 export const SwitchButton = (props: ISwitchProps) => {
@@ -21,8 +21,16 @@ export const SwitchButton = (props: ISwitchProps) => {
   const slideOut = classNames('slideOutAnimation', 'start-state');
 
   return (
-    <Box cursor={'pointer'} sx={styles.outer} onClick={_onClick} tabIndex={0}>
-      <Box sx={styles.inner} className={state ? slideIn : slideOut}></Box>
+    <Box
+      cursor={'pointer'}
+      sx={styles.outer}
+      onClick={_onClick}
+      tabIndex={0}
+    >
+      <Box
+        sx={styles.inner}
+        className={state ? slideIn : slideOut}
+      ></Box>
     </Box>
   );
 };

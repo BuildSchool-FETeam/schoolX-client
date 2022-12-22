@@ -11,7 +11,13 @@ export const EmptyFavorite = (props: IconProps) => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <g filter="url(#filter0_f_418_2336)">
-          <ellipse cx="123.5" cy="230.5" rx="92.5" ry="21.5" fill="#FFEBE7" />
+          <ellipse
+            cx="123.5"
+            cy="230.5"
+            rx="92.5"
+            ry="21.5"
+            fill="#FFEBE7"
+          />
         </g>
         <path
           d="M124.701 247.402C188.049 247.402 239.402 196.049 239.402 132.701C239.402 69.3534 188.049 18 124.701 18C61.3534 18 10 69.3534 10 132.701C10 196.049 61.3534 247.402 124.701 247.402Z"
@@ -68,7 +74,13 @@ export const EmptyFavorite = (props: IconProps) => {
           d="M214.41 189.248C214.899 187.221 217.782 187.221 218.271 189.248L219.918 196.07C220.093 196.794 220.658 197.36 221.383 197.535L228.205 199.182C230.232 199.671 230.232 202.554 228.205 203.043L221.383 204.69C220.658 204.865 220.093 205.43 219.918 206.155L218.271 212.977C217.782 215.004 214.899 215.004 214.41 212.977L212.763 206.155C212.588 205.43 212.022 204.865 211.298 204.69L204.476 203.043C202.449 202.554 202.449 199.671 204.476 199.182L211.298 197.535C212.022 197.36 212.588 196.794 212.763 196.07L214.41 189.248Z"
           fill="#FFBEBD"
         />
-        <circle cx="222.134" cy="160.559" r="4.55192" stroke="#FC9999" strokeWidth="2.48287" />
+        <circle
+          cx="222.134"
+          cy="160.559"
+          r="4.55192"
+          stroke="#FC9999"
+          strokeWidth="2.48287"
+        />
         <defs>
           <filter
             id="filter0_f_418_2336"
@@ -80,8 +92,16 @@ export const EmptyFavorite = (props: IconProps) => {
             colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-            <feGaussianBlur stdDeviation="10.8865" result="effect1_foregroundBlur_418_2336" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="10.8865"
+              result="effect1_foregroundBlur_418_2336"
+            />
           </filter>
           <filter
             id="filter1_f_418_2336"
@@ -93,8 +113,16 @@ export const EmptyFavorite = (props: IconProps) => {
             colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-            <feGaussianBlur stdDeviation="10.3453" result="effect1_foregroundBlur_418_2336" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="10.3453"
+              result="effect1_foregroundBlur_418_2336"
+            />
           </filter>
           <linearGradient
             id="paint0_linear_418_2336"

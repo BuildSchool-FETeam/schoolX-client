@@ -1,24 +1,24 @@
 import { ColorToken } from 'theme/base/interfaces';
-import { ExtendsColorEnum } from 'theme/colors/interfaces';
+import { ExtendedColor } from 'theme/colors/interfaces';
 
 export const colorDarkBoxData = [
   {
-    color: ExtendsColorEnum['darkLevel.700'],
+    color: ExtendedColor['darkLevel.700'],
     text: 'base 1'
   },
   {
-    color: ExtendsColorEnum['darkLevel.900'],
+    color: ExtendedColor['darkLevel.900'],
     text: 'base 2'
   }
 ];
 
 export const colorLightBoxData = [
   {
-    color: ExtendsColorEnum['primary_dark.500'],
+    color: ExtendedColor['primary_dark.500'],
     text: 'primary 500'
   },
   {
-    color: ExtendsColorEnum['warning_dark.500'],
+    color: ExtendedColor['warning_dark.500'],
     text: 'warning 500'
   }
 ];

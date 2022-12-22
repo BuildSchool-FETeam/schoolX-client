@@ -1,8 +1,16 @@
 import { usePage2Management } from './usePage2Management';
-import { Box, Button, Divider, useColorMode, Text, HStack } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Divider,
+  useColorMode,
+  Text,
+  HStack
+} from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
-import { TextLayerEnum } from 'theme/typography/interfaces';
-import { DisplayContainer } from 'component-ui/DisplayContainer/DisplayContainer';
+import { TextLayer } from 'theme/typography/interfaces';
+import { DisplayContainer } from 'component-ui/layouts/DisplayContainer/DisplayContainer';
+import { MoonIcon } from '@chakra-ui/icons';
 
 export const Page2 = () => {
   const { login } = usePage2Management();
@@ -11,7 +19,7 @@ export const Page2 = () => {
   return (
     <Box m={'2rem'}>
       <DisplayContainer>
-        <Text layerStyle={TextLayerEnum.headLineMd}>Page2: Demo</Text>
+        <Text layerStyle={TextLayer.headLineMd}>Page2: Demo</Text>
         <HStack>
           <Button
             my={'10px'}
@@ -27,7 +35,11 @@ export const Page2 = () => {
           >
             Login
           </Button>
-          <Button variant={'success'} onClick={toggleColorMode}>
+          <Button
+            variant={'success'}
+            onClick={toggleColorMode}
+            leftIcon={<MoonIcon />}
+          >
             Change color mode
           </Button>
         </HStack>

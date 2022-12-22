@@ -27,7 +27,13 @@ const ReactRoutesPre = (props: IRoutesProps) => {
       );
     }
 
-    return <Route key={route.path} path={route.path} element={<route.ReactComponent />} />;
+    return (
+      <Route
+        key={route.path}
+        path={route.path}
+        element={<route.ReactComponent />}
+      />
+    );
   }
 
   return <Routes>{renderRoutes(props.routes)}</Routes>;

@@ -31,10 +31,18 @@ export const CommonModal = (props: ICommonModalProps) => {
   const closeButtonColor = useColorModeValue('gray.800', 'white');
 
   return (
-    <Modal isCentered onClose={onClose} isOpen={isOpen} size={size} motionPreset={motionPreset}>
+    <Modal
+      isCentered
+      onClose={onClose}
+      isOpen={isOpen}
+      size={size}
+      motionPreset={motionPreset}
+    >
       <ModalOverlay />
       <ModalContent minH={'20rem'} p="1rem 1.5rem">
-        {haveCloseButton && <ModalCloseButton color={closeButtonColor} />}
+        {haveCloseButton && (
+          <ModalCloseButton color={closeButtonColor} />
+        )}
         {children}
       </ModalContent>
     </Modal>

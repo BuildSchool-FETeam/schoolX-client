@@ -82,7 +82,7 @@ const lightColor = {
   }
 };
 
-export const global = {
+export const globalColor = {
   ...darkColor,
   ...lightColor,
 

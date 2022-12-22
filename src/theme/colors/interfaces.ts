@@ -1,4 +1,4 @@
-export enum ExtendsColorEnum {
+export enum ExtendedColor {
   'primary_dark.100' = 'primary_dark.100',
   'primary_dark.300' = 'primary_dark.300',
   'primary_dark.500' = 'primary_dark.500',

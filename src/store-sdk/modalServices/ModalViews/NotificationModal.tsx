@@ -1,4 +1,8 @@
-import { CheckCircleIcon, InfoIcon, WarningTwoIcon } from '@chakra-ui/icons';
+import {
+  CheckCircleIcon,
+  InfoIcon,
+  WarningTwoIcon
+} from '@chakra-ui/icons';
 import {
   Button,
   Modal,
@@ -15,8 +19,8 @@ import {
   IconProps,
   HStack
 } from '@chakra-ui/react';
-import { ExtendsColorEnum } from 'theme/colors/interfaces';
-import { TextLayerEnum } from 'theme/typography/interfaces';
+import { ExtendedColor } from 'theme/colors/interfaces';
+import { TextLayer } from 'theme/typography/interfaces';
 
 export type NotificationModalType = 'info' | 'error' | 'success';
 
@@ -47,7 +51,7 @@ export const NotificationModal = (props: INotificationModal) => {
 
   function getDataByType(type: NotificationModalType) {
     let data: ModalMetaData = {
-      color: ExtendsColorEnum['error_dark.500'],
+      color: ExtendedColor['error_dark.500'],
       Icon: WarningTwoIcon,
       btnVariant: 'error'
     };
@@ -55,21 +59,21 @@ export const NotificationModal = (props: INotificationModal) => {
     switch (type) {
       case 'error':
         data = {
-          color: ExtendsColorEnum['error_dark.500'],
+          color: ExtendedColor['error_dark.500'],
           Icon: WarningTwoIcon,
           btnVariant: 'error'
         };
         break;
       case 'success':
         data = {
-          color: ExtendsColorEnum['success_dark.500'],
+          color: ExtendedColor['success_dark.500'],
           Icon: CheckCircleIcon,
           btnVariant: 'secondary'
         };
         break;
       case 'info':
         data = {
-          color: ExtendsColorEnum['info_dark.500'],
+          color: ExtendedColor['info_dark.500'],
           Icon: InfoIcon,
           btnVariant: 'info'
         };
@@ -82,7 +86,9 @@ export const NotificationModal = (props: INotificationModal) => {
     return data;
   }
 
-  const { color, Icon, btnVariant } = getDataByType(noticType || 'error');
+  const { color, Icon, btnVariant } = getDataByType(
+    noticType || 'error'
+  );
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} isCentered>
@@ -91,7 +97,11 @@ export const NotificationModal = (props: INotificationModal) => {
         <ModalHeader pb="0">
           <HStack>
             <Icon color={color} h="1.5rem" w="1.5rem" mr=".5rem" />
-            <Text as="h2" layerStyle={TextLayerEnum.headlineSm} color={color}>
+            <Text
+              as="h2"
+              layerStyle={TextLayer.headlineSm}
+              color={color}
+            >
               {title}
             </Text>
           </HStack>
@@ -99,13 +109,17 @@ export const NotificationModal = (props: INotificationModal) => {
         </ModalHeader>
         <ModalCloseButton color={closeButtonColor} />
         <ModalBody minH="5.5rem" pb="1.5rem">
-          <Text as="p" layerStyle={TextLayerEnum.bodyLg400}>
+          <Text as="p" layerStyle={TextLayer.bodyLg400}>
             {content}
           </Text>
         </ModalBody>
 
         <ModalFooter>
-          <Button variant={btnVariant} onClick={onClose} minW="5.5rem">
+          <Button
+            variant={btnVariant}
+            onClick={onClose}
+            minW="5.5rem"
+          >
             Close
           </Button>
         </ModalFooter>

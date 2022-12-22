@@ -2,14 +2,17 @@ import { Box, BoxProps } from '@chakra-ui/react';
 import { PropsWithChildren } from 'react';
 import { omit } from 'lodash';
 
-export interface IDisplayContainerProps extends PropsWithChildren<any> {
+export interface IDisplayContainerProps
+  extends PropsWithChildren<any> {
   isFluid?: boolean;
 }
 
 /**
  * This is the Box component as original but it help you center align the content in the safe space
  */
-export const DisplayContainer = (props: IDisplayContainerProps & BoxProps) => {
+export const DisplayContainer = (
+  props: IDisplayContainerProps & BoxProps
+) => {
   const { isFluid = false } = props;
 
   let maxWidth: { [key: string]: any } = {};
@@ -24,7 +27,12 @@ export const DisplayContainer = (props: IDisplayContainerProps & BoxProps) => {
   }
 
   return (
-    <Box px={px} m="0 auto" maxW={maxWidth} {...omit(props, 'isFluid')}>
+    <Box
+      px={px}
+      m="0 auto"
+      maxW={maxWidth}
+      {...omit(props, 'isFluid')}
+    >
       {props.children}
     </Box>
   );
