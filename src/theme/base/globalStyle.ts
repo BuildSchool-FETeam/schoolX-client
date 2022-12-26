@@ -9,7 +9,7 @@ export const globalStyle: IStyleSheet = {
     }
   },
   body: {
-    fontFamily: "'Bai Jamjuree', sans-serif",
+    fontFamily: 'Inter',
     fontSize: '1rem',
     color: 'gray.900'
   }

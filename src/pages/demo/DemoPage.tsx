@@ -3,7 +3,8 @@ import {
   Text,
   Box,
   useColorModeValue,
-  Flex
+  Flex,
+  Checkbox
 } from '@chakra-ui/react';
 import PrisButton from 'component-ui/buttons/PrisButton';
 import { ExtendedColor } from 'theme/colors/interfaces';
@@ -80,13 +81,13 @@ export const DemoPage = () => {
         align="center"
       >
         <PrisButton mr="4">Primary fit</PrisButton>
-        <PrisButton leftIcon={<MoonIcon />} mr="4">
+        <PrisButton leftIcon={<MoonIcon />} mr="4" minW={0}>
           Primary fit
         </PrisButton>
         <PrisButton isLoading mr="4">
           Primary fit
         </PrisButton>
-        <PrisButton mr="4">
+        <PrisButton mr="4" minW={'10px'}>
           <MoonIcon />
         </PrisButton>
         <PrisButton disabled mr="4" leftIcon={<MoonIcon />}>
@@ -111,7 +112,7 @@ export const DemoPage = () => {
         <PrisButtonSec isLoading mr="4">
           Primary fit
         </PrisButtonSec>
-        <PrisButtonSec mr="4">
+        <PrisButtonSec mr="4" minW={'0.5'}>
           <MoonIcon />
         </PrisButtonSec>
         <PrisButtonSec disabled mr="4" leftIcon={<MoonIcon />}>
@@ -150,6 +151,23 @@ export const DemoPage = () => {
         <TextButton mr="4" leftIcon={<MoonIcon />} size="md">
           Text Button
         </TextButton>
+      </Flex>
+
+      <Flex
+        justifyContent="flex-start"
+        sx={styles.listItems}
+        align="center"
+      >
+        <Checkbox isChecked mr="1rem">
+          Checked
+        </Checkbox>
+        <Checkbox mr="1rem">Unchecked</Checkbox>
+        <Checkbox isDisabled mr="1rem">
+          Disabled
+        </Checkbox>
+        <Checkbox isDisabled isChecked>
+          Disabled checked
+        </Checkbox>
       </Flex>
     </div>
   );

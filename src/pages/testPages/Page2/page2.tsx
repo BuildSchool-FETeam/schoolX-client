@@ -1,7 +1,6 @@
 import { usePage2Management } from './usePage2Management';
 import {
   Box,
-  Button,
   Divider,
   useColorMode,
   Text,
@@ -11,6 +10,8 @@ import { Outlet } from 'react-router-dom';
 import { TextLayer } from 'theme/typography/interfaces';
 import { DisplayContainer } from 'component-ui/layouts/DisplayContainer/DisplayContainer';
 import { MoonIcon } from '@chakra-ui/icons';
+import PrisButton from 'component-ui/buttons/PrisButton';
+import TextButton from 'component-ui/buttons/TextButton';
 
 export const Page2 = () => {
   const { login } = usePage2Management();
@@ -21,7 +22,7 @@ export const Page2 = () => {
       <DisplayContainer>
         <Text layerStyle={TextLayer.headLineMd}>Page2: Demo</Text>
         <HStack>
-          <Button
+          <PrisButton
             my={'10px'}
             colorScheme={'gray'}
             onClick={() =>
@@ -34,14 +35,14 @@ export const Page2 = () => {
             }
           >
             Login
-          </Button>
-          <Button
-            variant={'success'}
+          </PrisButton>
+          <TextButton
+            buttonType="round"
             onClick={toggleColorMode}
             leftIcon={<MoonIcon />}
           >
             Change color mode
-          </Button>
+          </TextButton>
         </HStack>
         <Divider></Divider>
       </DisplayContainer>

@@ -1,7 +1,6 @@
 import { ComponentStyleConfig } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 import { ExtendedColor } from 'theme/colors/interfaces';
-import { ButtonVariants } from './ButtonVariants';
 
 export const ButtonTheme: ComponentStyleConfig = {
   baseStyle: (props) => ({
@@ -18,8 +17,6 @@ export const ButtonTheme: ComponentStyleConfig = {
       cursor: 'pointer'
     }
   }),
-
-  variants: ButtonVariants,
 
   defaultProps: {
     variant: 'primary'

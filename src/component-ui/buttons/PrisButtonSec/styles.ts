@@ -1,16 +1,7 @@
 import { defineStyleConfig } from '@chakra-ui/react';
-import { ColorToken } from 'theme/base/interfaces';
+import { ButtonTokenColor } from 'theme/base/interfaces';
 import { ExtendedColor } from 'theme/colors/interfaces';
-
-export const fitButtonReusableStyle = {
-  color: 'white',
-  borderRadius: '.4rem',
-  fontFamily: 'content',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  transition: 'all .3s'
-};
+import { fitButtonReusableStyle } from '../PrisButton/styles';
 
 export const PrisButtonSecStyle = defineStyleConfig({
   baseStyle: {
@@ -19,24 +10,25 @@ export const PrisButtonSecStyle = defineStyleConfig({
 
   variants: {
     primary: {
-      color: ColorToken.primary_base,
-      bgColor: ExtendedColor['darkLevel.100'],
+      color: ButtonTokenColor.cpn_btn_secondary_content_default,
+      bgColor: ButtonTokenColor.cpn_btn_secondary_background_default,
 
       _hover: {
-        color: ColorToken.primary_dark
+        color: ButtonTokenColor.cpn_btn_secondary_content_hover
       },
       _loading: {
-        color: ColorToken.primary_light + ' !important',
+        color:
+          ButtonTokenColor.cpn_btn_secondary_content_loading +
+          ' !important',
         bgColor: 'white !important'
       },
       _focus: {
-        color: ColorToken.primary_darker,
+        color: ButtonTokenColor.cpn_btn_secondary_content_focus,
         outline: `3px solid`,
         outlineColor: ExtendedColor['darkLevel.500']
       },
       _disabled: {
-        bgColor: ExtendedColor['darkLevel.100'],
-        color: ExtendedColor['darkLevel.500'],
+        color: ButtonTokenColor.cpn_btn_secondary_content_disabled,
         cursor: 'not-allowed'
       }
     }

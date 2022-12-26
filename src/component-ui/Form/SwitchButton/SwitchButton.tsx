@@ -10,7 +10,7 @@ export interface ISwitchProps {
   activeColor?: ExtendedColor;
 }
 
-export const SwitchButton = (props: ISwitchProps) => {
+const SwitchButton = (props: ISwitchProps) => {
   const [state, setState] = useState(false);
 
   function _onClick() {
@@ -34,3 +34,5 @@ export const SwitchButton = (props: ISwitchProps) => {
     </Box>
   );
 };
+
+export default SwitchButton;

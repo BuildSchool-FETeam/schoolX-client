@@ -1,6 +1,6 @@
+/* eslint-disable quote-props */
 import { defineStyleConfig } from '@chakra-ui/react';
-import { ColorToken, ShadowToken } from 'theme/base/interfaces';
-import { ExtendedColor } from 'theme/colors/interfaces';
+import { ButtonTokenColor } from 'theme/base/interfaces';
 
 export const TextButtonStyle = defineStyleConfig({
   baseStyle: {
@@ -8,21 +8,19 @@ export const TextButtonStyle = defineStyleConfig({
     backgroundColor: 'transparent',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
-    _hover: {
-      shadow: ShadowToken.z4
-    }
+    alignItems: 'center'
   },
 
   variants: {
     primary: {
-      color: ColorToken.primary_base,
+      color: ButtonTokenColor.cpn_txt_btn_primary_content_default,
       _hover: {
-        backgroundColor: ExtendedColor['darkLevel.800'],
-        color: ColorToken.primary_light
+        backgroundColor:
+          ButtonTokenColor.cpn_txt_btn_primary_background_hover,
+        color: ButtonTokenColor.cpn_txt_btn_primary_content_hover
       },
       _disabled: {
-        color: ExtendedColor['darkLevel.500'],
+        color: ButtonTokenColor.cpn_txt_btn_primary_content_disabled,
         backgroundColor: 'transparent',
         cursor: 'not-allowed'
       }

@@ -32,7 +32,9 @@ export enum ColorToken {
   error_light = 'error_light',
   error_lighter = 'error_lighter',
   error_dark = 'error_dark',
-  error_darker = 'error_darker'
+  error_darker = 'error_darker',
+
+  text_normal = 'text_normal'
 }
 
 export enum ShadowToken {
@@ -46,5 +48,43 @@ export enum ShadowToken {
 
   card = 'card',
   dialog = 'dialog',
-  dropdown = 'dropdown'
+  dropdown = 'dropdown',
+
+  color_primary = 'color_primary',
+  color_success = 'color_success',
+
+  checkbox_default_hover = 'checkbox_default_hover'
+}
+
+export enum ButtonTokenColor {
+  cpn_btn_primary_background_default = 'cpn_btn_primary_background_default',
+  cpn_btn_primary_background_hover = 'cpn_btn_primary_background_hover',
+  cpn_btn_primary_background_loading = 'cpn_btn_primary_background_loading',
+  cpn_btn_primary_background_disabled = 'cpn_btn_primary_background_disabled',
+  cpn_btn_primary_background_focus = 'cpn_btn_primary_background_focus',
+  cpn_btn_primary_content_disable = 'cpn_btn_primary_content_disable',
+
+  cpn_btn_secondary_background_default = 'cpn_btn_secondary_background_default',
+  cpn_btn_secondary_content_default = 'cpn_btn_secondary_content_default',
+  cpn_btn_secondary_content_hover = 'cpn_btn_secondary_content_hover',
+  cpn_btn_secondary_content_loading = 'cpn_btn_secondary_content_loading',
+  cpn_btn_secondary_content_disabled = 'cpn_btn_secondary_content_disabled',
+  cpn_btn_secondary_content_focus = 'cpn_btn_secondary_content_focus',
+
+  cpn_txt_btn_primary_content_default = 'cpn_txt_btn_primary_content_default',
+  cpn_txt_btn_primary_content_hover = 'cpn_txt_btn_primary_content_hover',
+  cpn_txt_btn_primary_content_disabled = 'cpn_txt_btn_primary_content_disabled',
+  cpn_txt_btn_primary_background_hover = 'cpn_txt_btn_primary_background_hover'
+}
+
+export enum CheckBoxTokenColor {
+  cpn_check_box_bg_checkmark = 'cpn_check_box_bg_checkmark',
+  cpn_check_box_stroke_defaultHover = 'cpn_check_box_stroke_defaultHover',
+  cpn_check_box_content_disable = 'cpn_check_box_content_disable',
+  cpn_check_box_stroke_disable = 'cpn_check_box_stroke_disable',
+  cpn_check_box_bg_disable = 'cpn_check_box_bg_disable'
+}
+
+export enum BorderToken {
+  cpn_check_box_stroke_Disable = 'cpn_check_box_stroke_Disable'
 }

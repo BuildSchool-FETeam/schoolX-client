@@ -9,7 +9,8 @@ import { TextTheme } from './components/TextTheme';
 import { breakpoints } from './base/breakPoints';
 import { PrisButtonStyle } from 'component-ui/buttons/PrisButton/styles';
 import { PrisButtonSecStyle } from 'component-ui/buttons/PrisButtonSec/styles';
-import { TextButtonStyle } from 'component-ui/buttons/TextButton/style';
+import { TextButtonStyle } from 'component-ui/buttons/TextButton/styles';
+import { CheckboxStyles } from 'theme/components/CheckboxTheme';
 
 export const chakraTheme = extendTheme({
   config: {
@@ -28,8 +29,11 @@ export const chakraTheme = extendTheme({
     Button: ButtonTheme,
     Tooltip: TooltipTheme,
     Text: TextTheme,
+
     PrisButton: PrisButtonStyle,
     PrisButtonSec: PrisButtonSecStyle,
-    TextButton: TextButtonStyle
+    TextButton: TextButtonStyle,
+
+    Checkbox: CheckboxStyles
   }
 });

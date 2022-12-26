@@ -135,11 +135,19 @@ const info = {
   }
 };
 
+const textToken = {
+  text_normal: {
+    default: ExtendedColor['darkLevel.900'],
+    _dark: ExtendedColor['darkLevel.100']
+  }
+};
+
 // push the token here as you go
 export const colorTokens = {
   ...primary,
   ...success,
   ...warning,
   ...error,
-  ...info
+  ...info,
+  ...textToken
 };

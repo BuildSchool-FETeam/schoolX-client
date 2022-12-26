@@ -9,7 +9,6 @@ import {
 import { AddIcon } from '@chakra-ui/icons';
 import { styles } from './styles';
 import { ExtendedColor } from 'theme/colors/interfaces';
-import { ExtendVariantEnum } from 'theme/components/interfaces';
 import { TextLayer } from 'theme/typography/interfaces';
 import { DisplayContainer } from 'component-ui/layouts/DisplayContainer/DisplayContainer';
 
@@ -57,18 +56,6 @@ export const DemoComponent = () => {
             leftIcon={<AddIcon h={3} w={3} color={'white'} mr={2} />}
           >
             Icon Btn
-          </Button>
-        </SimpleGrid>
-
-        <SimpleGrid
-          spacing={10}
-          columns={{ base: 1, sm: 2, md: 4 }}
-          bg={boxColor}
-          sx={styles.listBtns}
-        >
-          <Button variant={ExtendVariantEnum.ghost}>Enabled</Button>
-          <Button variant={ExtendVariantEnum.ghost} disabled>
-            Enabled
           </Button>
         </SimpleGrid>
 

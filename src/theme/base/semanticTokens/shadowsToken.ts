@@ -1,3 +1,7 @@
+const checkboxShadow = {
+  checkbox_default_hover: '0px 0px 0px 2px rgba(51,102,255,0.24)'
+};
+
 export const shadowsToken = {
   z1: '0px 1px 2px 0px rgba(0,0,0,0.16)',
   z4: '0px 4px 8px 0px rgba(0,0,0,0.16)',
@@ -12,5 +16,7 @@ export const shadowsToken = {
   dropdown: '-20px 20px 40px -4px rgba(0,0,0,0.24)',
 
   color_primary: '0px 8px 16px 0px rgba(51,102,255,0.24)',
-  color_success: '0px 8px 16px 0px rgba(54, 179, 126,0.24)'
+  color_success: '0px 8px 16px 0px rgba(54, 179, 126,0.24)',
+
+  ...checkboxShadow
 };
