@@ -3,12 +3,10 @@ import { btnTokens } from './semanticTokens/buttonToken';
 import { cboxTokens } from './semanticTokens/checkboxToken';
 import { colorTokens } from './semanticTokens/colorToken';
 import { shadowsToken } from './semanticTokens/shadowsToken';
+import { typographyTokens } from './semanticTokens/typography';
 
 export const semanticTokens = {
-  fonts: {
-    title: "'Bai Jamjuree', sans-serif",
-    content: "'Inter', sans-serif"
-  },
+  fonts: typographyTokens,
   colors: {
     ...colorTokens,
     ...btnTokens,

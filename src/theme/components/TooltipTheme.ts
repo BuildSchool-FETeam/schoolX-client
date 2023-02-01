@@ -7,7 +7,7 @@ export const TooltipTheme: ComponentStyleConfig = {
     borderRadius: '10rem',
     // color: ExtendsColorEnum["success.500"],
     bgColor: ExtendedColor['darkLevel.900'],
-    layerStyle: TextLayer.labelLg500,
+    layerStyle: TextLayer.largeBold3X,
     px: 3,
     py: 2,
     fontSize: '1rem'

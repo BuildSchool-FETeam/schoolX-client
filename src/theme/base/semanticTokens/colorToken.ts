@@ -142,6 +142,15 @@ const textToken = {
   }
 };
 
+const white = {
+  global_white_56: {
+    default: 'rgba(255,255,255,.56)'
+  },
+  global_white_16: {
+    default: 'rgba(255,255,255,.16)'
+  }
+};
+
 // push the token here as you go
 export const colorTokens = {
   ...primary,
@@ -149,5 +158,6 @@ export const colorTokens = {
   ...warning,
   ...error,
   ...info,
-  ...textToken
+  ...textToken,
+  ...white
 };

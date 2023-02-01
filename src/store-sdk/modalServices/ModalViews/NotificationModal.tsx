@@ -99,7 +99,7 @@ export const NotificationModal = (props: INotificationModal) => {
             <Icon color={color} h="1.5rem" w="1.5rem" mr=".5rem" />
             <Text
               as="h2"
-              layerStyle={TextLayer.headlineSm}
+              layerStyle={TextLayer.largeMedium3X}
               color={color}
             >
               {title}
@@ -109,7 +109,7 @@ export const NotificationModal = (props: INotificationModal) => {
         </ModalHeader>
         <ModalCloseButton color={closeButtonColor} />
         <ModalBody minH="5.5rem" pb="1.5rem">
-          <Text as="p" layerStyle={TextLayer.bodyLg400}>
+          <Text as="p" layerStyle={TextLayer.baseRegularNormal}>
             {content}
           </Text>
         </ModalBody>

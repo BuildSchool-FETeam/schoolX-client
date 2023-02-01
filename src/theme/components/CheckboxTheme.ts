@@ -18,7 +18,7 @@ const baseStyle = definePartsStyle({
     _disabled: {
       bgColor:
         CheckBoxTokenColor.cpn_check_box_bg_disable + ' !important',
-      border: BorderToken.cpn_check_box_stroke_Disable + '!important',
+      border: BorderToken.cpn_check_box_stroke_disable + '!important',
 
       '& svg': {
         color: CheckBoxTokenColor.cpn_check_box_content_disable

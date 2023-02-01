@@ -11,6 +11,7 @@ import { PrisButtonStyle } from 'component-ui/buttons/PrisButton/styles';
 import { PrisButtonSecStyle } from 'component-ui/buttons/PrisButtonSec/styles';
 import { TextButtonStyle } from 'component-ui/buttons/TextButton/styles';
 import { CheckboxStyles } from 'theme/components/CheckboxTheme';
+import { dividerTheme } from './components/DividerTheme';
 
 export const chakraTheme = extendTheme({
   config: {
@@ -29,6 +30,7 @@ export const chakraTheme = extendTheme({
     Button: ButtonTheme,
     Tooltip: TooltipTheme,
     Text: TextTheme,
+    Divider: dividerTheme,
 
     PrisButton: PrisButtonStyle,
     PrisButtonSec: PrisButtonSecStyle,

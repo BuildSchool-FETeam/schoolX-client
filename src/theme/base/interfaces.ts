@@ -1,4 +1,4 @@
-export enum FontFamilyEnum {
+export enum FontFamily {
   title = 'title',
   content = 'content'
 }
@@ -34,7 +34,10 @@ export enum ColorToken {
   error_dark = 'error_dark',
   error_darker = 'error_darker',
 
-  text_normal = 'text_normal'
+  text_normal = 'text_normal',
+
+  global_white_56 = 'global_white_56',
+  global_white_16 = 'global_white_16'
 }
 
 export enum ShadowToken {
@@ -86,5 +89,5 @@ export enum CheckBoxTokenColor {
 }
 
 export enum BorderToken {
-  cpn_check_box_stroke_Disable = 'cpn_check_box_stroke_Disable'
+  cpn_check_box_stroke_disable = 'cpn_check_box_stroke_disable'
 }
