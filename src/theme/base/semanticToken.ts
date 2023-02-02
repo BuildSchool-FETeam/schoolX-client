@@ -1,3 +1,4 @@
+import { aliasNavToken } from './aliasTokens/nav';
 import { borders } from './semanticTokens/borderTokens';
 import { btnTokens } from './semanticTokens/buttonToken';
 import { cboxTokens } from './semanticTokens/checkboxToken';
@@ -10,7 +11,9 @@ export const semanticTokens = {
   colors: {
     ...colorTokens,
     ...btnTokens,
-    ...cboxTokens
+    ...cboxTokens,
+
+    ...aliasNavToken
   },
   shadows: shadowsToken,
   borders: borders

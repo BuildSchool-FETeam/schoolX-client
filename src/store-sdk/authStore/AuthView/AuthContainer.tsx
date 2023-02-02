@@ -5,6 +5,11 @@ import { IAuthStore } from '../interfaces';
 
 interface IAuthProps extends PropsWithChildren<any> {}
 
+/**
+ * This component only use for automating authentication
+ * @param props
+ * @returns
+ */
 export const AuthContainer = (props: IAuthProps) => {
   const authStore = useInjection<IAuthStore>(Symbols.IAuthStore);
   authStore.autoLogin();

@@ -1,3 +1,7 @@
-export const Home = () => {
-  return <h3> This is home page </h3>;
+import Navigation from 'layouts/navigations';
+
+const Home = () => {
+  return <Navigation></Navigation>;
 };
+
+export default Home;

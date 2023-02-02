@@ -55,6 +55,10 @@ const textButtons = {
   },
   cpn_txt_btn_primary_background_hover: {
     default: 'rgba(7, 132, 242, .16)'
+  },
+
+  cpn_txt_btn_secondary_content_default: {
+    default: ExtendedColor['darkLevel.100']
   }
 };
 

@@ -1,5 +1,6 @@
 import { defineStyleConfig } from '@chakra-ui/react';
 import { ButtonTokenColor, ColorToken } from 'theme/base/interfaces';
+import { TextLayer } from 'theme/typography/interfaces';
 
 export const fitButtonReusableStyle = {
   color: 'white',
@@ -48,15 +49,18 @@ export const PrisButtonStyle = defineStyleConfig({
   sizes: {
     sm: {
       fontSize: '14px',
-      padding: '8px 12px'
+      padding: '8px 12px',
+      layerStyle: TextLayer.smallBoldNormal
     },
     md: {
       fontSize: '16px',
-      padding: '10px 16px'
+      padding: '10px 16px',
+      layerStyle: TextLayer.baseBoldNormal
     },
     lg: {
       fontSize: '18px',
-      padding: '14px 20px'
+      padding: '14px 20px',
+      layerStyle: TextLayer.mediumBold
     }
   },
 

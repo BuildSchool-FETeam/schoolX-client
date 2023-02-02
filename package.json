@@ -111,7 +111,8 @@
       "indent": "off",
       "quotes": "off",
       "linebreak-style": "off",
-      "no-tabs": "off"
+      "no-tabs": "off",
+      "quote-props": "off"
     }
   },
   "browserslist": {
