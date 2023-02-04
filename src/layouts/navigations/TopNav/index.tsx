@@ -19,10 +19,11 @@ import { ExtendedColor } from 'theme/colors/interfaces';
 interface ITopNavProps {
   userName: string;
   imgSrc: string;
+  notificationCount: number;
 }
 
 const TopNav = (props: ITopNavProps) => {
-  const { userName, imgSrc } = props;
+  const { userName, imgSrc, notificationCount } = props;
 
   const _renderFirstSection = () => {
     return (
@@ -49,7 +50,7 @@ const TopNav = (props: ITopNavProps) => {
           marginLeft={'.8rem'}
           h="1rem"
         ></Divider>
-        <NotificationBell />
+        <NotificationBell notificationCount={notificationCount} />
         <Avatar
           name={userName}
           src={imgSrc}

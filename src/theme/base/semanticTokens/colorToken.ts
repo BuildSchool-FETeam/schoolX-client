@@ -151,6 +151,12 @@ const white = {
   }
 };
 
+const transparent = {
+  global_dark_level_transparent_56: {
+    default: 'rgba(22,28,36,.56)'
+  }
+};
+
 // push the token here as you go
 export const colorTokens = {
   ...primary,
@@ -159,5 +165,6 @@ export const colorTokens = {
   ...error,
   ...info,
   ...textToken,
-  ...white
+  ...white,
+  ...transparent
 };

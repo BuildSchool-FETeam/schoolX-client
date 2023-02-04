@@ -37,7 +37,9 @@ export enum ColorToken {
   text_normal = 'text_normal',
 
   global_white_56 = 'global_white_56',
-  global_white_16 = 'global_white_16'
+  global_white_16 = 'global_white_16',
+
+  global_dark_level_transparent_56 = 'global_dark_level_transparent_56'
 }
 
 export enum ShadowToken {
@@ -92,4 +94,17 @@ export enum CheckBoxTokenColor {
 
 export enum BorderToken {
   cpn_check_box_stroke_disable = 'cpn_check_box_stroke_disable'
+}
+
+export enum ChipToken {
+  cpn_chips_content_00_default = 'cpn_chips_content_00_default',
+  cpn_chips_stroke_00_default = 'cpn_chips_stroke_00_default',
+  cpn_chips_bg0_00_hovered = 'cpn_chips_bg0_00_hovered',
+  cpn_chips_stroke_00_hovered = 'cpn_chips_stroke_00_hovered',
+  cpn_chips_stroke_00_pressed = 'cpn_chips_stroke_00_pressed',
+  cpn_chips_bg0_s0_default = 'cpn_chips_bg0_s0_default',
+  cpn_chips_content_s0_default = 'cpn_chips_content_s0_default',
+  cpn_chips_content_s0_hovered = 'cpn_chips_content_s0_hovered',
+  cpn_chips_icon_bg_s0_hovered = 'cpn_chips_icon_bg_s0_hovered',
+  cpn_chips_bg0_s0_pressed = 'cpn_chips_bg0_s0_pressed'
 }

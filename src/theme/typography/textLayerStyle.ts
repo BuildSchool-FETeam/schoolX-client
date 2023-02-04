@@ -71,7 +71,7 @@ const medium = {
   baseLightNormal: generateContentStyle(16, 300, 24, 1.5),
 
   smallBoldNormal: generateContentStyle(14, 600, 24, 1),
-  smallRegutarNormal: generateContentStyle(14, 400, 24, 1),
+  smallRegularNormal: generateContentStyle(14, 400, 24, 1),
   smallLightNormal: generateContentStyle(14, 300, 24, 1)
 };
 

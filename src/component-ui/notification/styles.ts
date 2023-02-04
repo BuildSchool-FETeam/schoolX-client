@@ -8,9 +8,9 @@ export const styles: IStyleSheet = {
     w: '1.25rem',
     h: '1.25rem',
     bg: ExtendedColor['error_dark.500'],
-    borderRadius: '50%',
+    borderRadius: '5rem',
     position: 'absolute',
     top: '-8px',
-    right: '-14px'
+    right: '-13px'
   }
 };

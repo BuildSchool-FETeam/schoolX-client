@@ -1,0 +1,36 @@
+import { ExtendedColor } from 'theme/colors/interfaces';
+
+export const chipTokenDef = {
+  cpn_chips_content_00_default: {
+    default: ExtendedColor['darkLevel.400']
+  },
+
+  cpn_chips_stroke_00_default: {
+    default: 'rgba(255, 255, 255, 0.48)'
+  },
+  cpn_chips_bg0_00_hovered: {
+    default: ExtendedColor['graphite.100']
+  },
+
+  cpn_chips_stroke_00_hovered: {
+    default: ExtendedColor['darkLevel.400']
+  },
+  cpn_chips_stroke_00_pressed: {
+    default: ExtendedColor['graphite.200']
+  },
+  cpn_chips_bg0_s0_default: {
+    default: ExtendedColor['success_dark.100']
+  },
+  cpn_chips_content_s0_default: {
+    default: ExtendedColor['success_dark.700']
+  },
+  cpn_chips_content_s0_hovered: {
+    default: ExtendedColor['success_dark.900']
+  },
+  cpn_chips_icon_bg_s0_hovered: {
+    default: ExtendedColor['success_dark.300']
+  },
+  cpn_chips_bg0_s0_pressed: {
+    default: ExtendedColor['success_dark.300']
+  }
+};

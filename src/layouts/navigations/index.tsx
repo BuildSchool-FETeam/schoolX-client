@@ -7,12 +7,17 @@ const Navigation = () => {
   const mockData = {
     userName: 'Doraemon',
     imgSrc:
-      'https://img.freepik.com/free-photo/handsome-smiling-young-african-man_171337-9650.jpg'
+      'https://img.freepik.com/free-photo/handsome-smiling-young-african-man_171337-9650.jpg',
+    noticCount: 40
   };
 
   return (
     <Fragment>
-      <TopNav userName={mockData.userName} imgSrc={mockData.imgSrc} />
+      <TopNav
+        userName={mockData.userName}
+        imgSrc={mockData.imgSrc}
+        notificationCount={mockData.noticCount}
+      />
       <LeftNav />
       <NavContent />
     </Fragment>

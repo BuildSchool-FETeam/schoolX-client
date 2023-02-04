@@ -82,10 +82,15 @@ const lightColor = {
   }
 };
 
+const graphite = {
+  100: '#373C43',
+  200: '#637381'
+};
+
 export const globalColor = {
   ...darkColor,
   ...lightColor,
-
+  graphite,
   darkLevel: {
     100: '#F9FAFB',
     200: '#F4F6F8',

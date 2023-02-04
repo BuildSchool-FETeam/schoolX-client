@@ -13,5 +13,9 @@ export const aliasNavToken = {
   },
   cpn_btn_neutral_content_default: {
     default: 'rgba(255, 255, 255, 0.72)'
+  },
+
+  alias_divider_1: {
+    default: 'rgba(255, 255, 255, 0.16)'
   }
 };

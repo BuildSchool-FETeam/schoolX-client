@@ -23,7 +23,7 @@ export enum TextLayer {
   baseRegularNormal = 'baseRegularNormal',
   baseLightNormal = 'baseLightNormal',
   smallBoldNormal = 'smallBoldNormal',
-  smallRegutarNormal = 'smallRegutarNormal',
+  smallRegularNormal = 'smallRegularNormal',
   smallLightNormal = 'smallLightNormal',
 
   smallBoldNormalX = 'smallBoldNormalX',
