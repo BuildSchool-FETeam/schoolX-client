@@ -1,7 +1,7 @@
 import { createIcon } from '@chakra-ui/react';
 
-const SearchNormalIcon = createIcon({
-  displayName: 'SearchNormal',
+export const SearchNormalIconOutlined = createIcon({
+  displayName: 'SearchNormalIconOutlined',
   viewBox: '0 0 24 24',
   path: (
     <>
@@ -10,5 +10,3 @@ const SearchNormalIcon = createIcon({
     </>
   )
 });
-
-export default SearchNormalIcon;

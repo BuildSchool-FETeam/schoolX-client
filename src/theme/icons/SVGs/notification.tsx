@@ -1,7 +1,7 @@
 import { createIcon } from '@chakra-ui/react';
 
-const NotificationIcon = createIcon({
-  displayName: 'Notification',
+export const NotificationIconFilled = createIcon({
+  displayName: 'NotificationIconFilled',
   viewBox: '0 0 24 24',
   path: (
     <>
@@ -10,5 +10,3 @@ const NotificationIcon = createIcon({
     </>
   )
 });
-
-export default NotificationIcon;

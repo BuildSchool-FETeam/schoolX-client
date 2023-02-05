@@ -1,7 +1,7 @@
 import { createIcon } from '@chakra-ui/react';
 
-const CourseIcon = createIcon({
-  displayName: 'CourseIcon',
+export const CourseIconOutlined = createIcon({
+  displayName: 'CourseIconOutlined',
   viewBox: '0 0 24 24',
   path: (
     <>
@@ -12,5 +12,3 @@ const CourseIcon = createIcon({
     </>
   )
 });
-
-export default CourseIcon;

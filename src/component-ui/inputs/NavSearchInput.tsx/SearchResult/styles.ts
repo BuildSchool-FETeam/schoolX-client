@@ -11,6 +11,21 @@ export const styles: IStyleSheet = {
     right: '0px',
     border: '1px solid',
     borderColor: NavTokenColor.alias_divider_1,
-    borderRadius: '.5rem'
+    borderRadius: '.5rem',
+
+    '.chip': {
+      marginRight: '.7rem'
+    }
+  },
+
+  searchItemBox: {
+    p: '.75rem',
+    cursor: 'pointer',
+    borderRadius: '.7rem',
+    border: '1px solid transparent',
+
+    _hover: {
+      borderColor: NavTokenColor.alias_divider_1
+    }
   }
 };

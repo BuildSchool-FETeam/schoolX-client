@@ -10,7 +10,7 @@ import {
 import { useRef, useState } from 'react';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
 import { ExtendedColor } from 'theme/colors/interfaces';
-import SearchNormalIcon from 'theme/icons/SVGs/searchNormal';
+import { SearchNormalIconOutlined } from 'theme/icons/SVGs/searchNormal';
 import { TextLayer } from 'theme/typography/interfaces';
 import SearchResult from './SearchResult';
 import { styles } from './style';
@@ -38,7 +38,9 @@ const NavSearchInput = () => {
         <InputLeftElement
           pointerEvents="none"
           children={
-            <SearchNormalIcon fill={ExtendedColor['darkLevel.500']} />
+            <SearchNormalIconOutlined
+              fill={ExtendedColor['darkLevel.500']}
+            />
           }
         />
         <Input

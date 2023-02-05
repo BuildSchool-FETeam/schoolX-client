@@ -106,5 +106,11 @@ export enum ChipToken {
   cpn_chips_content_s0_default = 'cpn_chips_content_s0_default',
   cpn_chips_content_s0_hovered = 'cpn_chips_content_s0_hovered',
   cpn_chips_icon_bg_s0_hovered = 'cpn_chips_icon_bg_s0_hovered',
-  cpn_chips_bg0_s0_pressed = 'cpn_chips_bg0_s0_pressed'
+  cpn_chips_bg0_s0_pressed = 'cpn_chips_bg0_s0_pressed',
+  cpn_chips_bg0_0e_default = 'cpn_chips_bg0_0e_default',
+  cpn_chips_bg0_se_default = 'cpn_chips_bg0_se_default',
+  cpn_chips_content_se_default = 'cpn_chips_content_se_default',
+  cpn_chips_content_se_hovered = 'cpn_chips_content_se_hovered',
+  cpn_chips_icon_bg_se_hovered = 'cpn_chips_icon_bg_se_hovered',
+  cpn_chips_bg0_se_pressed = 'cpn_chips_bg0_se_pressed'
 }

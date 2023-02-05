@@ -28,6 +28,7 @@ export const TextButtonStyle = defineStyleConfig({
   },
   sizes: {
     sm: {
+      minW: '4rem',
       fontSize: '14px',
       padding: '6px 8px'
     },

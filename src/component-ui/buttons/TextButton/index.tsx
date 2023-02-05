@@ -4,6 +4,7 @@ import {
   useStyleConfig
 } from '@chakra-ui/react';
 import { IStyleSheet } from 'theme/interfaces';
+import { TextLayer } from 'theme/typography/interfaces';
 
 export interface TextButtonProps extends ButtonProps {
   buttonType?: 'no-round' | 'round';
@@ -26,7 +27,12 @@ const TextButton = (props: TextButtonProps) => {
   };
 
   return (
-    <Button __css={themeStyle} {...rest} sx={style.button}>
+    <Button
+      __css={themeStyle}
+      {...rest}
+      sx={style.button}
+      layerStyle={TextLayer.smallBoldNormalX}
+    >
       {children}
     </Button>
   );

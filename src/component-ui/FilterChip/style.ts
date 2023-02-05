@@ -1,52 +1,120 @@
 import { ChipToken } from 'theme/base/interfaces';
+import { ExtendedColor } from 'theme/colors/interfaces';
 import { IStyleSheet } from 'theme/interfaces';
 
-export const styles: IStyleSheet = {
-  filterChip: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '32px',
-    w: '108px',
-    border: '1px solid',
-    cursor: 'pointer',
-    overflow: 'hidden',
-    position: 'relative',
-    borderColor: ChipToken.cpn_chips_stroke_00_default,
+interface IStyleParams {
+  variant: 'base' | 'no-border';
+}
 
-    _hover: {
-      bg: ChipToken.cpn_chips_bg0_00_hovered,
-      borderColor: ChipToken.cpn_chips_stroke_00_hovered
+export const stylesGenerator = (
+  params: IStyleParams
+): IStyleSheet => {
+  const baseVariant: IStyleSheet = {
+    filterChip: {
+      borderColor: ChipToken.cpn_chips_stroke_00_default,
+
+      _hover: {
+        bg: ChipToken.cpn_chips_bg0_00_hovered,
+        borderColor: ChipToken.cpn_chips_stroke_00_hovered
+      },
+
+      _active: {
+        bg: ChipToken.cpn_chips_bg0_00_hovered,
+        borderColor: ChipToken.cpn_chips_stroke_00_pressed
+      }
     },
 
-    _active: {
-      bg: ChipToken.cpn_chips_bg0_00_hovered,
-      borderColor: ChipToken.cpn_chips_stroke_00_pressed
-    }
-  },
-
-  closeBox: {
-    height: '2rem',
-    width: '2rem',
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'absolute',
-    top: '0',
-    transition: 'all .5s ease',
-    bg: ChipToken.cpn_chips_icon_bg_s0_hovered
-  },
-
-  filterChipSelected: {
-    bgColor: ChipToken.cpn_chips_bg0_s0_default,
-    borderColor: ChipToken.cpn_chips_content_s0_hovered,
-
-    _hover: {
+    filterChipSelected: {
+      bgColor: ChipToken.cpn_chips_bg0_s0_default,
       borderColor: ChipToken.cpn_chips_content_s0_hovered,
-      bgColor: ChipToken.cpn_chips_bg0_s0_default
+
+      _hover: {
+        borderColor: ChipToken.cpn_chips_content_s0_hovered,
+        bgColor: ChipToken.cpn_chips_bg0_s0_default
+      },
+
+      _active: {
+        bg: ChipToken.cpn_chips_bg0_s0_pressed,
+        borderColor: ChipToken.cpn_chips_content_s0_hovered
+      }
+    }
+  };
+
+  const noBorderVariant: IStyleSheet = {
+    filterChip: {
+      border: 'none',
+      bg: ChipToken.cpn_chips_bg0_0e_default,
+
+      _hover: {
+        opacity: '.7'
+      },
+
+      _active: {
+        opacity: 1
+      }
     },
 
-    _active: {
-      bg: ChipToken.cpn_chips_bg0_s0_pressed,
-      borderColor: ChipToken.cpn_chips_content_s0_hovered
+    filterChipSelected: {
+      bgColor: ChipToken.cpn_chips_bg0_se_default,
+      border: 'none',
+
+      _hover: {
+        bgColor: ChipToken.cpn_chips_bg0_se_default
+      },
+
+      _active: {
+        bg: ChipToken.cpn_chips_bg0_se_pressed,
+
+        p: {
+          color: ExtendedColor['darkLevel.100']
+        }
+      }
+    },
+
+    closeBox: {
+      bgColor: ChipToken.cpn_chips_icon_bg_se_hovered
     }
+  };
+
+  let selectedVariant = baseVariant;
+
+  switch (params.variant) {
+    case 'no-border':
+      selectedVariant = noBorderVariant;
+      break;
+
+    default:
+      break;
   }
+
+  return {
+    filterChip: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '32px',
+      w: '108px',
+      border: '1px solid',
+      cursor: 'pointer',
+      overflow: 'hidden',
+      position: 'relative',
+      ...selectedVariant.filterChip
+    },
+
+    closeBox: {
+      height: '2rem',
+      width: '2rem',
+      alignItems: 'center',
+      justifyContent: 'center',
+      position: 'absolute',
+      top: '0',
+      transition: 'all .5s ease',
+      bg: ChipToken.cpn_chips_icon_bg_s0_hovered,
+
+      ...selectedVariant.closeBox
+    },
+
+    filterChipSelected: {
+      ...selectedVariant.filterChipSelected
+    }
+  };
 };
