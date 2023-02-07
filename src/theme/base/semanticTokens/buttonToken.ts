@@ -62,8 +62,31 @@ const textButtons = {
   }
 };
 
+const buttonTertiarySet = {
+  cpn_btn_neutral_content_default: {
+    default: 'rgba(255, 255, 255, .72)' // white
+  },
+  cpn_btn_neutral_content_disabled: {
+    default: ExtendedColor['darkLevel.500']
+  },
+
+  cpn_btn_neutral_background_loading: {
+    default: ExtendedColor['darkLevel.600']
+  },
+  cpn_btn_neutral_background_default: {
+    default: ExtendedColor['darkLevel.800']
+  },
+  cpn_btn_neutral_background_hover: {
+    default: ExtendedColor['darkLevel.700']
+  },
+  cpn_btn_neutral_stroke_disable: {
+    default: ExtendedColor['darkLevel.500']
+  }
+};
+
 export const btnTokens = {
   ...primarySet,
   ...secondarySet,
-  ...textButtons
+  ...textButtons,
+  ...buttonTertiarySet
 };

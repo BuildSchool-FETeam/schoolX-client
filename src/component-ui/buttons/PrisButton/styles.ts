@@ -43,6 +43,35 @@ export const PrisButtonStyle = defineStyleConfig({
         color: ButtonTokenColor.cpn_btn_primary_content_disable,
         cursor: 'not-allowed'
       }
+    },
+    tertiary: {
+      backgroundColor:
+        ButtonTokenColor.cpn_btn_neutral_background_default,
+      color: ButtonTokenColor.cpn_btn_neutral_content_default,
+
+      _hover: {
+        bg: ButtonTokenColor.cpn_btn_neutral_background_hover
+      },
+      _loading: {
+        bg:
+          ButtonTokenColor.cpn_btn_neutral_background_loading +
+          ' !important'
+      },
+      _focus: {
+        bg: ButtonTokenColor.cpn_btn_neutral_background_hover,
+        outline: `3px solid`,
+        outlineColor:
+          ButtonTokenColor.cpn_btn_neutral_background_hover,
+        border: '1px solid',
+        borderColor: ButtonTokenColor.cpn_btn_neutral_stroke_disable
+      },
+      _disabled: {
+        bg: 'none',
+        border: '1px solid',
+        borderColor: ButtonTokenColor.cpn_btn_neutral_stroke_disable,
+        cursor: 'not-allowed',
+        color: ButtonTokenColor.cpn_btn_neutral_content_disabled
+      }
     }
   },
 

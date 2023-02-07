@@ -83,8 +83,7 @@ const lightColor = {
 };
 
 const graphite = {
-  100: '#373C43',
-  200: '#637381'
+  100: '#373C43'
 };
 
 export const globalColor = {

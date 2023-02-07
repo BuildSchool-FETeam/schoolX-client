@@ -23,6 +23,7 @@ export const styles: IStyleSheet = {
     cursor: 'pointer',
     borderRadius: '.7rem',
     border: '1px solid transparent',
+    alignItems: 'center',
 
     _hover: {
       borderColor: NavTokenColor.alias_divider_1

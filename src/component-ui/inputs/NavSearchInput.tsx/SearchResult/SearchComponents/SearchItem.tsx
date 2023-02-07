@@ -1,8 +1,10 @@
 import { Box, Center, Flex, Image, Text } from '@chakra-ui/react';
 import Dot from 'component-ui/Badges/Dot';
+import PrisButton from 'component-ui/buttons/PrisButton';
 import { ExtendedColor } from 'theme/colors/interfaces';
 import { ArticleIconOutlined } from 'theme/icons/SVGs/article';
 import { ClockIconOutlined } from 'theme/icons/SVGs/clock';
+import CloseIcon from 'theme/icons/SVGs/close';
 import { CourseIconOutlined } from 'theme/icons/SVGs/course';
 import { UserIconOutlined } from 'theme/icons/SVGs/user';
 import { TextLayer } from 'theme/typography/interfaces';
@@ -71,7 +73,7 @@ const SearchItem = (props: ISearchItemProps) => {
       >
         {_renderThumbnail()}
       </Center>
-      <Box ml={'0.75rem'}>
+      <Box ml={'0.75rem'} mr="auto">
         <Text
           color={ExtendedColor['darkLevel.300']}
           layerStyle={TextLayer.baseRegularNormal}
@@ -89,6 +91,14 @@ const SearchItem = (props: ISearchItemProps) => {
           </Text>
         </Flex>
       </Box>
+      <PrisButton
+        variant={'tertiary'}
+        boxSize="2.25rem"
+        borderRadius={'50%'}
+        minWidth="0"
+      >
+        <CloseIcon fill={'currentcolor'} boxSize="1.25rem" />
+      </PrisButton>
     </Flex>
   );
 };

@@ -11,7 +11,7 @@ export const styles: IStyleSheet = {
   },
   shortcut: {
     border: '1px solid',
-    w: '40px',
+    w: '70px',
     h: '20px',
     borderColor: NavTokenColor.cpn_shortcut_stroke,
     borderRadius: '4px',

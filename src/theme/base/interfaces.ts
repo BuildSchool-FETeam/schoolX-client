@@ -81,7 +81,14 @@ export enum ButtonTokenColor {
   cpn_txt_btn_primary_content_disabled = 'cpn_txt_btn_primary_content_disabled',
   cpn_txt_btn_primary_background_hover = 'cpn_txt_btn_primary_background_hover',
 
-  cpn_txt_btn_secondary_content_default = 'cpn_txt_btn_secondary_content_default'
+  cpn_txt_btn_secondary_content_default = 'cpn_txt_btn_secondary_content_default',
+
+  cpn_btn_neutral_content_default = 'cpn_btn_neutral_content_default',
+  cpn_btn_neutral_content_disabled = 'cpn_btn_neutral_content_disabled',
+  cpn_btn_neutral_background_default = 'cpn_btn_neutral_background_default',
+  cpn_btn_neutral_background_hover = 'cpn_btn_neutral_background_hover',
+  cpn_btn_neutral_stroke_disable = 'cpn_btn_neutral_stroke_disable',
+  cpn_btn_neutral_background_loading = 'cpn_btn_neutral_background_loading'
 }
 
 export enum CheckBoxTokenColor {

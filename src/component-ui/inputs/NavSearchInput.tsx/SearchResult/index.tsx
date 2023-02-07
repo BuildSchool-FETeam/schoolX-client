@@ -19,39 +19,58 @@ interface ISearchResultProps {
    * InputRef is using to get input width
    */
   inputRef: MutableRefObject<HTMLInputElement | null>;
+  isSearching: boolean;
 }
 
 const SearchResult = (props: ISearchResultProps) => {
-  const { isShow, inputRef } = props;
+  const { isShow, inputRef, isSearching } = props;
   const _resultWidth = inputRef.current?.offsetWidth;
 
-  const chipArrays = [
-    {
-      icon: <CourseIconOutlined />,
-      title: 'Courses'
-    },
-    {
-      icon: <ArticleIconOutlined />,
-      title: 'Articles'
-    },
-    {
-      icon: <UserIconOutlined />,
-      title: 'People'
-    }
-  ];
+  const _renderFilterChips = () => {
+    const chipArrays = [
+      {
+        icon: <CourseIconOutlined />,
+        title: 'Courses'
+      },
+      {
+        icon: <ArticleIconOutlined />,
+        title: 'Articles'
+      },
+      {
+        icon: <UserIconOutlined />,
+        title: 'People'
+      }
+    ];
+    return (
+      <Flex m="1rem">
+        {chipArrays.map((chip) => (
+          <FilteredChip
+            Icon={chip.icon}
+            title={chip.title}
+            className="chip"
+            key={chip.title}
+          />
+        ))}
+      </Flex>
+    );
+  };
 
   const _renderRecentSearch = () => {
     return (
-      <Box>
-        <Flex
-          alignItems={'center'}
-          justifyContent="space-between"
-          mt="1rem"
-          w="100%"
-        >
-          <Text layerStyle={TextLayer.mediumBold}>Recent Search</Text>
-          <TextButton> More </TextButton>
-        </Flex>
+      <Box mx="1rem">
+        {!isSearching && (
+          <Flex
+            alignItems={'center'}
+            justifyContent="space-between"
+            mt="1rem"
+            w="100%"
+          >
+            <Text layerStyle={TextLayer.mediumBold}>
+              Recent Search
+            </Text>
+            <TextButton> More </TextButton>
+          </Flex>
+        )}
         <Flex flexDir={'column'} mt="1.2rem">
           {recentItemData.map((item) => (
             <SearchItem
@@ -73,6 +92,7 @@ const SearchResult = (props: ISearchResultProps) => {
           justifyContent="space-between"
           mt="1rem"
           w="100%"
+          p="1rem"
         >
           <Text layerStyle={TextLayer.mediumBold}>My Courses</Text>
           <TextButton> More </TextButton>
@@ -86,22 +106,15 @@ const SearchResult = (props: ISearchResultProps) => {
     <Flex
       w={_resultWidth}
       sx={styles.resultBox}
-      p="1rem"
       flexDir={'column'}
+      pb="1rem"
     >
-      <Flex mb="1rem">
-        {chipArrays.map((chip) => (
-          <FilteredChip
-            Icon={chip.icon}
-            title={chip.title}
-            className="chip"
-            key={chip.title}
-          />
-        ))}
-      </Flex>
-      <Divider variant={'v1'} />
+      {_renderFilterChips()}
+      <Box px="1rem">
+        <Divider variant={'v1'} />
+      </Box>
       {_renderRecentSearch()}
-      {_renderMyCourses()}
+      {!isSearching && _renderMyCourses()}
     </Flex>
   ) : null;
 };

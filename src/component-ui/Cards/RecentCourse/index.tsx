@@ -16,7 +16,6 @@ export interface ICourseCardProps {
 const RecentCourse = (props: ICourseCardProps) => {
   const { imgUrl, title, timeByHour, className, onClick } = props;
   const _onClick = () => {
-    console.log('Hello');
     onClick && onClick();
   };
 
@@ -32,7 +31,7 @@ const RecentCourse = (props: ICourseCardProps) => {
         src={imgUrl}
         w="12.5rem"
         h="7rem"
-        borderRadius={'.7rem'}
+        borderTopRadius={'.7rem'}
         objectFit="cover"
       />
       <Box id="recent-course-information" m=".75rem">

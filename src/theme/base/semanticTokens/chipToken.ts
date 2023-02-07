@@ -16,7 +16,7 @@ export const chipTokenDef = {
     default: ExtendedColor['darkLevel.400']
   },
   cpn_chips_stroke_00_pressed: {
-    default: ExtendedColor['graphite.200']
+    default: ExtendedColor['darkLevel.600']
   },
   cpn_chips_bg0_s0_default: {
     default: ExtendedColor['success_dark.100']

@@ -4,6 +4,7 @@ import {
   useStyleConfig
 } from '@chakra-ui/react';
 import { IStyleSheet } from 'theme/interfaces';
+import { TextLayer } from 'theme/typography/interfaces';
 
 export interface FittingButtonProps extends ButtonProps {
   buttonType?: 'no-round' | 'round';
@@ -13,20 +14,35 @@ const PrisButton = (props: FittingButtonProps) => {
   const {
     buttonType = 'no-round',
     variant,
-    size,
+    size = 'sm',
     children,
+    borderRadius,
     ...rest
   } = props;
   const themeStyle = useStyleConfig('PrisButton', { size, variant });
 
   const style: IStyleSheet = {
     button: {
-      borderRadius: buttonType === 'no-round' ? '.5rem' : '10rem'
+      borderRadius:
+        borderRadius ||
+        (buttonType === 'no-round' ? '.5rem' : '10rem')
     }
   };
 
+  const layerStyleOnSize: { [key: string]: TextLayer } = {
+    sm: TextLayer.smallBoldNormalX,
+    md: TextLayer.smallBoldNormal,
+    lg: TextLayer.baseBoldNormal,
+    xlg: TextLayer.mediumBold
+  };
+
   return (
-    <Button __css={themeStyle} {...rest} sx={style.button}>
+    <Button
+      __css={themeStyle}
+      sx={style.button}
+      layerStyle={layerStyleOnSize[size as string]}
+      {...rest}
+    >
       {children}
     </Button>
   );

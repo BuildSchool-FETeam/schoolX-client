@@ -69,6 +69,5 @@ export enum ExtendedColor {
   'darkLevel.800' = 'darkLevel.800',
   'darkLevel.900' = 'darkLevel.900',
 
-  'graphite.100' = 'graphite.100',
-  'graphite.200' = 'graphite.200'
+  'graphite.100' = 'graphite.100'
 }
