@@ -12,6 +12,8 @@ export const styles: IStyleSheet = {
     border: '1px solid',
     borderColor: NavTokenColor.alias_divider_1,
     borderRadius: '.5rem',
+    flexDir: 'column',
+    boxShadow: '-40px 40px 80px -8px rgba(0, 0, 0, 0.24)',
 
     '.chip': {
       marginRight: '.7rem'

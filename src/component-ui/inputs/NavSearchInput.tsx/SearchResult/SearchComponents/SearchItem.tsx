@@ -3,7 +3,6 @@ import Dot from 'component-ui/Badges/Dot';
 import PrisButton from 'component-ui/buttons/PrisButton';
 import { ExtendedColor } from 'theme/colors/interfaces';
 import { ArticleIconOutlined } from 'theme/icons/SVGs/article';
-import { ClockIconOutlined } from 'theme/icons/SVGs/clock';
 import CloseIcon from 'theme/icons/SVGs/close';
 import { CourseIconOutlined } from 'theme/icons/SVGs/course';
 import { UserIconOutlined } from 'theme/icons/SVGs/user';
@@ -20,10 +19,17 @@ export enum SearchItemType {
 export interface ISearchItemProps {
   imgUrl?: string;
   type?: SearchItemType;
+  title: string;
+  timeByMinutes: number;
 }
 
 const SearchItem = (props: ISearchItemProps) => {
-  const { imgUrl, type = SearchItemType.RECENT } = props;
+  const {
+    imgUrl,
+    type = SearchItemType.RECENT,
+    title,
+    timeByMinutes
+  } = props;
 
   const _renderThumbnail = () => {
     if (imgUrl) {
@@ -43,9 +49,6 @@ const SearchItem = (props: ISearchItemProps) => {
       };
 
       switch (type) {
-        case SearchItemType.RECENT:
-          thumbnailIcon = <ClockIconOutlined {...defaultProps} />;
-          break;
         case SearchItemType.ARTICLE:
           thumbnailIcon = <ArticleIconOutlined {...defaultProps} />;
           break;
@@ -54,9 +57,6 @@ const SearchItem = (props: ISearchItemProps) => {
           break;
         case SearchItemType.PEOPLE:
           thumbnailIcon = <UserIconOutlined {...defaultProps} />;
-          break;
-        default:
-          thumbnailIcon = <ClockIconOutlined {...defaultProps} />;
           break;
       }
 
@@ -78,7 +78,7 @@ const SearchItem = (props: ISearchItemProps) => {
           color={ExtendedColor['darkLevel.300']}
           layerStyle={TextLayer.baseRegularNormal}
         >
-          Concept in finance
+          {title}
         </Text>
         <Flex alignItems={'center'}>
           <Dot />
@@ -87,7 +87,7 @@ const SearchItem = (props: ISearchItemProps) => {
             layerStyle={TextLayer.smallRegularNormal}
             ml="5px"
           >
-            35 mins
+            {timeByMinutes} mins
           </Text>
         </Flex>
       </Box>

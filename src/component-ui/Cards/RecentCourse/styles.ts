@@ -1,3 +1,5 @@
+import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
+import { ColorToken, ShadowToken } from 'theme/base/interfaces';
 import { IStyleSheet } from 'theme/interfaces';
 
 export const styles: IStyleSheet = {
@@ -7,7 +9,31 @@ export const styles: IStyleSheet = {
 
     '.recentCourseItem': {
       ml: '.85rem',
-      flex: '0 0 12.5rem'
+      flex: '0 0 15rem',
+      borderRadius: '.7rem',
+      cursor: 'pointer',
+      borderColor: NavTokenColor.alias_divider_1,
+      overflow: 'visible',
+      position: 'relative',
+      height: '5.45rem',
+
+      _hover: {
+        h2: {
+          color: ColorToken.primary_light
+        },
+        _after: {
+          content: '""',
+          height: '96%',
+          w: '96%',
+          position: 'absolute',
+          top: '.78rem',
+          left: 0,
+          backgroundColor: ColorToken.fake_shadow_background_info,
+          zIndex: '-1',
+          boxShadow: ShadowToken.shadow_color_infor,
+          borderRadius: '.7rem'
+        }
+      }
     }
   }
 };

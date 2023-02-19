@@ -4,7 +4,7 @@ import { btnTokens } from './semanticTokens/buttonToken';
 import { cboxTokens } from './semanticTokens/checkboxToken';
 import { chipTokenDef } from './semanticTokens/chipToken';
 import { colorTokens } from './semanticTokens/colorToken';
-import { shadowsToken } from './semanticTokens/shadowsToken';
+import { shadowsTokenDefinition } from './semanticTokens/shadowsToken';
 import { typographyTokens } from './semanticTokens/typography';
 
 export const semanticTokens = {
@@ -17,6 +17,6 @@ export const semanticTokens = {
     ...aliasNavToken,
     ...chipTokenDef
   },
-  shadows: shadowsToken,
+  shadows: shadowsTokenDefinition,
   borders: borders
 };

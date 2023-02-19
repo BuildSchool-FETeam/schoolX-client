@@ -39,7 +39,8 @@ export enum ColorToken {
   global_white_56 = 'global_white_56',
   global_white_16 = 'global_white_16',
 
-  global_dark_level_transparent_56 = 'global_dark_level_transparent_56'
+  global_dark_level_transparent_56 = 'global_dark_level_transparent_56',
+  fake_shadow_background_info = 'fake_shadow_background_info'
 }
 
 export enum ShadowToken {
@@ -58,7 +59,8 @@ export enum ShadowToken {
   color_primary = 'color_primary',
   color_success = 'color_success',
 
-  checkbox_default_hover = 'checkbox_default_hover'
+  checkbox_default_hover = 'checkbox_default_hover',
+  shadow_color_infor = 'shadow_color_infor'
 }
 
 export enum ButtonTokenColor {

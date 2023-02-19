@@ -6,7 +6,7 @@ import {
   CheckBoxTokenColor,
   ColorToken
 } from 'theme/base/interfaces';
-import { shadowsToken } from 'theme/base/semanticTokens/shadowsToken';
+import { shadowsTokenDefinition } from 'theme/base/semanticTokens/shadowsToken';
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(checkboxAnatomy.keys);
@@ -29,7 +29,7 @@ const baseStyle = definePartsStyle({
       border: '1px solid',
       borderColor:
         CheckBoxTokenColor.cpn_check_box_stroke_defaultHover,
-      shadow: shadowsToken.checkbox_default_hover,
+      shadow: shadowsTokenDefinition.checkbox_default_hover,
 
       _checked: {
         bgColor: CheckBoxTokenColor.cpn_check_box_bg_checkmark

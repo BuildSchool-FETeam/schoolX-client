@@ -18,6 +18,7 @@ const RecentCoursesSlider = (props: IRecentCoursesSliderProps) => {
   return (
     <Flex
       w={width}
+      minH="6.8rem"
       sx={styles.root}
       ref={sliderRef}
       {...draggableScroll}

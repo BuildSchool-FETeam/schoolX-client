@@ -71,9 +71,11 @@ const SearchResult = (props: ISearchResultProps) => {
             <TextButton> More </TextButton>
           </Flex>
         )}
-        <Flex flexDir={'column'} mt="1.2rem">
+        <Flex flexDir={'column'} mt="1rem">
           {recentItemData.map((item) => (
             <SearchItem
+              title={item.title}
+              timeByMinutes={item.timeByMinutes}
               key={recentItemData.indexOf(item)}
               imgUrl={item.url}
               type={item.type as SearchItemType}
@@ -90,7 +92,7 @@ const SearchResult = (props: ISearchResultProps) => {
         <Flex
           alignItems={'center'}
           justifyContent="space-between"
-          mt="1rem"
+          mt=".5rem"
           w="100%"
           p="1rem"
         >
@@ -103,12 +105,7 @@ const SearchResult = (props: ISearchResultProps) => {
   };
 
   return isShow ? (
-    <Flex
-      w={_resultWidth}
-      sx={styles.resultBox}
-      flexDir={'column'}
-      pb="1rem"
-    >
+    <Flex w={_resultWidth} sx={styles.resultBox}>
       {_renderFilterChips()}
       <Box px="1rem">
         <Divider variant={'v1'} />

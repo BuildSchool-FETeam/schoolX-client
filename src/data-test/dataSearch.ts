@@ -6,19 +6,27 @@ import img4 from 'theme/icons/Images/image-demo-4.jpg';
 export const recentItemData = [
   {
     url: img1,
-    type: 'RECENT'
+    type: 'RECENT',
+    title: 'Concept in finance',
+    timeByMinutes: 20
   },
   {
     url: '',
-    type: 'COURSE'
+    type: 'COURSE',
+    title: 'Video production',
+    timeByMinutes: 35
   },
   {
     url: img2,
-    type: 'COURSE'
+    type: 'COURSE',
+    title: 'Frontend - beyond the basic',
+    timeByMinutes: 18
   },
   {
     url: '',
-    type: 'ARTICLE'
+    type: 'ARTICLE',
+    title: 'Nodejs - js in serverside',
+    timeByMinutes: 20
   }
 ];
 

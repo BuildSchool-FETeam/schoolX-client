@@ -1,7 +1,6 @@
 import { Box, chakra, Flex, Image, Text } from '@chakra-ui/react';
 import Dot from 'component-ui/Badges/Dot';
 import { truncate } from 'lodash';
-import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
 import { ExtendedColor } from 'theme/colors/interfaces';
 import { TextLayer } from 'theme/typography/interfaces';
 
@@ -20,30 +19,23 @@ const RecentCourse = (props: ICourseCardProps) => {
   };
 
   return (
-    <Box
-      onClick={_onClick}
-      border="1px solid"
-      borderColor={NavTokenColor.alias_divider_1}
-      borderRadius={'.7rem'}
-      className={className}
-    >
+    <Flex onClick={_onClick} border="1px solid" className={className}>
       <Image
         src={imgUrl}
-        w="12.5rem"
-        h="7rem"
-        borderTopRadius={'.7rem'}
+        boxSize="5.375rem"
+        borderLeftRadius={'.5rem'}
         objectFit="cover"
       />
-      <Box id="recent-course-information" m=".75rem">
-        <Text layerStyle={TextLayer.smallBoldNormal}>
-          {truncate(title, { length: 45, separator: /\s/ })}
+      <Box id="recent-course-information" m=".4rem" ml=".75rem">
+        <Text layerStyle={TextLayer.smallBoldNormal} as="h2">
+          {truncate(title, { length: 30, separator: /\s/ })}
         </Text>
-        <Flex alignItems={'center'} mt=".5rem">
+        <Flex alignItems={'center'} mt=".3rem">
           <Dot />
           <Text
             layerStyle={TextLayer.smallRegularNormalX}
             color={ExtendedColor['darkLevel.600']}
-            ml="4px"
+            ml="6px"
           >
             Seen{' '}
             <chakra.b color={ExtendedColor['darkLevel.100']}>
@@ -53,7 +45,7 @@ const RecentCourse = (props: ICourseCardProps) => {
           </Text>
         </Flex>
       </Box>
-    </Box>
+    </Flex>
   );
 };
 
