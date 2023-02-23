@@ -29,11 +29,13 @@ const NotificationBell = (props: INotificationBellProps) => {
         ml={'1.25rem'}
         fill={NavTokenColor.cpn_btn_neutral_content_default}
       />
-      <Flex sx={noticCountStyles}>
-        <Text layerStyle={TextLayer.smallBoldNormalX}>
-          {notificationCount}
-        </Text>
-      </Flex>
+      {notificationCount > 0 && (
+        <Flex sx={noticCountStyles}>
+          <Text layerStyle={TextLayer.smallBoldNormalX}>
+            {notificationCount}
+          </Text>
+        </Flex>
+      )}
     </Box>
   );
 };

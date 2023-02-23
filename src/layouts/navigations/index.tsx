@@ -5,10 +5,10 @@ import TopNav from './TopNav';
 
 const Navigation = () => {
   const mockData = {
-    userName: 'Doraemon',
+    userName: 'Katarina Gomez',
     imgSrc:
-      'https://img.freepik.com/free-photo/handsome-smiling-young-african-man_171337-9650.jpg',
-    noticCount: 40
+      'https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/08/woman-portrait-smile-dimples-1296x728-body2-affiliative-1296x728.jpg?w=1155&h=1528',
+    noticCount: 0
   };
 
   return (

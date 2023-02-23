@@ -1,20 +1,13 @@
 import { navStyle } from './styles';
-import {
-  Avatar,
-  AvatarBadge,
-  Divider,
-  Flex,
-  Img
-} from '@chakra-ui/react';
+import { Divider, Flex, Img } from '@chakra-ui/react';
 import DraggableIcon from 'theme/icons/SVGs/draggable';
 import Section from 'component-ui/factoryComponent/SectionFactory';
 import Nav from 'component-ui/factoryComponent/NavFactory';
 import LogoNav from 'theme/icons/Images/LogoNav.png';
 import NavSearchInput from 'component-ui/inputs/NavSearchInput.tsx';
 import PrisButton from 'component-ui/buttons/PrisButton';
-import NotificationBell from 'component-ui/notification/NotificationBell';
-import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
-import { ExtendedColor } from 'theme/colors/interfaces';
+import NotificationBell from 'layouts/navigations/TopNav/components/NotificationBell';
+import TopBarAvatar from './components/TopBarAvatar';
 
 interface ITopNavProps {
   userName: string;
@@ -51,20 +44,7 @@ const TopNav = (props: ITopNavProps) => {
           h="1rem"
         ></Divider>
         <NotificationBell notificationCount={notificationCount} />
-        <Avatar
-          name={userName}
-          src={imgSrc}
-          ml="1.5rem"
-          boxSize={'40px'}
-          cursor="pointer"
-        >
-          <AvatarBadge
-            borderColor={NavTokenColor.alias_neutral_bg_2}
-            bg={ExtendedColor['success_dark.500']}
-            boxSize="1rem"
-            border="2px solid"
-          />
-        </Avatar>
+        <TopBarAvatar userName={userName} imgSrc={imgSrc} />
       </Flex>
     );
   };

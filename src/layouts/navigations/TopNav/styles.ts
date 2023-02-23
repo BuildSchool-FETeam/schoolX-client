@@ -9,7 +9,7 @@ export const navStyle: IStyleSheet = {
     width: '100vw',
     display: 'flex',
     alignItems: 'center',
-    px: '1.75rem',
+    px: '1rem',
     justifyContent: 'space-between'
   },
 

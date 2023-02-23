@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Text } from '@chakra-ui/react';
+import { Box, Collapse, Divider, Flex, Text } from '@chakra-ui/react';
 import TextButton from 'component-ui/buttons/TextButton';
 import RecentCoursesSlider from 'component-ui/Cards/RecentCourse/RecentCoursesSlider';
 import FilteredChip from 'component-ui/FilterChip';
@@ -104,16 +104,18 @@ const SearchResult = (props: ISearchResultProps) => {
     );
   };
 
-  return isShow ? (
-    <Flex w={_resultWidth} sx={styles.resultBox}>
-      {_renderFilterChips()}
-      <Box px="1rem">
-        <Divider variant={'v1'} />
-      </Box>
-      {_renderRecentSearch()}
-      {!isSearching && _renderMyCourses()}
-    </Flex>
-  ) : null;
+  return (
+    <Collapse in={isShow} unmountOnExit>
+      <Flex w={_resultWidth} sx={styles.resultBox}>
+        {_renderFilterChips()}
+        <Box px="1rem">
+          <Divider variant={'v1'} />
+        </Box>
+        {_renderRecentSearch()}
+        {!isSearching && _renderMyCourses()}
+      </Flex>
+    </Collapse>
+  );
 };
 
 export default SearchResult;
