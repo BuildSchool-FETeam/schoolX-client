@@ -17,5 +17,14 @@ export const aliasNavToken = {
 
   alias_divider_1: {
     default: 'rgba(255, 255, 255, 0.16)'
+  },
+  cpn_nav_ver_bg_active: {
+    default: 'rgba(7, 132, 242, .16)'
+  },
+  cpn_nav_ver_content_active: {
+    default: ExtendedColor['primary_dark.300']
+  },
+  alias_divider_decor: {
+    default: ExtendedColor['primary_dark.500']
   }
 };

@@ -1,5 +1,9 @@
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
-import { ColorToken, ShadowToken } from 'theme/base/interfaces';
+import {
+  ColorToken,
+  ShadowToken,
+  TypoToken
+} from 'theme/base/interfaces';
 import { IStyleSheet } from 'theme/interfaces';
 
 export const styles: IStyleSheet = {
@@ -19,7 +23,7 @@ export const styles: IStyleSheet = {
 
       _hover: {
         h2: {
-          color: ColorToken.primary_light
+          color: TypoToken.type_link_focus
         },
         _after: {
           content: '""',

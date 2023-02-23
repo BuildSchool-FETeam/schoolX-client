@@ -12,6 +12,7 @@ import { PrisButtonSecStyle } from 'component-ui/buttons/PrisButtonSec/styles';
 import { TextButtonStyle } from 'component-ui/buttons/TextButton/styles';
 import { CheckboxStyles } from 'theme/components/CheckboxTheme';
 import { dividerTheme } from './components/DividerTheme';
+import { radioTheme } from './components/RadioTheme';
 
 export const chakraTheme = extendTheme({
   config: {
@@ -36,6 +37,7 @@ export const chakraTheme = extendTheme({
     PrisButtonSec: PrisButtonSecStyle,
     TextButton: TextButtonStyle,
 
-    Checkbox: CheckboxStyles
+    Checkbox: CheckboxStyles,
+    Radio: radioTheme
   }
 });

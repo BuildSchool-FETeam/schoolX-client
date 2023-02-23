@@ -1,6 +1,7 @@
 import { Box, chakra, Flex, Image, Text } from '@chakra-ui/react';
 import Dot from 'component-ui/Badges/Dot';
 import { truncate } from 'lodash';
+import { TypoToken } from 'theme/base/interfaces';
 import { ExtendedColor } from 'theme/colors/interfaces';
 import { TextLayer } from 'theme/typography/interfaces';
 
@@ -27,14 +28,18 @@ const RecentCourse = (props: ICourseCardProps) => {
         objectFit="cover"
       />
       <Box id="recent-course-information" m=".4rem" ml=".75rem">
-        <Text layerStyle={TextLayer.smallBoldNormal} as="h2">
+        <Text
+          layerStyle={TextLayer.smallBoldNormal}
+          color={TypoToken.type_neutral_default}
+          as="h2"
+        >
           {truncate(title, { length: 30, separator: /\s/ })}
         </Text>
         <Flex alignItems={'center'} mt=".3rem">
           <Dot />
           <Text
             layerStyle={TextLayer.smallRegularNormalX}
-            color={ExtendedColor['darkLevel.600']}
+            color={TypoToken.type_neutral_disable}
             ml="6px"
           >
             Seen{' '}

@@ -1,6 +1,7 @@
 import { Box, Center, Flex, Image, Text } from '@chakra-ui/react';
 import Dot from 'component-ui/Badges/Dot';
 import PrisButton from 'component-ui/buttons/PrisButton';
+import { TypoToken } from 'theme/base/interfaces';
 import { ExtendedColor } from 'theme/colors/interfaces';
 import { ArticleIconOutlined } from 'theme/icons/SVGs/article';
 import CloseIcon from 'theme/icons/SVGs/close';
@@ -75,7 +76,7 @@ const SearchItem = (props: ISearchItemProps) => {
       </Center>
       <Box ml={'0.75rem'} mr="auto">
         <Text
-          color={ExtendedColor['darkLevel.300']}
+          color={TypoToken.type_neutral_default}
           layerStyle={TextLayer.baseRegularNormal}
         >
           {title}
@@ -83,7 +84,7 @@ const SearchItem = (props: ISearchItemProps) => {
         <Flex alignItems={'center'}>
           <Dot />
           <Text
-            color={ExtendedColor['darkLevel.600']}
+            color={TypoToken.type_neutral_disable}
             layerStyle={TextLayer.smallRegularNormal}
             ml="5px"
           >

@@ -6,6 +6,7 @@ import { chipTokenDef } from './semanticTokens/chipToken';
 import { colorTokens } from './semanticTokens/colorToken';
 import { shadowsTokenDefinition } from './semanticTokens/shadowsToken';
 import { typographyTokens } from './semanticTokens/typography';
+import { typoDef } from './semanticTokens/typoToken';
 
 export const semanticTokens = {
   fonts: typographyTokens,
@@ -15,7 +16,8 @@ export const semanticTokens = {
     ...cboxTokens,
 
     ...aliasNavToken,
-    ...chipTokenDef
+    ...chipTokenDef,
+    ...typoDef
   },
   shadows: shadowsTokenDefinition,
   borders: borders

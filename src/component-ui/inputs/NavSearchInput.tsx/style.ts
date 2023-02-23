@@ -1,13 +1,13 @@
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
-import { ExtendedColor } from 'theme/colors/interfaces';
+import { TypoToken } from 'theme/base/interfaces';
 import { IStyleSheet } from 'theme/interfaces';
 
 export const styles: IStyleSheet = {
   input: {
     size: 'md',
     minW: '35rem',
-    _placeholder: { color: ExtendedColor['darkLevel.500'] },
-    color: ExtendedColor['darkLevel.500']
+    _placeholder: { color: TypoToken.type_placeholder },
+    color: TypoToken.type_neutral_default
   },
   shortcut: {
     border: '1px solid',

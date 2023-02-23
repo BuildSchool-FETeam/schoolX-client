@@ -16,6 +16,7 @@ interface IProfilePanelSettingNavProps {
   title: string;
   subTitle: string;
   className?: string;
+  onClick?: () => void;
 }
 
 const ProfilePanelSettingNav = (
@@ -26,7 +27,8 @@ const ProfilePanelSettingNav = (
     Icon,
     title,
     subTitle,
-    className
+    className,
+    onClick
   } = props;
 
   let settingNavStyles = styles.settingNav;
@@ -45,7 +47,11 @@ const ProfilePanelSettingNav = (
   };
 
   return (
-    <Flex sx={settingNavStyles} className={className}>
+    <Flex
+      sx={settingNavStyles}
+      className={className}
+      onClick={onClick}
+    >
       <Icon {...iconStyles} />
       <Box mr="auto">
         <Text as={'h4'} layerStyle={TextLayer.baseRegularNormal}>

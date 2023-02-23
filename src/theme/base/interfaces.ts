@@ -123,3 +123,11 @@ export enum ChipToken {
   cpn_chips_icon_bg_se_hovered = 'cpn_chips_icon_bg_se_hovered',
   cpn_chips_bg0_se_pressed = 'cpn_chips_bg0_se_pressed'
 }
+
+export enum TypoToken {
+  type_neutral_default = 'type_neutral_default',
+  type_neutral_disable = 'type_neutral_disable',
+  type_link_focus = 'type_link_focus',
+  type_placeholder = 'type_placeholder',
+  type_neutral_hard = 'type_neutral_hard'
+}

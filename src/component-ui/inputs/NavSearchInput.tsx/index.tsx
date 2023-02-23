@@ -8,7 +8,7 @@ import {
   Text,
   useOutsideClick
 } from '@chakra-ui/react';
-import { useRef, useState } from 'react';
+import { ChangeEvent, useRef, useState } from 'react';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
 import { ExtendedColor } from 'theme/colors/interfaces';
 import { SearchNormalIconOutlined } from 'theme/icons/SVGs/searchNormal';
@@ -16,12 +16,14 @@ import { TextLayer } from 'theme/typography/interfaces';
 import SearchResult from './SearchResult';
 import { styles } from './style';
 import HotKeys from 'react-hot-keys';
+import { TypoToken } from 'theme/base/interfaces';
 
 const DELAY_SEARCH_TIME = 2000; // 2 seconds
 
 const NavSearchInput = () => {
   const [isOpenResult, setIsOpenResult] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
+  const [val, setVal] = useState('');
   const _searchInputRef = useRef<HTMLInputElement>(null);
 
   const compRef = useRef(null);
@@ -32,7 +34,7 @@ const NavSearchInput = () => {
     }
   });
 
-  const _renderShortCutIcon = () => {
+  const _renderShortcutIcon = () => {
     return (
       <Flex sx={styles.shortcut}>
         <Text
@@ -46,7 +48,8 @@ const NavSearchInput = () => {
   };
 
   let timeoutId: NodeJS.Timeout | null = null;
-  const _onLazyChange = () => {
+  const _onLazyChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setVal(e.currentTarget.value);
     if (timeoutId) {
       clearTimeout(timeoutId);
     }
@@ -73,7 +76,11 @@ const NavSearchInput = () => {
             pointerEvents="none"
             children={
               <SearchNormalIconOutlined
-                fill={ExtendedColor['darkLevel.500']}
+                fill={
+                  val
+                    ? TypoToken.type_neutral_default
+                    : TypoToken.type_placeholder
+                }
               />
             }
           />
@@ -82,13 +89,14 @@ const NavSearchInput = () => {
             placeholder="Search"
             sx={styles.input}
             ref={_searchInputRef}
-            onChange={() => _onLazyChange()}
+            onChange={(e) => _onLazyChange(e)}
             onFocus={() => setIsOpenResult(true)}
+            value={val}
           />
           <InputRightElement
             w="70px"
             pointerEvents="none"
-            children={_renderShortCutIcon()}
+            children={_renderShortcutIcon()}
           />
         </InputGroup>
         <SearchResult
