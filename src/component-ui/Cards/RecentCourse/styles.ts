@@ -1,12 +1,12 @@
+import { defineStyle } from '@chakra-ui/react';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
 import {
   ColorToken,
   ShadowToken,
   TypoToken
 } from 'theme/base/interfaces';
-import { IStyleSheet } from 'theme/interfaces';
 
-export const styles: IStyleSheet = {
+export const styles = defineStyle({
   root: {
     overflow: 'hidden',
     cursor: 'grab',
@@ -40,4 +40,4 @@ export const styles: IStyleSheet = {
       }
     }
   }
-};
+});

@@ -19,5 +19,12 @@ export const typoDef = {
 
   type_neutral_hard: {
     default: ExtendedColor['darkLevel.200']
+  },
+
+  type_neutral_medium: {
+    default: ExtendedColor['darkLevel.300']
+  },
+  type_neutral_light: {
+    default: ExtendedColor['darkLevel.500']
   }
 };

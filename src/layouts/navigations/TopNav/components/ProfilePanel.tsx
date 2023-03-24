@@ -1,5 +1,4 @@
 import {
-  Collapse,
   Flex,
   chakra,
   Text,
@@ -28,7 +27,7 @@ import { ExtendedColor } from 'theme/colors/interfaces';
 import { ProfileSettingEnum, UserType } from 'models/user';
 import { startCase } from 'lodash';
 import { Fragment, useState } from 'react';
-import { ArrowIconOutlined } from 'theme/icons/SVGs/arrow';
+import { ArrowRightIconOutlined } from 'theme/icons/SVGs/arrow';
 import SwitchSettingButton, {
   SwitchSettingButtonProps
 } from './SwitchSettingButton';
@@ -46,12 +45,14 @@ import {
 } from 'theme/icons/SVGs/instructor';
 import { UKFlagIcon, VietnamFlagIcon } from 'theme/icons/SVGs/flag';
 import 'theme/globalCSS/animation.css';
+import { PrisPopover } from 'component-ui/PrisPopover';
 
 export interface IProfilePanelProps {
   isShow: boolean;
   imgSrc: string;
   userName: string;
   userType: UserType;
+  onClickOutSide(): void;
 }
 
 export enum PanelMode {
@@ -62,7 +63,8 @@ export enum PanelMode {
 }
 
 const ProfilePanel = (props: IProfilePanelProps) => {
-  const { isShow, imgSrc, userName, userType } = props;
+  const { isShow, imgSrc, userName, userType, onClickOutSide } =
+    props;
   const [panelMode, setPanelMode] = useState(PanelMode.DEFAULT);
   const [profileChoice, setProfileChoice] = useState(
     ProfileSettingEnum.LEARNER
@@ -223,7 +225,7 @@ const ProfilePanel = (props: IProfilePanelProps) => {
           borderRadius={'50%'}
           onClick={_backToMainPanel}
         >
-          <ArrowIconOutlined
+          <ArrowRightIconOutlined
             boxSize={'1.25rem'}
             transform={'rotate(180deg)'}
             fill={ExtendedColor['darkLevel.200']}
@@ -400,11 +402,14 @@ const ProfilePanel = (props: IProfilePanelProps) => {
       : ExtendedColor['darkLevel.200'];
 
   return (
-    <Collapse in={isShow} unmountOnExit>
-      <Flex sx={styles.profilePanel}>
-        {_renderPanelBasedOnMode()}
-      </Flex>
-    </Collapse>
+    <PrisPopover
+      isShow={isShow}
+      onClickOutside={onClickOutSide}
+      sx={styles.profilePanel}
+      id="profile-panel"
+    >
+      {_renderPanelBasedOnMode()}
+    </PrisPopover>
   );
 };
 

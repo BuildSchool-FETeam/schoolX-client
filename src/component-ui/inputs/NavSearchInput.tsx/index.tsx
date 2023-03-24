@@ -6,7 +6,7 @@ import {
   InputLeftElement,
   InputRightElement,
   Text,
-  useOutsideClick
+  useDisclosure
 } from '@chakra-ui/react';
 import { ChangeEvent, useRef, useState } from 'react';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
@@ -21,18 +21,10 @@ import { TypoToken } from 'theme/base/interfaces';
 const DELAY_SEARCH_TIME = 2000; // 2 seconds
 
 const NavSearchInput = () => {
-  const [isOpenResult, setIsOpenResult] = useState(false);
+  const { isOpen, onClose, onOpen } = useDisclosure();
   const [isSearching, setIsSearching] = useState(false);
   const [val, setVal] = useState('');
   const _searchInputRef = useRef<HTMLInputElement>(null);
-
-  const compRef = useRef(null);
-  useOutsideClick({
-    ref: compRef,
-    handler: () => {
-      setIsOpenResult(false);
-    }
-  });
 
   const _renderShortcutIcon = () => {
     return (
@@ -68,9 +60,15 @@ const NavSearchInput = () => {
     _searchInputRef.current?.focus();
   };
 
+  const _clickOutside = () => {
+    if (isOpen) {
+      onClose();
+    }
+  };
+
   return (
     <HotKeys keyName="ctrl+/" onKeyDown={_onShortcut}>
-      <Box position={'relative'} ref={compRef}>
+      <Box position={'relative'}>
         <InputGroup>
           <InputLeftElement
             pointerEvents="none"
@@ -90,7 +88,8 @@ const NavSearchInput = () => {
             sx={styles.input}
             ref={_searchInputRef}
             onChange={(e) => _onLazyChange(e)}
-            onFocus={() => setIsOpenResult(true)}
+            onFocus={() => onOpen()}
+            onClick={() => onOpen()}
             value={val}
           />
           <InputRightElement
@@ -100,9 +99,10 @@ const NavSearchInput = () => {
           />
         </InputGroup>
         <SearchResult
-          isShow={isOpenResult}
+          isShow={isOpen}
           inputRef={_searchInputRef}
           isSearching={isSearching}
+          onClickOutside={_clickOutside}
         />
       </Box>
     </HotKeys>

@@ -90,7 +90,12 @@ export enum ButtonTokenColor {
   cpn_btn_neutral_background_default = 'cpn_btn_neutral_background_default',
   cpn_btn_neutral_background_hover = 'cpn_btn_neutral_background_hover',
   cpn_btn_neutral_stroke_disable = 'cpn_btn_neutral_stroke_disable',
-  cpn_btn_neutral_background_loading = 'cpn_btn_neutral_background_loading'
+  cpn_btn_neutral_background_loading = 'cpn_btn_neutral_background_loading',
+
+  cpn_txt_btn_danger_background_hover = 'cpn_txt_btn_danger_background_hover',
+  cpn_txt_btn_danger_content_hover = 'cpn_txt_btn_danger_content_hover',
+  cpn_txt_btn_danger_content_default = 'cpn_txt_btn_danger_content_default',
+  cpn_txt_btn_danger_content_disable = 'cpn_txt_btn_danger_content_disable'
 }
 
 export enum CheckBoxTokenColor {
@@ -121,7 +126,14 @@ export enum ChipToken {
   cpn_chips_content_se_default = 'cpn_chips_content_se_default',
   cpn_chips_content_se_hovered = 'cpn_chips_content_se_hovered',
   cpn_chips_icon_bg_se_hovered = 'cpn_chips_icon_bg_se_hovered',
-  cpn_chips_bg0_se_pressed = 'cpn_chips_bg0_se_pressed'
+  cpn_chips_bg0_se_pressed = 'cpn_chips_bg0_se_pressed',
+  cpn_chips_bg_0_00_focused = 'cpn_chips_bg_0_00_focused',
+  cpn_chips_content_0_00_focused = 'cpn_chips_content_0_00_focused',
+  cpn_chips_content_00_disabled = 'cpn_chips_content_00_disabled',
+  cpn_chips_content_0e_default = 'cpn_chips_content_0e_default',
+  cpn_chips_content_0e_focused = 'cpn_chips_content_0e_focused',
+  cpn_chips_bg_0e_focused = 'cpn_chips_bg_0e_focused',
+  cpn_chips_0e_disabled = 'cpn_chips_0e_disabled'
 }
 
 export enum TypoToken {
@@ -129,5 +141,7 @@ export enum TypoToken {
   type_neutral_disable = 'type_neutral_disable',
   type_link_focus = 'type_link_focus',
   type_placeholder = 'type_placeholder',
-  type_neutral_hard = 'type_neutral_hard'
+  type_neutral_hard = 'type_neutral_hard',
+  type_neutral_medium = 'type_neutral_medium',
+  type_neutral_light = 'type_neutral_light'
 }

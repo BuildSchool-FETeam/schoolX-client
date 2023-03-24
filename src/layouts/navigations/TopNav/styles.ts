@@ -1,8 +1,8 @@
+import { defineStyle } from '@chakra-ui/react';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
 import { ButtonTokenColor } from 'theme/base/interfaces';
-import { IStyleSheet } from 'theme/interfaces';
 
-export const navStyle: IStyleSheet = {
+export const navStyle = defineStyle({
   root: {
     bgColor: NavTokenColor.alias_neutral_bg_2,
     height: '3.5rem',
@@ -19,4 +19,4 @@ export const navStyle: IStyleSheet = {
     w: '1.5rem',
     cursor: 'pointer'
   }
-};
+});

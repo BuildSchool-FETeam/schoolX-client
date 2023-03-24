@@ -1,7 +1,14 @@
-import { Box, Collapse, Divider, Flex, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Divider,
+  Flex,
+  SystemStyleObject,
+  Text
+} from '@chakra-ui/react';
 import TextButton from 'component-ui/buttons/TextButton';
 import RecentCoursesSlider from 'component-ui/Cards/RecentCourse/RecentCoursesSlider';
 import FilteredChip from 'component-ui/FilterChip';
+import { PrisPopover } from 'component-ui/PrisPopover';
 import { myCoursesData, recentItemData } from 'data-test/dataSearch';
 import { MutableRefObject } from 'react';
 import { ArticleIconOutlined } from 'theme/icons/SVGs/article';
@@ -20,10 +27,11 @@ interface ISearchResultProps {
    */
   inputRef: MutableRefObject<HTMLInputElement | null>;
   isSearching: boolean;
+  onClickOutside?(): void;
 }
 
 const SearchResult = (props: ISearchResultProps) => {
-  const { isShow, inputRef, isSearching } = props;
+  const { isShow, inputRef, isSearching, onClickOutside } = props;
   const _resultWidth = inputRef.current?.offsetWidth;
 
   const _renderFilterChips = () => {
@@ -104,17 +112,24 @@ const SearchResult = (props: ISearchResultProps) => {
     );
   };
 
+  const popoverStyles: SystemStyleObject = {
+    ...styles.resultBox,
+    w: _resultWidth
+  };
+
   return (
-    <Collapse in={isShow} unmountOnExit>
-      <Flex w={_resultWidth} sx={styles.resultBox}>
-        {_renderFilterChips()}
-        <Box px="1rem">
-          <Divider variant={'v1'} />
-        </Box>
-        {_renderRecentSearch()}
-        {!isSearching && _renderMyCourses()}
-      </Flex>
-    </Collapse>
+    <PrisPopover
+      isShow={isShow}
+      sx={popoverStyles}
+      onClickOutside={onClickOutside}
+    >
+      {_renderFilterChips()}
+      <Box px="1rem">
+        <Divider variant={'v1'} />
+      </Box>
+      {_renderRecentSearch()}
+      {!isSearching && _renderMyCourses()}
+    </PrisPopover>
   );
 };
 

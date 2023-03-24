@@ -13,6 +13,7 @@ import { TextButtonStyle } from 'component-ui/buttons/TextButton/styles';
 import { CheckboxStyles } from 'theme/components/CheckboxTheme';
 import { dividerTheme } from './components/DividerTheme';
 import { radioTheme } from './components/RadioTheme';
+import { MenuTheme } from './components/MenuTheme';
 
 export const chakraTheme = extendTheme({
   config: {
@@ -38,6 +39,7 @@ export const chakraTheme = extendTheme({
     TextButton: TextButtonStyle,
 
     Checkbox: CheckboxStyles,
-    Radio: radioTheme
+    Radio: radioTheme,
+    Menu: MenuTheme
   }
 });

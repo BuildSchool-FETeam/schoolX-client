@@ -14,7 +14,7 @@ export const ButtonTheme: ComponentStyleConfig = {
     _disabled: {
       opacity: 1,
       pointerEvents: 'none',
-      cursor: 'pointer'
+      cursor: 'not-allowed !important'
     }
   }),
 

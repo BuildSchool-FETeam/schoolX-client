@@ -1,6 +1,6 @@
+import { defineStyle } from '@chakra-ui/react';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
 import { ColorToken } from 'theme/base/interfaces';
-import { IStyleSheet } from 'theme/interfaces';
 
 export const popoverStyleFromTopBar = {
   bg: ColorToken.global_dark_level_transparent_56,
@@ -16,7 +16,7 @@ export const popoverStyleFromTopBar = {
   transition: 'all .4s'
 };
 
-export const styles: IStyleSheet = {
+export const styles = defineStyle({
   resultBox: {
     ...popoverStyleFromTopBar,
 
@@ -36,4 +36,4 @@ export const styles: IStyleSheet = {
       borderColor: NavTokenColor.alias_divider_1
     }
   }
-};
+});

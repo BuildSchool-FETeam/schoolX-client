@@ -1,15 +1,13 @@
+import { defineStyle } from '@chakra-ui/react';
 import { ChipToken } from 'theme/base/interfaces';
 import { ExtendedColor } from 'theme/colors/interfaces';
-import { IStyleSheet } from 'theme/interfaces';
 
 interface IStyleParams {
   variant: 'base' | 'no-border';
 }
 
-export const stylesGenerator = (
-  params: IStyleParams
-): IStyleSheet => {
-  const baseVariant: IStyleSheet = {
+export const stylesGenerator = (params: IStyleParams) => {
+  const baseVariant = defineStyle({
     filterChip: {
       borderColor: ChipToken.cpn_chips_stroke_00_default,
 
@@ -38,9 +36,9 @@ export const stylesGenerator = (
         borderColor: ChipToken.cpn_chips_content_s0_hovered
       }
     }
-  };
+  });
 
-  const noBorderVariant: IStyleSheet = {
+  const noBorderVariant = defineStyle({
     filterChip: {
       border: 'none',
       bg: ChipToken.cpn_chips_bg0_0e_default,
@@ -74,9 +72,9 @@ export const stylesGenerator = (
     closeBox: {
       bgColor: ChipToken.cpn_chips_icon_bg_se_hovered
     }
-  };
+  });
 
-  let selectedVariant = baseVariant;
+  let selectedVariant = baseVariant as any;
 
   switch (params.variant) {
     case 'no-border':

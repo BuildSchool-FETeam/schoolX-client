@@ -6,7 +6,7 @@ import {
   Text
 } from '@chakra-ui/react';
 import { ExtendedColor } from 'theme/colors/interfaces';
-import { ArrowIconOutlined } from 'theme/icons/SVGs/arrow';
+import { ArrowRightIconOutlined } from 'theme/icons/SVGs/arrow';
 import { TextLayer } from 'theme/typography/interfaces';
 import { styles } from './styles';
 
@@ -64,7 +64,7 @@ const ProfilePanelSettingNav = (
           {subTitle}
         </Text>
       </Box>
-      <ArrowIconOutlined
+      <ArrowRightIconOutlined
         boxSize={'1rem'}
         fill={ExtendedColor['darkLevel.300']}
       />

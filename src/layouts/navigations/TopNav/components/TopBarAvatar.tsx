@@ -1,10 +1,4 @@
-import {
-  Avatar,
-  AvatarBadge,
-  useDisclosure,
-  useOutsideClick
-} from '@chakra-ui/react';
-import { useRef } from 'react';
+import { Avatar, AvatarBadge, useDisclosure } from '@chakra-ui/react';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
 import { ExtendedColor } from 'theme/colors/interfaces';
 import ProfilePanel from './ProfilePanel';
@@ -17,14 +11,9 @@ export interface ITopBarNavProps {
 const TopBarAvatar = (props: ITopBarNavProps) => {
   const { userName, imgSrc } = props;
   const { isOpen, onToggle, onClose } = useDisclosure();
-  const avaRef = useRef(null);
-  useOutsideClick({
-    handler: () => onClose(),
-    ref: avaRef
-  });
 
   return (
-    <div ref={avaRef}>
+    <div>
       <Avatar
         name={userName}
         src={imgSrc}
@@ -45,6 +34,7 @@ const TopBarAvatar = (props: ITopBarNavProps) => {
         imgSrc={imgSrc}
         userName={userName}
         userType="learner"
+        onClickOutSide={onClose}
       />
     </div>
   );

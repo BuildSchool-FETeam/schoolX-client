@@ -39,7 +39,7 @@ const SwitchSettingButton = (props: SwitchSettingButtonProps) => {
     wrapperStyle = {
       ...styles.switchButtonWrapper,
       ...styles.switchButtonBgActive
-    };
+    } as any;
   }
 
   const contentColorWhenActive = isChecked

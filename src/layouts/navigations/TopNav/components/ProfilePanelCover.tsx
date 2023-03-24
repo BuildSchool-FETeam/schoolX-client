@@ -8,7 +8,7 @@ const ProfilePanelCover = (props: ProfileCoverPanelProps) => {
   return (
     <Box w="100%">
       <Img
-        h="14.5rem"
+        h="13.5rem"
         src={props.imgSrc}
         objectFit="cover"
         width="100%"

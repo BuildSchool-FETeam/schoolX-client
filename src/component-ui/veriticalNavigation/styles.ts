@@ -1,6 +1,6 @@
-import { IStyleSheet } from 'theme/interfaces';
+import { defineStyle } from '@chakra-ui/react';
 
-export const styles: IStyleSheet = {
+export const styles = defineStyle({
   root: {
     minH: '3rem',
     minW: '16.25rem',
@@ -12,4 +12,4 @@ export const styles: IStyleSheet = {
       bgColor: 'rgba()'
     }
   }
-};
+});

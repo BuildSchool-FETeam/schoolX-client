@@ -8,7 +8,7 @@ const Navigation = () => {
     userName: 'Katarina Gomez',
     imgSrc:
       'https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/08/woman-portrait-smile-dimples-1296x728-body2-affiliative-1296x728.jpg?w=1155&h=1528',
-    noticCount: 0
+    noticCount: 6
   };
 
   return (

@@ -1,9 +1,9 @@
 import {
   Button,
   ButtonProps,
+  defineStyle,
   useStyleConfig
 } from '@chakra-ui/react';
-import { IStyleSheet } from 'theme/interfaces';
 
 export interface FittingButtonProps extends ButtonProps {
   buttonType?: 'no-round' | 'round';
@@ -22,11 +22,11 @@ const PrisButtonSec = (props: FittingButtonProps) => {
     variant
   });
 
-  const style: IStyleSheet = {
+  const style = defineStyle({
     button: {
       borderRadius: buttonType === 'no-round' ? '.5rem' : '10rem'
     }
-  };
+  });
 
   return (
     <Button __css={themeStyle} {...rest} sx={style.button}>

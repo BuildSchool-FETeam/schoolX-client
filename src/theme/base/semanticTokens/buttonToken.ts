@@ -1,4 +1,5 @@
 import { ExtendedColor } from 'theme/colors/interfaces';
+import { ColorToken } from '../interfaces';
 
 const primarySet = {
   cpn_btn_primary_background_default: {
@@ -59,6 +60,19 @@ const textButtons = {
 
   cpn_txt_btn_secondary_content_default: {
     default: ExtendedColor['darkLevel.100']
+  },
+
+  cpn_txt_btn_danger_background_hover: {
+    default: 'rgba(204, 63, 72, .18)'
+  },
+  cpn_txt_btn_danger_content_hover: {
+    default: ColorToken.error_light
+  },
+  cpn_txt_btn_danger_content_default: {
+    default: ColorToken.error_base
+  },
+  cpn_txt_btn_danger_content_disable: {
+    default: ExtendedColor['darkLevel.500']
   }
 };
 

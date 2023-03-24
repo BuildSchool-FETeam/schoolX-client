@@ -1,7 +1,7 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 import { ExtendedColor } from 'theme/colors/interfaces';
-import { ArrowIconOutlined } from 'theme/icons/SVGs/arrow';
+import { ArrowRightIconOutlined } from 'theme/icons/SVGs/arrow';
 import { CourseIconOutlined } from 'theme/icons/SVGs/course';
 import { TextLayer } from 'theme/typography/interfaces';
 import { styles } from './styles';
@@ -22,7 +22,7 @@ const VerticalNavigation = () => {
       >
         Menu here
       </Text>
-      <ArrowIconOutlined
+      <ArrowRightIconOutlined
         boxSize={'1rem'}
         fill={ExtendedColor['darkLevel.100']}
         transition={'all .3s'}

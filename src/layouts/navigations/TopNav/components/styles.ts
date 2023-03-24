@@ -1,9 +1,16 @@
-import { popoverStyleFromTopBar } from 'component-ui/inputs/NavSearchInput.tsx/SearchResult/styles';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
 import { ExtendedColor } from 'theme/colors/interfaces';
-import { IStyleSheet } from 'theme/interfaces';
+import { defineStyle } from '@chakra-ui/react';
 
-export const styles: IStyleSheet = {
+const commonBtnStyle = {
+  transition: 'all .2s',
+  boxSize: '2.75rem',
+  minW: 0,
+  borderRadius: '50%',
+  position: 'absolute',
+  bottom: '-1px'
+};
+export const styles = defineStyle({
   noticCount: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -12,20 +19,20 @@ export const styles: IStyleSheet = {
     bg: ExtendedColor['error_dark.500'],
     borderRadius: '5rem',
     position: 'absolute',
-    top: '-8px',
-    right: '-13px'
+    top: '-3px',
+    right: '-5px'
   },
 
   profilePanel: {
-    ...popoverStyleFromTopBar,
-
-    minW: '25.75rem',
+    w: '23.8rem',
     mr: '1rem',
     my: '.5rem',
     alignItems: 'center',
     borderRadius: '.75rem',
     transition: 'all .3s',
     overflow: 'hidden',
+    maxH: 'calc(100vh - 5rem)',
+    overflowY: 'auto',
 
     '.avatarBadge': {
       transform: 'translateY(-1.25rem)'
@@ -87,5 +94,33 @@ export const styles: IStyleSheet = {
   switchButtonContentActive: {
     fill: NavTokenColor.cpn_nav_ver_content_active,
     color: NavTokenColor.cpn_nav_ver_content_active
+  },
+
+  notificationBellBox: {
+    ml: '1.25rem',
+    boxSize: '2.25rem !important',
+    borderRadius: '50%',
+    minW: 0
+  },
+  notificationPanel: {
+    w: '23rem',
+    mt: '.5rem',
+    mr: '1rem'
+  },
+
+  notificationList: {
+    pb: '1rem',
+    maxH: 'calc(100vh - 15.3rem)',
+    overflowY: 'auto'
+  },
+
+  slideRightBtn: {
+    ...commonBtnStyle,
+    right: '7px'
+  },
+
+  slideLeftBtn: {
+    ...commonBtnStyle,
+    left: '7px'
   }
-};
+});

@@ -1,8 +1,8 @@
+import { defineStyle } from '@chakra-ui/react';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
 import { TypoToken } from 'theme/base/interfaces';
-import { IStyleSheet } from 'theme/interfaces';
 
-export const styles: IStyleSheet = {
+export const styles = defineStyle({
   input: {
     size: 'md',
     minW: '35rem',
@@ -19,4 +19,4 @@ export const styles: IStyleSheet = {
     justifyContent: 'center',
     mr: '.5rem'
   }
-};
+});

@@ -53,5 +53,28 @@ export const chipTokenDef = {
   },
   cpn_chips_bg0_se_pressed: {
     default: ExtendedColor['success_dark.500']
+  },
+
+  cpn_chips_bg_0_00_focused: {
+    default: ExtendedColor['primary_dark.100']
+  },
+  cpn_chips_content_0_00_focused: {
+    default: ExtendedColor['primary_dark.500']
+  },
+  cpn_chips_content_00_disabled: {
+    default: 'rgba(255,255,255,0.16)'
+  },
+
+  cpn_chips_content_0e_default: {
+    default: ExtendedColor['darkLevel.400']
+  },
+  cpn_chips_content_0e_focused: {
+    default: ExtendedColor['darkLevel.100']
+  },
+  cpn_chips_bg_0e_focused: {
+    default: ExtendedColor['primary_dark.500']
+  },
+  cpn_chips_0e_disabled: {
+    default: 'rgba(255,255,255,.16)'
   }
 };

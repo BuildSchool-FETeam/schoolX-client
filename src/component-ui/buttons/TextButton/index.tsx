@@ -1,10 +1,10 @@
 import {
   Button,
   ButtonProps,
+  defineStyle,
   useStyleConfig
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import { IStyleSheet } from 'theme/interfaces';
 import { TextLayer } from 'theme/typography/interfaces';
 
 export interface TextButtonProps extends ButtonProps {
@@ -28,11 +28,11 @@ const TextButton = (props: TextButtonProps) => {
   } = props;
   const themeStyle = useStyleConfig('TextButton', { size, variant });
 
-  const style: IStyleSheet = {
+  const style = defineStyle({
     button: {
       borderRadius: buttonType === 'no-round' ? '.5rem' : '10rem'
     }
-  };
+  });
 
   return (
     <Button

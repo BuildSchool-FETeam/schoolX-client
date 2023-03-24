@@ -1,5 +1,5 @@
-import { CSSObject } from '@chakra-ui/react';
+import { SystemStyleObject } from '@chakra-ui/react';
 
 export interface IStyleSheet {
-  [key: string]: CSSObject;
+  [key: string]: SystemStyleObject;
 }
