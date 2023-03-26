@@ -145,3 +145,12 @@ export enum TypoToken {
   type_neutral_medium = 'type_neutral_medium',
   type_neutral_light = 'type_neutral_light'
 }
+
+export enum CollapsibleNavToken {
+  cpn_nav_ver_content_inactive = 'cpn_nav_ver_content_inactive',
+  cpn_nav_ver_arrow_inactive = 'cpn_nav_ver_arrow_inactive',
+  cpn_nav_ver_bg_inactive = 'cpn_nav_ver_bg_inactive',
+  cpn_nav_ver_content_active = 'cpn_nav_ver_content_active',
+  cpn_nav_ver_arrow_active = 'cpn_nav_ver_arrow_active',
+  cpn_nav_ver_bg_active = 'cpn_nav_ver_bg_active'
+}

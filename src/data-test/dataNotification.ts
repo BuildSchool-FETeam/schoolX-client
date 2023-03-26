@@ -3,7 +3,7 @@ import {
   NotificationCategoryEnum
 } from 'models/notification';
 
-export const dataNotifications1: INotification[] = [
+export const dataNotifications: INotification[] = [
   {
     id: '1',
     src: 'https://img.freepik.com/free-vector/abstract-colorful-shapes-background_23-2148769631.jpg',
@@ -75,4 +75,4 @@ export const dataNotifications1: INotification[] = [
   }
 ];
 
-export const dataNotifications: INotification[] = [];
+export const dataNotification: INotification[] = [];

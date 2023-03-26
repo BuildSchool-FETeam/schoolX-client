@@ -1,6 +1,6 @@
 import { defineStyle } from '@chakra-ui/react';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
-import { ButtonTokenColor } from 'theme/base/interfaces';
+import { ButtonTokenColor, ShadowToken } from 'theme/base/interfaces';
 
 export const navStyle = defineStyle({
   root: {
@@ -10,7 +10,8 @@ export const navStyle = defineStyle({
     display: 'flex',
     alignItems: 'center',
     px: '1rem',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    boxShadow: ShadowToken.z4
   },
 
   dragIcon: {

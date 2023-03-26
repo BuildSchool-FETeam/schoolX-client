@@ -3,6 +3,7 @@ import { borders } from './semanticTokens/borderTokens';
 import { btnTokens } from './semanticTokens/buttonToken';
 import { cboxTokens } from './semanticTokens/checkboxToken';
 import { chipTokenDef } from './semanticTokens/chipToken';
+import { collapsibleNavTokenDef } from './semanticTokens/collapsibleNavToken';
 import { colorTokens } from './semanticTokens/colorToken';
 import { shadowsTokenDefinition } from './semanticTokens/shadowsToken';
 import { typographyTokens } from './semanticTokens/typography';
@@ -17,7 +18,8 @@ export const semanticTokens = {
 
     ...aliasNavToken,
     ...chipTokenDef,
-    ...typoDef
+    ...typoDef,
+    ...collapsibleNavTokenDef
   },
   shadows: shadowsTokenDefinition,
   borders: borders

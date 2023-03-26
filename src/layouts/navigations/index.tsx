@@ -1,9 +1,13 @@
-import { Fragment } from 'react';
+import { HStack } from '@chakra-ui/react';
+import { Fragment, useState } from 'react';
 import LeftNav from './LeftNav';
 import NavContent from './NavContent';
 import TopNav from './TopNav';
 
 const Navigation = () => {
+  const [isLeftNavExpand, setIsLeftNavExpand] = useState(true);
+  const [isLeftNavFixed, setIsLeftNavFixed] = useState(true);
+
   const mockData = {
     userName: 'Katarina Gomez',
     imgSrc:
@@ -14,12 +18,20 @@ const Navigation = () => {
   return (
     <Fragment>
       <TopNav
+        onMenuClick={() => setIsLeftNavFixed(!isLeftNavFixed)}
         userName={mockData.userName}
         imgSrc={mockData.imgSrc}
         notificationCount={mockData.noticCount}
       />
-      <LeftNav />
-      <NavContent />
+      <HStack pos="relative">
+        <LeftNav
+          isFixed={isLeftNavFixed}
+          isLeftNavExpand={isLeftNavExpand}
+          onMouseEnter={() => setIsLeftNavExpand(true)}
+          onMouseOut={() => setIsLeftNavExpand(false)}
+        />
+        <NavContent isLeftNavFixed={isLeftNavFixed} />
+      </HStack>
     </Fragment>
   );
 };

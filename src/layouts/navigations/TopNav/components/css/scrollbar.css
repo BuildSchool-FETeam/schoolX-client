@@ -1,6 +1,6 @@
 /* width */
 #notification-list::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 /* Track */
@@ -21,7 +21,7 @@
 
 /* width */
 #profile-panel::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 /* Track */

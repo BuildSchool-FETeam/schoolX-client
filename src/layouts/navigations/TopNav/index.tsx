@@ -13,15 +13,16 @@ interface ITopNavProps {
   userName: string;
   imgSrc: string;
   notificationCount: number;
+  onMenuClick: () => void;
 }
 
 const TopNav = (props: ITopNavProps) => {
-  const { userName, imgSrc, notificationCount } = props;
+  const { userName, imgSrc, notificationCount, onMenuClick } = props;
 
   const _renderFirstSection = () => {
     return (
       <Flex align={'center'}>
-        <DraggableIcon sx={navStyle.dragIcon} />
+        <DraggableIcon sx={navStyle.dragIcon} onClick={onMenuClick} />
         <Img src={LogoNav} w="6.5rem" ml="1rem" />
       </Flex>
     );
