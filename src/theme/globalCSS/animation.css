@@ -12,3 +12,7 @@
 .slideInAnimation {
   animation: slideIn ease-in 0.5s;
 }
+
+.slideInAnimationDelay {
+  animation: slideIn ease-in 0.5s;
+}

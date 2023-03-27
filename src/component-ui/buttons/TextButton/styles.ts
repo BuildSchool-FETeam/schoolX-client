@@ -27,6 +27,20 @@ export const TextButtonStyle = defineStyleConfig({
         backgroundColor: 'transparent',
         cursor: 'not-allowed'
       }
+    },
+    secondary: {
+      color: ButtonTokenColor.cpn_txt_btn_secondary_content_default,
+      fill: ButtonTokenColor.cpn_txt_btn_secondary_content_default,
+      _hover: {
+        backgroundColor:
+          ButtonTokenColor.cpn_txt_btn_secondary_background_hover
+      },
+      _disabled: {
+        color: ButtonTokenColor.cpn_txt_btn_secondary_content_disable,
+        fill: ButtonTokenColor.cpn_txt_btn_secondary_content_disable,
+        backgroundColor: 'transparent',
+        cursor: 'not-allowed'
+      }
     }
   },
   sizes: {

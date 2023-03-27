@@ -1,9 +1,14 @@
-import { Box, Text, VStack } from '@chakra-ui/react';
+import { Box, Divider, Flex, Text, VStack } from '@chakra-ui/react';
 import CollapsibleNavigation from 'component-ui/CollapsibleNavigation';
-import CollapsibleNavItem from 'component-ui/CollapsibleNavigation/CollasibleNavItem';
+import CollapsibleNavItem from 'component-ui/CollapsibleNavigation/CollapsibleNavItem';
 import { TextLayer } from 'theme/typography/interfaces';
 import { style } from './styles';
 import { navList } from './navList';
+import { useLocation } from 'react-router-dom';
+import BadgeInfo from 'component-ui/Badges/BadgeInfor';
+import { config } from 'config/config.dev';
+import { ColorToken, TypoToken } from 'theme/base/interfaces';
+import TextButton from 'component-ui/buttons/TextButton';
 
 interface ILeftNavProps {
   isLeftNavExpand: boolean;
@@ -16,26 +21,23 @@ const LeftNav = (props: ILeftNavProps) => {
   const { isLeftNavExpand, onMouseEnter, onMouseOut, isFixed } =
     props;
   const styles = style(isLeftNavExpand, isFixed);
+  const currentRoutePath = useLocation().pathname;
 
-  return (
-    <VStack
-      sx={styles.root}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseOut}
-    >
-      <Text
-        sx={styles.menuTitle}
-        layerStyle={TextLayer.smallBoldNormal}
-      >
-        Menu
-      </Text>
-      <Box w="100%">
+  function _renderNavList() {
+    return (
+      <Box w="100%" px="1rem">
         {navList.map((item) => {
           const { subItems, ...rest } = item;
           const listSubItems = subItems.map((subItem) => {
+            const { title, linkHref } = subItem;
             return (
-              <CollapsibleNavItem key={subItem.title}>
-                {subItem.title}
+              <CollapsibleNavItem
+                id={title}
+                key={title}
+                linkHref={linkHref}
+                isActive={currentRoutePath === linkHref}
+              >
+                {title}
               </CollapsibleNavItem>
             );
           });
@@ -51,6 +53,73 @@ const LeftNav = (props: ILeftNavProps) => {
           );
         })}
       </Box>
+    );
+  }
+
+  function _renderNavInfo() {
+    return (
+      <Box
+        w="100%"
+        mt="auto !important"
+        px=".5rem"
+        className="slideInAnimationDelay"
+      >
+        <Flex>
+          <Text
+            layerStyle={TextLayer.smallRegularNormal}
+            color={TypoToken.type_neutral_disable}
+            mr="1rem"
+          >
+            Version
+          </Text>
+          <BadgeInfo
+            bgColor={ColorToken.warning_light}
+            color={ColorToken.warning_darker}
+            badgeType="round"
+          >
+            Insider {config.version}
+          </BadgeInfo>
+        </Flex>
+        <Divider variant={'v1'} my="1rem" />
+        <Flex flexWrap={'wrap'} alignItems="center" opacity={0.7}>
+          <TextButton variant={'secondary'}>Điều khoảng</TextButton>
+          <Text mx=".5rem">&#x2022;</Text>
+          <TextButton variant={'secondary'}>
+            Quyền riêng tư
+          </TextButton>
+          <TextButton variant={'secondary'}>
+            Liên hệ với chúng tôi
+          </TextButton>
+        </Flex>
+        <Text
+          my="1.25rem"
+          ml="7px"
+          m="1.25rem 0 1.25rem 7px"
+          layerStyle={TextLayer.smallRegularNormal2X}
+          color={TypoToken.type_neutral_light}
+        >
+          © 2023 Prisdom Copyright
+        </Text>
+      </Box>
+    );
+  }
+
+  return (
+    <VStack
+      sx={styles.root}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseOut}
+    >
+      <Box px="1rem">
+        <Text
+          sx={styles.menuTitle}
+          layerStyle={TextLayer.smallBoldNormal}
+        >
+          Menu
+        </Text>
+      </Box>
+      {_renderNavList()}
+      {(isLeftNavExpand || isFixed) && _renderNavInfo()}
     </VStack>
   );
 };

@@ -27,6 +27,7 @@ const BadgeInfo = (props: BadgeInfoProps) => {
       bgColor={bgColor}
       borderRadius={borderRadius}
       className={className}
+      display="inline"
     >
       <Text color={color} layerStyle={TextLayer.smallBoldNormalX}>
         {children}

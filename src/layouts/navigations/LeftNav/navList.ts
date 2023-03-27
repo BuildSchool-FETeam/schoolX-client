@@ -13,9 +13,9 @@ export const navList = [
     IconExpanded: CourseIconFilled,
     title: 'Learning',
     subItems: [
-      { title: 'Dashboard' },
-      { title: 'Courses' },
-      { title: 'Ask question' }
+      { title: 'Dashboard', linkHref: '/' },
+      { title: 'Courses', linkHref: '/courses' },
+      { title: 'Ask question', linkHref: '/ask-question' }
     ]
   },
   {
@@ -23,9 +23,8 @@ export const navList = [
     IconExpanded: ExploreIconFilled,
     title: 'Explore',
     subItems: [
-      { title: 'Labs' },
-      { title: 'More challenge' },
-      { title: 'Ranking' }
+      { title: 'Dashboard', linkHref: '/explore' },
+      { title: 'See more', linkHref: '/explore/more' }
     ]
   }
 ];

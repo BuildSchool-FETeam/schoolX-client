@@ -3,11 +3,13 @@ import { uniqueId } from 'lodash';
 import { CollapsibleNavToken } from 'theme/base/interfaces';
 import { TextLayer } from 'theme/typography/interfaces';
 import { styleGen } from './styles';
+import { Link } from 'react-router-dom';
 
 interface ICollapsibleNavItemProps extends ButtonProps {
   onNavSelect?(id: string): void;
-  id?: string;
+  id: string;
   isActive?: boolean;
+  linkHref?: string;
 }
 
 const CollapsibleNavItem = (props: ICollapsibleNavItemProps) => {
@@ -16,6 +18,7 @@ const CollapsibleNavItem = (props: ICollapsibleNavItemProps) => {
     isActive,
     id = uniqueId(),
     onNavSelect,
+    linkHref,
     ...rest
   } = props;
   const styles = styleGen(!!isActive);
@@ -46,20 +49,23 @@ const CollapsibleNavItem = (props: ICollapsibleNavItemProps) => {
             '.5rem',
             CollapsibleNavToken.cpn_nav_ver_content_active
           )}
-      <Text
-        layerStyle={
-          isActive
-            ? TextLayer.baseBoldNormal
-            : TextLayer.baseRegularNormal
-        }
-        color={
-          isActive
-            ? CollapsibleNavToken.cpn_nav_ver_content_active
-            : CollapsibleNavToken.cpn_nav_ver_content_inactive
-        }
-      >
-        {children}
-      </Text>
+      <Link to={linkHref || '/'} style={{ width: '100%' }}>
+        <Text
+          layerStyle={
+            isActive
+              ? TextLayer.baseBoldNormal
+              : TextLayer.baseRegularNormal
+          }
+          color={
+            isActive
+              ? CollapsibleNavToken.cpn_nav_ver_content_active
+              : CollapsibleNavToken.cpn_nav_ver_content_inactive
+          }
+          p=".5rem"
+        >
+          {children}
+        </Text>
+      </Link>
     </Button>
   );
 };

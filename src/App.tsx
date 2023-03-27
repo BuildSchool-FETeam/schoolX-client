@@ -1,6 +1,5 @@
 import { Box, VStack } from '@chakra-ui/react';
-import { ReactRoutes } from 'router/ReactRoutes';
-import homeRoutes from 'router/routes/home.route';
+import Navigation from 'layouts/navigations';
 import { AuthContainer } from 'store-sdk/authStore/AuthView/AuthContainer';
 import { ModalContainer } from 'store-sdk/modalServices/ModalViews/NotificationModalContainer';
 
@@ -10,7 +9,7 @@ function App() {
       <AuthContainer />
       <VStack align={'center'} textAlign="center">
         <Box>
-          <ReactRoutes routes={homeRoutes} />
+          <Navigation />
         </Box>
       </VStack>
     </ModalContainer>

@@ -9,7 +9,6 @@ export const style = (leftNavExpanded: boolean, isFixed: boolean) =>
       bgColor: NavTokenColor.alias_neutral_bg_2,
       alignItems: 'flex-start',
       transition: 'all .3s',
-      px: '1rem',
       pos: 'absolute',
       top: '0',
       left: '0',

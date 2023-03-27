@@ -51,7 +51,6 @@ export const styleGen = (
       alignItems: 'center',
       w: '100%',
       h: '2.6rem',
-      p: '1rem',
       justifyContent: 'flex-start',
       pl: isActive ? '.85rem' : '',
 

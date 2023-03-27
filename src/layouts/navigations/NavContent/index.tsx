@@ -1,4 +1,6 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
+import { Outlet } from 'react-router-dom';
+import { styleGenerator } from './styles';
 
 interface NavContentProps {
   isLeftNavFixed: boolean;
@@ -6,15 +8,11 @@ interface NavContentProps {
 
 const NavContent = (props: NavContentProps) => {
   const { isLeftNavFixed } = props;
+  const styles = styleGenerator(isLeftNavFixed);
 
   return (
-    <Box
-      ml={`${isLeftNavFixed ? '17.5rem' : '5rem'} !important`}
-      w={`calc(100vw - ${isLeftNavFixed ? '17.5rem' : '5rem'})`}
-      transition="all .3s"
-      zIndex={-2}
-    >
-      <Text>Nav Content</Text>;
+    <Box sx={styles.root}>
+      <Outlet></Outlet>
     </Box>
   );
 };
