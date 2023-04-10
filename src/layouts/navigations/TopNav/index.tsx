@@ -45,7 +45,11 @@ const TopNav = (props: ITopNavProps) => {
           h="1rem"
         ></Divider>
         <NotificationBell notificationCount={notificationCount} />
-        <TopBarAvatar userName={userName} imgSrc={imgSrc} />
+        <TopBarAvatar
+          userName={userName}
+          imgSrc={imgSrc}
+          notificationNumbers={0}
+        />
       </Flex>
     );
   };

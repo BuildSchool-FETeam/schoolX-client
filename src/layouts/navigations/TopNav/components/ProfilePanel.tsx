@@ -6,11 +6,11 @@ import {
   Divider,
   HStack,
   Box,
-  RadioGroup
+  RadioGroup,
+  LinkBox,
+  LinkOverlay
 } from '@chakra-ui/react';
 import { styles } from './styles';
-import cover from 'theme/icons/Images/cover01.jpg';
-import ProfilePanelCover from './ProfilePanelCover';
 import BadgeInfo from 'component-ui/Badges/BadgeInfor';
 import { TextLayer } from 'theme/typography/interfaces';
 import { PriscoinIconFilled } from 'theme/icons/SVGs/priscoin';
@@ -25,7 +25,6 @@ import { LanguageIconOutlined } from 'theme/icons/SVGs/language';
 import { LogoutIconOutlined } from 'theme/icons/SVGs/logOut';
 import { ExtendedColor } from 'theme/colors/interfaces';
 import { ProfileSettingEnum, UserType } from 'models/user';
-import { startCase } from 'lodash';
 import { Fragment, useState } from 'react';
 import { ArrowRightIconOutlined } from 'theme/icons/SVGs/arrow';
 import SwitchSettingButton, {
@@ -74,10 +73,10 @@ const ProfilePanel = (props: IProfilePanelProps) => {
   );
   const [langChoice, setLangChoice] = useState(ProfileSettingEnum.UK);
 
-  const _renderCourseAndPointInfo = () => {
+  function _renderCourseAndPointInfo() {
     return (
       <Flex alignItems={'center'}>
-        <HStack mr="1rem">
+        <HStack mr=".5rem">
           <Center
             p="4px"
             borderRadius={'50%'}
@@ -97,7 +96,7 @@ const ProfilePanel = (props: IProfilePanelProps) => {
           </Text>
         </HStack>
         <Divider orientation="vertical" h="8px" />
-        <HStack ml="1rem">
+        <HStack ml=".5rem">
           <Center
             p="4px"
             borderRadius={'50%'}
@@ -119,9 +118,9 @@ const ProfilePanel = (props: IProfilePanelProps) => {
         </HStack>
       </Flex>
     );
-  };
+  }
 
-  const _renderMenuLists = () => {
+  function _renderMenuLists() {
     const data = [
       {
         Icon: ProfileIconOutlined,
@@ -146,7 +145,7 @@ const ProfilePanel = (props: IProfilePanelProps) => {
       }
     ];
     return (
-      <Box px="1rem">
+      <Box mx="1rem">
         {data.map((itemProps) => (
           <ProfilePanelSettingNav
             key={itemProps.title}
@@ -155,39 +154,52 @@ const ProfilePanel = (props: IProfilePanelProps) => {
         ))}
       </Box>
     );
-  };
+  }
 
-  const _renderMainPanel = () => {
+  function _renderAvatarInfoContainer() {
     return (
       <Fragment>
-        <ProfilePanelCover imgSrc={cover} />
-        <Flex direction="column" alignItems={'center'}>
-          <chakra.img
-            sx={styles.bigProfileImg}
-            borderColor={`${bgColor} !important`}
-            src={imgSrc}
-          />
-          <BadgeInfo
-            className="avatarBadge"
-            bgColor={bgColor}
-            color={color}
+        <LinkBox sx={styles.linkBox}>
+          <HStack
+            sx={styles.avatarInfoContainer}
+            className="avatarInfoContainer"
           >
-            {startCase(userType)}
-          </BadgeInfo>
-        </Flex>
-        <Text
-          layerStyle={TextLayer.largeBoldX}
-          color={TypoToken.type_neutral_hard}
-        >
-          {userName}
-        </Text>
-        {_renderCourseAndPointInfo()}
-        <Box px="1rem" w="100%">
-          <PrisButton size={'lg'} w="100%" mt="1.5rem">
-            View profile
-          </PrisButton>
-        </Box>
-        <Divider my="1.5rem" />
+            <chakra.img
+              sx={styles.bigProfileImg}
+              borderColor={`${bgColor} !important`}
+              src={imgSrc}
+            />
+            <Box mr="6rem">
+              <LinkOverlay href="#">
+                <Text
+                  layerStyle={TextLayer.mediumBold}
+                  color={TypoToken.type_neutral_hard}
+                  mb=".2rem"
+                >
+                  {userName}
+                </Text>
+              </LinkOverlay>
+              {_renderCourseAndPointInfo()}
+            </Box>
+            <BadgeInfo
+              badgeType="round"
+              bgColor={ColorToken.warning_light}
+              color={ColorToken.warning_darker}
+              justifySelf={'flex-end'}
+              ml="auto !important"
+            >
+              2
+            </BadgeInfo>
+          </HStack>
+        </LinkBox>
+        <Divider mb="1.5rem" />
+      </Fragment>
+    );
+  }
+
+  function _renderMainPanel() {
+    return (
+      <Fragment>
         <HStack px="1rem" w="100%">
           <Text layerStyle={TextLayer.mediumBold} mr="auto">
             Settings
@@ -212,10 +224,12 @@ const ProfilePanel = (props: IProfilePanelProps) => {
         </Box>
       </Fragment>
     );
-  };
+  }
 
-  const _backToMainPanel = () => setPanelMode(PanelMode.DEFAULT);
-  const _renderSubPanelHeaders = (headerTitle: string) => {
+  function _backToMainPanel() {
+    setPanelMode(PanelMode.DEFAULT);
+  }
+  function _renderSubPanelHeaders(headerTitle: string) {
     return (
       <HStack w="100%" mb="1rem">
         <PrisButton
@@ -243,8 +257,8 @@ const ProfilePanel = (props: IProfilePanelProps) => {
         </TextButton>
       </HStack>
     );
-  };
-  const _renderProfilePanel = () => {
+  }
+  function _renderProfilePanel() {
     const itemListData: SwitchSettingButtonProps[] = [
       {
         IconNormal: LearnerIconOutlined,
@@ -272,7 +286,7 @@ const ProfilePanel = (props: IProfilePanelProps) => {
       }
     ];
     return (
-      <Box p="1rem" w="100%">
+      <Box px="1rem" w="100%">
         {_renderSubPanelHeaders('Switch profile')}
         <RadioGroup
           value={profileChoice}
@@ -290,9 +304,9 @@ const ProfilePanel = (props: IProfilePanelProps) => {
         </RadioGroup>
       </Box>
     );
-  };
+  }
 
-  const _renderThemePanel = () => {
+  function _renderThemePanel() {
     const itemListData: SwitchSettingButtonProps[] = [
       {
         title: 'system default',
@@ -316,7 +330,7 @@ const ProfilePanel = (props: IProfilePanelProps) => {
     ];
 
     return (
-      <Box p="1rem" w="100%">
+      <Box px="1rem" w="100%">
         {_renderSubPanelHeaders('Switch theme')}
         <RadioGroup
           value={themeChoice}
@@ -334,9 +348,9 @@ const ProfilePanel = (props: IProfilePanelProps) => {
         </RadioGroup>
       </Box>
     );
-  };
+  }
 
-  const _renderLanguagePanel = () => {
+  function _renderLanguagePanel() {
     const itemListData: SwitchSettingButtonProps[] = [
       {
         IconNormal: VietnamFlagIcon,
@@ -355,7 +369,7 @@ const ProfilePanel = (props: IProfilePanelProps) => {
     ];
 
     return (
-      <Box p="1rem" w="100%">
+      <Box px="1rem" w="100%">
         {_renderSubPanelHeaders('Switch language')}
         <RadioGroup
           value={langChoice}
@@ -371,9 +385,9 @@ const ProfilePanel = (props: IProfilePanelProps) => {
         </RadioGroup>
       </Box>
     );
-  };
+  }
 
-  const _renderPanelBasedOnMode = () => {
+  function _renderPanelBasedOnMode() {
     let renderer = _renderMainPanel();
 
     switch (panelMode) {
@@ -389,17 +403,12 @@ const ProfilePanel = (props: IProfilePanelProps) => {
     }
 
     return renderer;
-  };
+  }
 
   const bgColor =
     userType === 'learner'
       ? ExtendedColor['darkLevel.100']
       : ColorToken.primary_base;
-
-  const color =
-    userType === 'learner'
-      ? ExtendedColor['darkLevel.800']
-      : ExtendedColor['darkLevel.200'];
 
   return (
     <PrisPopover
@@ -408,6 +417,7 @@ const ProfilePanel = (props: IProfilePanelProps) => {
       sx={styles.profilePanel}
       id="profile-panel"
     >
+      {_renderAvatarInfoContainer()}
       {_renderPanelBasedOnMode()}
     </PrisPopover>
   );

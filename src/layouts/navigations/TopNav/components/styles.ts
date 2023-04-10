@@ -1,6 +1,7 @@
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
 import { ExtendedColor } from 'theme/colors/interfaces';
 import { defineStyle } from '@chakra-ui/react';
+import { ColorToken } from 'theme/base/interfaces';
 
 const commonBtnStyle = {
   transition: 'all .2s',
@@ -23,6 +24,38 @@ export const styles = defineStyle({
     right: '-5px'
   },
 
+  linkBox: {
+    w: '100%',
+
+    _hover: {
+      '.avatarInfoContainer': {
+        bg: NavTokenColor.alias_neutral_bg_2
+      }
+    }
+  },
+
+  avatarInfoContainer: {
+    justify: 'flex-start',
+    w: '100%',
+    py: '1.5rem',
+    px: '1rem',
+    borderTopRadius: '.75rem',
+    display: 'flex'
+  },
+
+  avatarBadge: {
+    bgColor: ColorToken.warning_light,
+    color: ColorToken.warning_darker,
+    justifySelf: 'flex-end',
+    ml: 'auto !important',
+    position: 'absolute',
+    top: '1px',
+    right: '10px',
+
+    boxSize: '1.5rem',
+    zIndex: 300
+  },
+
   profilePanel: {
     w: '23.8rem',
     mr: '1rem',
@@ -32,7 +65,7 @@ export const styles = defineStyle({
     transition: 'all .3s',
     overflow: 'hidden',
     maxH: 'calc(100vh - 5rem)',
-    overflowY: 'auto',
+    zIndex: 1000,
 
     '.avatarBadge': {
       transform: 'translateY(-1.25rem)'
@@ -47,16 +80,15 @@ export const styles = defineStyle({
   },
 
   bigProfileImg: {
-    boxSize: '10.5rem',
-    border: '4px solid',
+    boxSize: '3rem',
     borderRadius: '10.5rem',
     objectFit: 'cover',
-    mt: '-6.3rem'
+    mr: '.5rem'
   },
 
   settingNav: {
     alignItems: 'center',
-    minW: '23.75rem',
+    minW: '21.75rem',
     minH: '3rem',
     px: '.75rem',
     borderRadius: '8px',

@@ -1,9 +1,8 @@
-import { Flex, Text } from '@chakra-ui/react';
-import { PropsWithChildren } from 'react';
+import { Flex, FlexProps, Text } from '@chakra-ui/react';
 import { ExtendedColor } from 'theme/colors/interfaces';
 import { TextLayer } from 'theme/typography/interfaces';
 
-interface BadgeInfoProps extends PropsWithChildren<any> {
+interface BadgeInfoProps extends FlexProps {
   bgColor?: string;
   color?: string;
   badgeType?: 'round' | 'no-round';
@@ -16,7 +15,7 @@ const BadgeInfo = (props: BadgeInfoProps) => {
     bgColor = ExtendedColor['darkLevel.300'],
     color = ExtendedColor['darkLevel.900'],
     badgeType = 'no-round',
-    className
+    ...rest
   } = props;
 
   const borderRadius = badgeType === 'no-round' ? '.3rem' : '10rem';
@@ -26,8 +25,8 @@ const BadgeInfo = (props: BadgeInfoProps) => {
       p="3px 9px"
       bgColor={bgColor}
       borderRadius={borderRadius}
-      className={className}
       display="inline"
+      {...rest}
     >
       <Text color={color} layerStyle={TextLayer.smallBoldNormalX}>
         {children}

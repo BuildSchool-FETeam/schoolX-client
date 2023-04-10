@@ -82,7 +82,7 @@ const LeftNav = (props: ILeftNavProps) => {
         </Flex>
         <Divider variant={'v1'} my="1rem" />
         <Flex flexWrap={'wrap'} alignItems="center" opacity={0.7}>
-          <TextButton variant={'secondary'}>Điều khoảng</TextButton>
+          <TextButton variant={'secondary'}>Điều khoản</TextButton>
           <Text mx=".5rem">&#x2022;</Text>
           <TextButton variant={'secondary'}>
             Quyền riêng tư

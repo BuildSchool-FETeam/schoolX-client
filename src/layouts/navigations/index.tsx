@@ -23,7 +23,7 @@ const Navigation = () => {
         imgSrc={mockData.imgSrc}
         notificationCount={mockData.noticCount}
       />
-      <HStack pos="relative">
+      <HStack pos="relative" zIndex="-1">
         <LeftNav
           isFixed={isLeftNavFixed}
           isLeftNavExpand={isLeftNavExpand}
