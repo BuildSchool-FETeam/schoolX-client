@@ -11,7 +11,7 @@ const NavContent = (props: NavContentProps) => {
   const styles = styleGenerator(isLeftNavFixed);
 
   return (
-    <Box sx={styles.root}>
+    <Box sx={styles.root} id="nav-main-content">
       <Outlet></Outlet>
     </Box>
   );

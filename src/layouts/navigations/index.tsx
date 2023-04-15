@@ -5,8 +5,8 @@ import NavContent from './NavContent';
 import TopNav from './TopNav';
 
 const Navigation = () => {
-  const [isLeftNavExpand, setIsLeftNavExpand] = useState(true);
-  const [isLeftNavFixed, setIsLeftNavFixed] = useState(true);
+  const [isLeftNavExpand, setIsLeftNavExpand] = useState(false);
+  const [isLeftNavFixed, setIsLeftNavFixed] = useState(false);
 
   const mockData = {
     userName: 'Katarina Gomez',

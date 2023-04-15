@@ -153,10 +153,31 @@ const white = {
 
 const transparent = {
   global_dark_level_transparent_56: {
-    default: 'rgba(22,28,36,.56)'
+    default: 'rgba(22,28,36,.8)'
   },
   fake_shadow_background_info: {
     default: 'rgba(51, 102, 255, 0.24)'
+  },
+  global_success_transparent_16: {
+    default: 'rgba(40, 189, 104, 0.16)'
+  },
+  global_success_transparent_32: {
+    default: 'rgba(40, 189, 104, 0.32)'
+  },
+  global_primary_transparent_16: {
+    default: 'rgba(7, 132, 242, 0.16)'
+  },
+  global_warning_transparent_16: {
+    default: 'rgba(237, 176, 21, 0.16)'
+  },
+  global_dark_level_transparent_24: {
+    default: 'rgba(22, 28, 36, 0.24)'
+  },
+  global_error_transparent_16: {
+    default: 'rgba(204, 63, 72, 0.16)'
+  },
+  global_error_transparent_32: {
+    default: 'rgba(204, 63, 72, 0.32)'
   }
 };
 

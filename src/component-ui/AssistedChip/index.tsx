@@ -13,7 +13,7 @@ import { ChipVariant, stylesGenerator } from './styles';
 export interface IAssistedChipProps extends ButtonProps {
   chipType?: 'round' | 'no-round';
   Icon?: ComponentWithAs<'svg', IconProps>;
-  title: string;
+  userName: string;
 }
 
 const AssistedChip = (props: IAssistedChipProps) => {
@@ -23,7 +23,7 @@ const AssistedChip = (props: IAssistedChipProps) => {
     chipType = 'round',
     children,
     borderRadius,
-    title,
+    userName: title,
     variant = 'default',
     Icon,
     ...rest

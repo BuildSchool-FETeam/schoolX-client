@@ -11,7 +11,8 @@ export const navStyle = defineStyle({
     alignItems: 'center',
     px: '1rem',
     justifyContent: 'space-between',
-    boxShadow: ShadowToken.z4
+    boxShadow: ShadowToken.z4,
+    position: 'fixed'
   },
 
   dragIcon: {

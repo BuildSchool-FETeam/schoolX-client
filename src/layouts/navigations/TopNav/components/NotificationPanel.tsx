@@ -29,7 +29,6 @@ import { ReadAllIconOutlined } from 'theme/icons/SVGs/readAll';
 import { UserIconOutlined } from 'theme/icons/SVGs/user';
 import { TextLayer } from 'theme/typography/interfaces';
 import { styles } from './styles';
-import './css/scrollbar.css';
 import emptyStateImg from 'theme/icons/Images/illustrations/NotificationIllus.png';
 
 interface INotificationPanelProps {
@@ -128,7 +127,7 @@ const NotificationPanel = (props: INotificationPanelProps) => {
                 key={chip.title}
                 variant={'elevator'}
                 Icon={chip.Icon}
-                title={chip.title}
+                userName={chip.title}
                 ml=".7rem"
                 flexShrink={0}
               />
@@ -223,6 +222,7 @@ const NotificationPanel = (props: INotificationPanelProps) => {
                 <NotificationCardInfo
                   isShowActionButton={noticItem.isShowActionButton}
                   id={noticItem.id}
+                  key={noticItem.id}
                   src={noticItem.src}
                   avatarName={noticItem.avatarName}
                   notificationTitle={noticItem.notificationTitle}
@@ -241,6 +241,7 @@ const NotificationPanel = (props: INotificationPanelProps) => {
                   isShowActionButton={noticItem.isShowActionButton}
                   id={noticItem.id}
                   src={noticItem.src}
+                  key={noticItem.id}
                   avatarName={noticItem.avatarName}
                   notificationTitle={noticItem.notificationTitle}
                   notificationState={noticItem.notificationState}

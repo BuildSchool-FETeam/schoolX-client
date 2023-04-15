@@ -40,7 +40,14 @@ export enum ColorToken {
   global_white_16 = 'global_white_16',
 
   global_dark_level_transparent_56 = 'global_dark_level_transparent_56',
-  fake_shadow_background_info = 'fake_shadow_background_info'
+  fake_shadow_background_info = 'fake_shadow_background_info',
+  global_success_transparent_16 = 'global_success_transparent_16',
+  global_warning_transparent_16 = 'global_warning_transparent_16',
+  global_primary_transparent_16 = 'global_primary_transparent_16',
+  global_dark_level_transparent_24 = 'global_dark_level_transparent_24',
+  global_success_transparent_32 = 'global_success_transparent_32',
+  global_error_transparent_16 = 'global_error_transparent_16',
+  global_error_transparent_32 = 'global_error_transparent_32'
 }
 
 export enum ShadowToken {

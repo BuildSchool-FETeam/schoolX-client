@@ -19,3 +19,13 @@ export const ArrowLeftIconOutlined = createIcon({
     </>
   )
 });
+
+export const IsMeArrowIcon = createIcon({
+  displayName: 'IsMeArrowIcon',
+  viewBox: '0 0 11 56',
+  path: (
+    <>
+      <path d="M3 13.0294V3C3 1.34315 1.65685 0 0 0V56C1.65685 56 3 54.6569 3 53V42.9706C3 39.788 4.26428 36.7357 6.51471 34.4853L8.75736 32.2426C11.1005 29.8995 11.1005 26.1005 8.75736 23.7574L6.51472 21.5147C4.26428 19.2643 3 16.212 3 13.0294Z" />
+    </>
+  )
+});
