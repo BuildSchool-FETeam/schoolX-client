@@ -21,6 +21,7 @@ import {
 import { PriscoinIconFilled } from 'theme/icons/SVGs/priscoin';
 import RightBarRankItem from './RightBarRankItem';
 import { DataRanking } from 'data-test/data-ranking';
+import { ClockIconFilled } from 'theme/icons/SVGs/clock';
 
 interface RightBarProps {
   isDownTrend?: boolean;
@@ -135,13 +136,13 @@ const RightBar = (props: RightBarProps) => {
             124
           </Text>
         </HStack>
-        <HStack mt="2">
+        <HStack mt="3">
           <Center
             boxSize={8}
             borderRadius={'50%'}
             bgColor={ColorToken.primary_base}
           >
-            <PriscoinIconFilled
+            <ClockIconFilled
               boxSize={6}
               fill={ColorToken.primary_lighter}
             />
