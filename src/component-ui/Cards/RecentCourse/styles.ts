@@ -24,7 +24,8 @@ export const styles = defineStyle({
       _hover: {
         h2: {
           color: TypoToken.type_link_focus
-        },
+        }
+        /*
         _after: {
           content: '""',
           height: '96%',
@@ -37,6 +38,7 @@ export const styles = defineStyle({
           boxShadow: ShadowToken.shadow_color_infor,
           borderRadius: '.7rem'
         }
+        */
       }
     }
   }

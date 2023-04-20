@@ -171,11 +171,7 @@ const RightBar = (props: RightBarProps) => {
         <Text layerStyle={TextLayer.largeBold} m="4">
           Top 10 of this week
         </Text>
-        <Box
-          mt="4"
-          id="rightBar-rank-list-box"
-          sx={styles.rankingListBox}
-        >
+        <Box mt="4" id="rightBar-rank-list-box">
           {DataRanking.map((item) => (
             <RightBarRankItem {...item} mb="3" key={item.id} />
           ))}

@@ -1,9 +1,7 @@
 import { defineStyle } from '@chakra-ui/react';
 import { NavTokenColor } from 'theme/base/aliasTokens/interfaces';
-import { ColorToken } from 'theme/base/interfaces';
 
 export const popoverStyleFromTopBar = defineStyle({
-  bg: ColorToken.global_dark_level_transparent_56,
   minH: '10rem',
   position: 'absolute',
   top: '3.6rem',

@@ -29,7 +29,7 @@ export const styles = defineStyle({
 
     _hover: {
       '.avatarInfoContainer': {
-        bg: NavTokenColor.alias_neutral_bg_2
+        bg: NavTokenColor.alias_neutral_bg_3
       }
     }
   },
@@ -57,7 +57,7 @@ export const styles = defineStyle({
   },
 
   profilePanel: {
-    w: '23.8rem',
+    w: '25rem',
     mr: '1rem',
     my: '.5rem',
     alignItems: 'center',
@@ -88,7 +88,7 @@ export const styles = defineStyle({
 
   settingNav: {
     alignItems: 'center',
-    minW: '21.75rem',
+    minW: '23rem',
     minH: '3rem',
     px: '.75rem',
     borderRadius: '8px',
@@ -135,7 +135,7 @@ export const styles = defineStyle({
     minW: 0
   },
   notificationPanel: {
-    w: '23rem',
+    w: '25rem',
     mt: '.5rem',
     mr: '1rem'
   },

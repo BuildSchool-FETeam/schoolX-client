@@ -23,13 +23,11 @@ import {
   ArrowRightIconOutlined,
   ArrowLeftIconOutlined
 } from 'theme/icons/SVGs/arrow';
-import { ArticleIconOutlined } from 'theme/icons/SVGs/article';
-import { CourseIconOutlined } from 'theme/icons/SVGs/course';
 import { ReadAllIconOutlined } from 'theme/icons/SVGs/readAll';
-import { UserIconOutlined } from 'theme/icons/SVGs/user';
 import { TextLayer } from 'theme/typography/interfaces';
 import { styles } from './styles';
 import emptyStateImg from 'theme/icons/Images/illustrations/NotificationIllus.png';
+import { chipsArray } from '../staticData';
 
 interface INotificationPanelProps {
   isShow: boolean;
@@ -271,28 +269,5 @@ const NotificationPanel = (props: INotificationPanelProps) => {
     </PrisPopover>
   );
 };
-
-const chipsArray = [
-  {
-    title: 'All',
-    Icon: undefined
-  },
-  {
-    title: 'Unread',
-    Icon: undefined
-  },
-  {
-    title: 'Courses',
-    Icon: CourseIconOutlined
-  },
-  {
-    title: 'People',
-    Icon: UserIconOutlined
-  },
-  {
-    title: 'Articles',
-    Icon: ArticleIconOutlined
-  }
-];
 
 export default NotificationPanel;

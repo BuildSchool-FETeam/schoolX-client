@@ -4,6 +4,9 @@ export const aliasNavToken = {
   alias_neutral_bg_2: {
     default: ExtendedColor['darkLevel.800']
   },
+  alias_neutral_bg_3: {
+    default: ExtendedColor['darkLevel.700']
+  },
 
   cpn_shortcut_content: {
     default: 'rgba(255, 255, 255, 0.32)'

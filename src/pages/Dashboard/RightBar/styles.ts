@@ -71,11 +71,6 @@ export const stylesComputed = (
       borderRadius: '.75rem'
     },
 
-    rankingListBox: {
-      maxH: 'calc(100vh - 35rem)',
-      overflowY: 'auto'
-    },
-
     rightBarItem: {
       h: '3.5rem',
       pos: 'relative',

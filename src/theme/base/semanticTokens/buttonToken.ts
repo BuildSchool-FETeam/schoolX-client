@@ -91,13 +91,13 @@ const buttonTertiarySet = {
   },
 
   cpn_btn_neutral_background_loading: {
-    default: ExtendedColor['darkLevel.600']
+    default: ExtendedColor['darkLevel.500']
   },
   cpn_btn_neutral_background_default: {
-    default: ExtendedColor['darkLevel.800']
+    default: ExtendedColor['darkLevel.700']
   },
   cpn_btn_neutral_background_hover: {
-    default: ExtendedColor['darkLevel.700']
+    default: ExtendedColor['darkLevel.600']
   },
   cpn_btn_neutral_stroke_disable: {
     default: ExtendedColor['darkLevel.500']
